@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import * as config from '../utils/config';
+---
+
+<Layout>
+  <main class="my-20">
+    <header class="grid w-full items-start mx-auto gap-4 p-6 mb-10 ">
+      <h1 class="">{config.title}</h1>  
+      <h4 class="text-text">
+        <b>Error 404</b>: Page Not Found
+      </h4>
+    </header>
+  </main>
+</Layout>

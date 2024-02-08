@@ -1,0 +1,15 @@
+---
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+---
+
+<nav class="headnav">
+	<a href="/">{title}</a>
+  <div class="flex gap-4">
+    <a href="/server">Our Server</a>
+    <a href="/courses">Courses</a>
+  </div>
+	<!-- <Toggle /> -->
+</nav>

@@ -1,0 +1,29 @@
+---
+// components
+import Layout from './Layout.astro';
+import Head from '../components/Head.astro'
+import Navbar from '../components/Navbar.astro';
+
+// utils
+const { frontmatter } = Astro.props;
+---
+
+<Head title={frontmatter.title} description={frontmatter.description}/>
+
+<Layout>
+  <article>
+    <Navbar url={frontmatter.url} />
+    <hgroup>
+      <h1 class="capitalize">{frontmatter.title}</h1>
+      <h3>{frontmatter.description}</h3>
+      <div class="tags overflow-y-scroll">
+      {frontmatter.categories.map((tag: string) => 
+          <span class="tag">#{tag}</span>
+          )}
+      </div>
+    </hgroup>
+    <div class="prose">
+      <slot/>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,18 @@
+---
+import Window from './Window.astro';
+import { formatDate } from '../utils/index.js';
+const { frontmatter, url } = Astro.props;
+const { title, date, author, description, categories } = frontmatter
+---
+<Window width='w-72 aspect-square font-manrope'>
+  <div class="text-xs text-text2">
+    <a href={url}  class="capitalize text-xl text-primary drop-shadow-glow">{title}</a>
+    <p>By: {author} - {formatDate(date)}</p>
+  </div>
+  <p class="text-sm capitalize">{description}</p>
+  <div class="tags overflow-y-scroll">
+    {categories.map((tag: string) => 
+      <button class="tag text-xs">#{tag}</button>
+    )}
+  </div>
+</Window>

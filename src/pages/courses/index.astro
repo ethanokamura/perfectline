@@ -1,0 +1,32 @@
+---
+// Utils
+import { formatCourses } from "../../utils/index.js";
+
+// Components
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import Head from "../../components/Head.astro";
+
+let tag = 'all';
+let filterByTag = false;
+if (tag != 'all') filterByTag = true;
+
+const allCourses = await Astro.glob('./*/*.md');
+const formattedCourses = formatCourses(allCourses, tag, {
+  filterOutDrafts: true,
+  filterOutTags: filterByTag,
+  sortByOrder: true,
+});
+---
+
+<Head title="Courses" description="A List of Courses We Offer"/>
+<Layout>
+  <section class="text-center grid gap-4">
+    <h1>Our Courses:</h1>
+    <div class="flex flex-wrap items-start justify-around gap-6 p-5">
+      {formattedCourses.map((course: any) => 
+        <Card frontmatter={course.frontmatter} url={course.url}/>
+      )}
+    </div>
+  </section>
+</Layout>

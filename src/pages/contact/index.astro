@@ -1,0 +1,40 @@
+---
+// components
+import Layout from '../../layouts/Layout.astro';
+import Head from '../../components/Head.astro'
+import Window from '../../components/Window.astro';
+
+// utils
+const { frontmatter } = Astro.props;
+---
+
+<!-- layout: '../../layouts/InfoLayout.astro'
+title: Contact Us
+description: Instructions on how to contact us!
+subdescription: Join us today :)
+author: Ethan Okamura
+date: 11.1.2023
+categories:
+  - info
+  - contact
+published: true
+order: 0 -->
+
+<Head title='Contact Us' description='Instructions on how to contact us!'/>
+
+<Layout>
+  <main class="grid justify-center pb-20 pt-10">
+    <header class="grid max-w-2xl w-full text-center items-start mx-auto gap-4 p-6 mb-10 ">
+      <Window width="w-fit">
+        <h2 class="capitalize">Contact Us</h2>
+        <h4>Instructions on how to contact us!</h4>
+        <p class="text-text2">Join us today :)</p>
+        <div class="flex gap-4 justify-center">
+          <a href="">Discord</a>
+          <a href="mailto:ethanokamura3@gmail.com">Email</a>
+          <a href="mailto:ethanokamura3@gmail.com">Complete Google Form</a>
+        </div>
+      </Window>
+    </header>
+  </main>
+</Layout>
