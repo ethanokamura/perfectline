@@ -51,11 +51,7 @@
   h5 {
     @apply text-lg;
   }
-  h1,
-  h2,
-  b,
-  a,
-  strong {
+  h1, h2, b, a, strong {
     @apply text-primary drop-shadow-glow;
   }
   article {
