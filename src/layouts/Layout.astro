@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import Head from '../components/Head.astro';
 import { title, description } from '../utils/config';
 import '../styles/global.css';
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -11,7 +12,7 @@ import '../styles/global.css';
   <Head title={title} description={description}/>
 	<body class="flex flex-col justify-between">
     <div class="flex flex-col justify-start">
-      <Header title={title}/>
+      <Header title={title} path={currentPath}/>
       <main class="px-6 flex flex-col items-center h-full">
         <slot/>
       </main>

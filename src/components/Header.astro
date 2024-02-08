@@ -1,12 +1,13 @@
 ---
 interface Props {
 	title: string;
+  path: string;
 }
-const { title } = Astro.props;
+const { title, path } = Astro.props;
 ---
 
-<nav class="headnav">
-	<a href="/">{title}</a>
+<nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"} `}>
+  { path === "/" ? <></> : <a href="/">{title}</a> }
   <div class="flex gap-4">
     <a href="/server">Our Server</a>
     <a href="/courses">Courses</a>
