@@ -27,13 +27,13 @@ const formattedPages = formatPages(pages, {
     <a href={url}>Intro</a>
   </div>
   {formattedPages.map((page: any, index: number) => 
-    <div class="text-lg">
+    <div class="text-lg flex gap-2">
       {index + 2 < 10 ? 
         <span class="text-text2"> 0{index + 2}:</span> 
       :
         <span class="text-text2">{index + 2}:</span>
       }
-      <a class="flex gap-4 text-primary" href={`${page.url}`}>{page.frontmatter.title}</a>
+      <a class="flex gap-4" href={`${page.url}`}>{page.frontmatter.title}</a>
     </div>
   )}
 </div>
