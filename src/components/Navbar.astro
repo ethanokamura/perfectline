@@ -11,6 +11,9 @@ switch (slug) {
   case 'cpp-101': pages = await Astro.glob('../pages/courses/cpp/cpp-101/*.md'); break;
   case 'practice': pages = await Astro.glob('../pages/courses/cpp/practice/*.md'); break;
   case 'slot-machine': pages = await Astro.glob('../pages/courses/cpp/slot-machine/*.md'); break;
+  case 'unity-101': pages = await Astro.glob('../pages/courses/unity/unity-101/*.md'); break;
+  // case 'unity-topdown': pages = await Astro.glob('../pages/courses/unity/unity-topdown/*.md'); break;
+  // case 'unity-platformer': pages = await Astro.glob('../pages/courses/unity/unity-platformer/*.md'); break;
   case 'webdev-101': pages = await Astro.glob('../pages/courses/web/webdev-101/*.md'); break;
   case 'git-101': pages = await Astro.glob('../pages/courses/web/git-101/*.md'); break;
   default: pages = await Astro.glob('../pages/courses/*/*.md');
@@ -20,6 +23,8 @@ const formattedPages = formatPages(pages, {
   sortByOrder: true,
 });
 const subject = url.split('/')[2];
+console.log(url);
+console.log(slug);
 ---
 
 <div class="flex flex-wrap gap-2 mb-10 justify-start">

@@ -7,7 +7,7 @@ date: 11.1.2023
 categories:
   - unity
   - beginner
-published: false
+published: true
 lang: unity
 order: 200
 ---
