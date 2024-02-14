@@ -19,14 +19,13 @@ const formattedPages = formatPages(pages, {
   filterOutDrafts: true,
   sortByOrder: true,
 });
-console.log(slug);
-console.log(url);
+const subject = url.split('/')[2];
 ---
 
 <div class="flex flex-wrap gap-2 mb-10 justify-start">
   <div class="text-lg">
     <span class="text-text2">01:</span> 
-    <a class="text-primary" href={`${url}/..`}>Intro</a>
+    <a class="text-primary" href={`/courses/${subject}/${slug}`}>Intro</a>
   </div>
   {formattedPages.map((page: any, index: number) => 
     <div class="text-lg flex gap-2 flex-nowrap">
