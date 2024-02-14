@@ -6,7 +6,7 @@ const { title, date, author, description, categories } = frontmatter
 ---
 <Window width='w-72 aspect-square font-manrope'>
   <div class="text-xs text-text2">
-    <a href={url}  class="capitalize text-xl text-primary drop-shadow-glow">{title}</a>
+    <a href={`${url}/`}  class="capitalize text-xl text-primary drop-shadow-glow">{title}</a>
     <p>By: {author} - {formatDate(date)}</p>
   </div>
   <p class="text-sm capitalize">{description}</p>

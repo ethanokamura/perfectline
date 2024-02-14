@@ -14,8 +14,8 @@ const { frontmatter } = Astro.props;
   <article>
     <Navbar url={frontmatter.url} />
     <hgroup>
-      <h1 class="capitalize">{frontmatter.title}</h1>
-      <h3>{frontmatter.description}</h3>
+      <h1 class="capitalize text-5xl">{frontmatter.title}</h1>
+      <h3 class="text-2xl">{frontmatter.description}</h3>
       <div class="tags overflow-y-scroll">
       {frontmatter.categories.map((tag: string) => 
           <span class="tag">#{tag}</span>
