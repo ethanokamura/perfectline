@@ -22,6 +22,7 @@ order: 200
 5. Pokemon Go
 6. Rust
 7. Fall Guys
+
 ## Unity Hub:
 The Unity Hub serves as a centralized managements tool for Unity developers, streamlining the process of handling multiple Unity projects. It makes project management and organization efficient. Here, you can create new projects both in 2D and 3D within seconds. The Unity Hub also includes game templates to start off with! This is super handy if you just want to get a feel for Unity, but I always recommend creating a skeleton project (2D or 3D core).
 
