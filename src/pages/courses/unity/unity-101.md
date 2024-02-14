@@ -13,7 +13,8 @@ order: 200
 ---
 
 ## What is Unity?
- Unity is a versatile, widely used, cross-platform game engine created released in 2005. With over 450,000 daily users, it has lead to the creation of hundreds of thousands of games both at a professional and individual level. It has the capability to write programs for desktop, mobile, console, and VR platforms (most recently, extending to the Apple Vision SDK). It has a user-friendly interface and makes game development a seamless process. Unity supports both 2D and 3D development. Out of the box, it has a rich ecosystem of assets, plugins, and a vast community of developers. Unity has been and continues to be a go-to engine for many developers. Turn your wildest dreams into a reality with the Unity Game Engine!
+Unity is a versatile, widely used, cross-platform game engine created released in 2005. With over 450,000 daily users, it has lead to the creation of hundreds of thousands of games both at a professional and individual level. It has the capability to write programs for desktop, mobile, console, and VR platforms (most recently, extending to the Apple Vision SDK). It has a user-friendly interface and makes game development a seamless process. Unity supports both 2D and 3D development. Out of the box, it has a rich ecosystem of assets, plugins, and a vast community of developers. Unity has been and continues to be a go-to engine for many developers. Turn your wildest dreams into a reality with the Unity Game Engine!
+
 ## Games made with Unity:
 1. Cuphead
 2. Hollow Knight

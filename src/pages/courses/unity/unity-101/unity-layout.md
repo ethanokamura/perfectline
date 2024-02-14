@@ -19,12 +19,7 @@ The Unity Editor is the environment where you directly work on your projects. It
 The default layout of Unit should look something like this:
 ![](/imgs/unity/unity-101/BlankEditor.png)
 
-Let's break this down into the most important tabs:
-1. Project
-2. Console
-3. Hierarchy
-4. Inspector
-5. Scene / Game
+Let's break this down tab by tab:
 
 ## 1. Project:
 At the bottom of your screen you should see a tab called `Project`. In here, there are two main folders, `Assets` and `Packages`. For the sake of our courses. We will never directly edit the Packages folder. We mainly want to look inside the Assest folder. 
@@ -41,9 +36,23 @@ The console tab (normally next to the Project tab) will display messages that ar
 We will look at the console once we start scripting.
 
 ## 3. Hierarchy
+On the left hand side you will see the Hierarchy:
 ![](/imgs/unity/unity-101/Hierarchy.png)
+The Hierarchy includes every object that belongs in the scene (cameras, lights, players, enemies, bullets, the map, etc).
+
+This is also where the game's UI is held. 
+
+In a fresh project, the only object in the scene is the `Main Camera`. This is just as it's described, the main camera. Anything that you see in game is displayed through the eyes of the main camera. Let's see what the camera contains.
+
+To do this, let's look over to the Inspector on the right hand side of the Unity Editor.
+
 
 ## 4. Inspector
+The Inspector is where all the `components` inside an object are held. Components are essentially all the pieces that make up an object! Every object in the game contains a transform component. The transform component holds data such as the object's position, rotation, and scale. For example in the `Main Camera` contains both a `Camera` component and an `Audio Listener`. Typically the components are pretty self explanitory. An example of some components that a play may have would be a `Collider` that detects in game collision, a script that holds the code that controls the player, and possibly a component that controls physics.
 ![](/imgs/unity/unity-101/Inspector.png)
+
 ## 5. Scene / Game
+Finally, the last two tabs in the middle of the screen go hand in hand. The first we will look at is the scene tab. I call this the scene view. Here we can manipulate the transform of objects and position things around the level. The game view is what the user sees when the game is played! Above the scene and game view tabs, are a play and pause button. To test the game press the play button, to stop it, press play again. When the game is in progress, the start button is blue.
+
+MAKE NOTE: you cannot make changes to the game while the game is running, meaning that you must stop play mode in order to edit the game and files.
 ![](/imgs/unity/unity-101/MainWindow.png)

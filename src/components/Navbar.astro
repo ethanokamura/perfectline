@@ -12,7 +12,7 @@ switch (slug) {
   case 'practice': pages = await Astro.glob('../pages/courses/cpp/practice/*.md'); break;
   case 'slot-machine': pages = await Astro.glob('../pages/courses/cpp/slot-machine/*.md'); break;
   case 'unity-101': pages = await Astro.glob('../pages/courses/unity/unity-101/*.md'); break;
-  // case 'unity-topdown': pages = await Astro.glob('../pages/courses/unity/unity-topdown/*.md'); break;
+  case 'unity-topdown': pages = await Astro.glob('../pages/courses/unity/unity-topdown/*.md'); break;
   // case 'unity-platformer': pages = await Astro.glob('../pages/courses/unity/unity-platformer/*.md'); break;
   case 'webdev-101': pages = await Astro.glob('../pages/courses/web/webdev-101/*.md'); break;
   case 'git-101': pages = await Astro.glob('../pages/courses/web/git-101/*.md'); break;
@@ -29,15 +29,15 @@ console.log(slug);
 
 <div class="flex flex-wrap gap-2 mb-10 justify-start">
   <div class="text-lg">
-    <span class="text-text2">01:</span> 
+    <span class="text-text2">00:</span> 
     <a class="text-primary" href={`/courses/${subject}/${slug}`}>Intro</a>
   </div>
   {formattedPages.map((page: any, index: number) => 
     <div class="text-lg flex gap-2 flex-nowrap">
       {index + 2 < 10 ? 
-        <span class="text-text2"> 0{index + 2}:</span> 
+        <span class="text-text2"> 0{index + 1}:</span> 
       :
-        <span class="text-text2">{index + 2}:</span>
+        <span class="text-text2">{index + 1}:</span>
       }
       <a class="flex gap-4 text-primary" href={`${page.url}`}>{page.frontmatter.title}</a>
     </div>

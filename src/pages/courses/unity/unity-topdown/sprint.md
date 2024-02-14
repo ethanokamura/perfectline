@@ -1,3 +1,19 @@
+---
+layout: '../../../../layouts/PageLayout.astro'
+title: Sprinting
+description: Let's Go a Little Deeper And Create Sprinting Funcitonality For Our Player
+author: Ethan Okamura
+date: 11.1.2023
+categories:
+  - unity
+  - beginner
+  - top-down
+  - movement
+published: true
+lang: unity
+order: 2
+---
+
 Let's start with defining some variables to hold data such as speeds, timers, and player stats:
 ```cs
 private float curSpeed;  // current speed of the player
