@@ -7,7 +7,7 @@ date: 11.1.2023
 categories:
   - unity
   - beginner
-published: false
+published: true
 lang: unity
 order: 200
 ---
@@ -18,7 +18,7 @@ Unity is a versatile, widely used, cross-platform game engine created released i
 ## Games made with Unity:
 1. Cuphead
 2. Hollow Knight
-3. Hearthstone
+3. Hearthstone`
 4. Among Us
 5. Pokemon Go
 6. Rust

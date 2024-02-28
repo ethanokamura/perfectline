@@ -1,18 +1,25 @@
 ---
-import Window from './Window.astro';
 import { formatDate } from '../utils/index.js';
 const { frontmatter, url } = Astro.props;
 const { title, date, author, description, categories } = frontmatter
 ---
-<Window width='w-72 aspect-square font-manrope'>
-  <div class="text-xs text-text2">
-    <a href={`${url}/`}  class="capitalize text-xl text-primary drop-shadow-glow">{title}</a>
-    <p>By: {author} - {formatDate(date)}</p>
+
+<a href={`${url}/`} class='bg-secondary rounded w-72 aspect-square font-manrope mx-auto items-start flex flex-col gap-4 drop-shadow-none'>
+  <div class="flex gap-2 w-full p-3 border-b-2 border-accent">
+    <div class="w-4 h-4 rounded-full bg-red-400 flex items-center justify-center"><div class="w-[0.3rem] h-[0.3rem] rounded-full bg-red-500"></div></div>
+    <div class="w-4 h-4 rounded-full bg-yellow-200"></div>
+    <div class="w-4 h-4 rounded-full bg-green-300"></div>
   </div>
-  <p class="text-sm capitalize">{description}</p>
-  <div class="tags overflow-y-scroll">
-    {categories.map((tag: string) => 
+  <div class="text-start px-6 pb-4">
+    <div class="text-xs text-text2">
+      <h1 class="capitalize text-xl text-primary drop-shadow-glow">{title}</h1>
+      <p>By: {author} - {formatDate(date)}</p>
+    </div>
+    <p class="text-sm capitalize">{description}</p>
+    <div class="tags overflow-y-scroll">
+      {categories.map((tag: string) => 
       <button class="tag text-xs">#{tag}</button>
-    )}
+      )}
+    </div>
   </div>
-</Window>
+</a>
