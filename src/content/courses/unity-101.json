@@ -1,0 +1,12 @@
+
+{
+  "title": "Intro to Unity",
+  "description":"Learn About Unity!",
+  "author": "Ethan Okamura",
+  "date": "11-01-2023",
+  "tags": [ "unity", "beginner", "c#" ],
+  "published": true,
+  "lang": "unity",
+  "course": "unity-101",
+  "order": 200
+}

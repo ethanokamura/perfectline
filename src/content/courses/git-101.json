@@ -1,0 +1,11 @@
+{
+  "title": "Intro to Git",
+  "description":"In this course, we will cover the importance of Git!",
+  "author": "Ethan Okamura",
+  "date": "11-01-2023",
+  "tags": [ "git", "repositories", "file system" ],
+  "published": true,
+  "lang": "misc",
+  "course": "git-101",
+  "order": 1000
+}

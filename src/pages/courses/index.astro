@@ -1,20 +1,18 @@
 ---
 // Utils
 import { formatCourses } from "../../utils/index.js";
+import { getCollection, getEntry } from 'astro:content';
 
 // Components
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
 import Head from "../../components/Head.astro";
 
-let tag = 'all';
-let filterByTag = false;
-if (tag != 'all') filterByTag = true;
+const allCourses = await getCollection('courses');
 
-const allCourses = await Astro.glob('./*/*.md');
-const formattedCourses = formatCourses(allCourses, tag, {
+const formattedCourses = formatCourses(allCourses, "all", {
   filterOutDrafts: true,
-  filterOutTags: filterByTag,
+  filterOutTags: false,
   sortByOrder: true,
 });
 ---
@@ -24,8 +22,8 @@ const formattedCourses = formatCourses(allCourses, tag, {
   <section class="text-center grid gap-4">
     <h1 class="text-4xl">Our Courses:</h1>
     <div class="flex flex-wrap items-start justify-around gap-6 p-5">
-      {formattedCourses.map((course: any) => 
-        <Card frontmatter={course.frontmatter} url={course.url}/>
+      {formattedCourses.map((course:any) =>
+        <Card data={ course.data } url={ `/courses/${course.data.lang}/${course.data.course}/intro` }/>
       )}
     </div>
   </section>

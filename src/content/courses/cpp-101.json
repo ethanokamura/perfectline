@@ -1,0 +1,11 @@
+{
+  "title": "Intro to C++",
+  "description":" In this section, we will cover what C++ is and why one might use it.",
+  "author": "Ethan Okamura",
+  "date": "11-01-2023",
+  "tags": [ "full course", "cpp", "beginner", "basics" ],
+  "published": true,
+  "lang": "cpp",
+  "course": "cpp-101",
+  "order": 101
+}

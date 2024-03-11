@@ -1,0 +1,12 @@
+
+{
+  "title": "Practice Exercises",
+  "description":"Put your Skills to Use With These Practice Problems!",
+  "author": "Ethan Okamura",
+  "date": "11-01-2023",
+  "tags": [ "practice", "cpp", "javascript", "python" ],
+  "published": true,
+  "lang": "misc",
+  "course": "practice",
+  "order": 0
+}
