@@ -47,7 +47,6 @@ export const collections = {
   'unity-101': pageCollection,
   'javascript-101': pageCollection,
   'git-101': pageCollection,
-  'slot-machine': pageCollection,
   'practice': pageCollection,
   'assignments': pageCollection,
   'info': infoCollection
