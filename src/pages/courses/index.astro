@@ -2,7 +2,7 @@
 // Utils
 import { formatCourses } from "../../utils/index.js";
 import { getCollection } from 'astro:content';
-
+import * as config from '../../utils/config.js'
 // Components
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
@@ -19,12 +19,19 @@ const formattedCourses = formatCourses(allCourses, "all", {
 
 <Head title="Courses" description="A List of Courses We Offer"/>
 <Layout>
+  <main class="grid justify-center pb-20 pt-10">
+  <header class="grid max-w-2xl w-full text-center items-start mx-auto gap-4 p-6">
+    <div class="my-10">
+      <h1 class="font-rubik font-[800] text-text drop-shadow-none md:text-6xl text-4xl mb-6 transition-all ease-linear duration-300">&lcub; {config.title} &rcub;</h1>
+      <h2 class="font-rubik font-[300] italic">Complete Courses:</h2>
+    </div>
+  </header>
   <section class="text-center grid gap-4">
-    <h1 class="text-4xl">Our Courses:</h1>
     <div class="flex flex-wrap items-start justify-around gap-6 p-5">
       {formattedCourses.map((course:any) =>
         <Card data={ course.data } url={ `/courses/${course.data.lang}/${course.data.course}/intro` }/>
       )}
     </div>
   </section>
+  </main>
 </Layout>

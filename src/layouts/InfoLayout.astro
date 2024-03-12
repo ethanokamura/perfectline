@@ -3,6 +3,7 @@
 import Layout from './Layout.astro';
 import Head from '../components/Head.astro'
 import Window from '../components/Window.astro';
+import * as config from '../utils/config.js'
 
 // utils
 const { frontmatter } = Astro.props;
@@ -12,12 +13,12 @@ const { frontmatter } = Astro.props;
 
 <Layout>
   <main class="grid justify-center pb-20 pt-10">
-    <header class="grid max-w-2xl w-full text-center items-start mx-auto gap-4 p-6 mb-10 ">
-      <Window width="w-fit">
-        <h2 class="capitalize">{frontmatter.title}</h2>
+    <header class="grid max-w-2xl w-full text-center items-start mx-auto gap-4 p-6">
+      <div class="my-10">
+        <h1 class="font-rubik font-[800] text-text drop-shadow-none md:text-6xl text-4xl mb-6 transition-all ease-linear duration-300">&lcub; {config.title} &rcub;</h1>
+        <h2 class="font-rubik font-[300] italic">Private Lessons</h2>
         <h4>{frontmatter.description}</h4>
-        <p class="text-text2">{frontmatter.subdescription}</p>
-      </Window>
+      </div>
     </header>
     <article>
       <div class="prose">
