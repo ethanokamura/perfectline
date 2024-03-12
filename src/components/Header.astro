@@ -8,5 +8,6 @@ const { title, path } = Astro.props;
 
 <nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"} `}>
   { path === "/" ? <></> : <a href="/">{title}</a> }
+  { path === "/" ? <a href="/tutoring">Private Tutoring</a> : <></> }
   { path === "/" ? <a href="/courses">Start Learning</a> : <a href="/courses">Courses</a> }
 </nav>

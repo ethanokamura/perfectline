@@ -30,6 +30,15 @@ const pageCollection = defineCollection({
     order: z.number().optional(),
   }),
 });
+
+const infoCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    layout: z.string().optional(),
+    title: z.string(),
+    description: z.string().optional(),
+  }),
+});
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
@@ -40,4 +49,5 @@ export const collections = {
   'git-101': pageCollection,
   'practice': pageCollection,
   'assignments': pageCollection,
+  'info': infoCollection
 };

@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/InfoLayout.astro'
+layout: '../../../layouts/InfoLayout.astro'
 title: Our Server
 description: Instructions on how to log into our SSH server.
 subdescription: Access all your files and see examples over the internet!

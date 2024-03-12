@@ -17,13 +17,23 @@
   font-weight: 300;
   src: url('/fonts/Rubik-Regular.ttf');
 }
-
+@font-face {
+  font-family: "rubik";
+  font-weight: 800;
+  src: url('/fonts/Rubik-Bold.ttf');
+}
+@font-face {
+  font-family: "rubik";
+  font-weight: 300;
+  font-style: italic;
+  src: url('/fonts/Rubik-Italic.ttf');
+}
 @layer base {
   html::-webkit-scrollbar {
     display: none;
   }
   html {
-    @apply p-0 m-0 font-rubik text-text bg-gradient-to-r from-black to-background;
+    @apply p-0 m-0 font-rubik font-[300] text-text bg-gradient-to-r from-black to-background;
   }
   html,
   body {
@@ -66,14 +76,14 @@
   .headnav a {
     @apply text-primary hover:text-shadow-green transition-all ease-linear duration-300;
   }
-  
+
   .links {
     @apply flex gap-4;
   }
   .links li a {
     @apply text-text text-opacity-100 hover:text-opacity-20 transition-all ease-linear duration-100 drop-shadow-none;
   }
-  
+
   .tags {
     @apply flex flex-wrap gap-4 mt-5;
   }
@@ -84,13 +94,13 @@
     display: none;
   }
   .prose :is(h1, h2, h3, h4, h5, h6) {
-    @apply my-3 text-shadow-none; 
+    @apply my-3 text-shadow-none;
   }
   .prose :not(h1, h2, h3, h4, h5, h6) {
-    @apply text-base md:text-lg transition-all ease-linear duration-300; 
+    @apply text-base md:text-lg transition-all ease-linear duration-300;
   }
   .prose :not(h1, h2, h3, h4, h5, h6, b, a, strong) {
-    @apply text-text2; 
+    @apply text-text2;
   }
   .prose p:not(:is(h1, h2, h3, h4, h5, h6) + p) {
     @apply mt-7

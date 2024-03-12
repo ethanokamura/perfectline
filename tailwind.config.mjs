@@ -6,8 +6,8 @@ export default {
 	theme: {
 		extend: {
       colors: {
-        'text': '#f7f1da',
-        'text2': '#9c9684',
+        'text': '#ffffff',
+        'text2': '#a6a6a6',
         'background': '#13151a',
         'accent': '#1f232e',
         'primary': '#54b6f7',
@@ -78,7 +78,7 @@ export default {
           },
           to: {
             width: "100%"
-          }  
+          }
         },
         blink: {
           "50%": {
@@ -86,7 +86,7 @@ export default {
           },
           "100%": {
             opacity: "100%"
-          }  
+          }
         }
       }
     },
