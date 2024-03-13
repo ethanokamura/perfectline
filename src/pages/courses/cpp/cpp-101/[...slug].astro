@@ -7,7 +7,7 @@ import type { CollectionEntry } from 'astro:content';
 export async function getStaticPaths() {
   const cppCourses = await getCollection('cpp-101');
   return cppCourses.map((entry) => ({
-    params: { course: entry.data.course, slug: entry.slug }, props: { entry },
+    params: { slug: entry.slug }, props: { entry },
   }));
 }
 

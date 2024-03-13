@@ -8,6 +8,8 @@ tags:
   - file system
   - repositories
 published: true
+lang: misc
+course: git-101
 order: 1
 ---
 In GitHub create a new repository and give it a name. Once created, GitHub will create an empty repository and give you instructions on how to connect it locally.
