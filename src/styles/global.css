@@ -76,19 +76,17 @@
   .headnav a {
     @apply text-primary hover:text-shadow-green transition-all ease-linear duration-300;
   }
-
   .links {
     @apply flex gap-4;
   }
   .links li a {
     @apply text-text text-opacity-100 hover:text-opacity-20 transition-all ease-linear duration-100 drop-shadow-none;
   }
-
   .tags {
     @apply flex flex-wrap gap-4 mt-5;
   }
   .tags > * {
-    @apply px-2 py-1 rounded-xl bg-accent text-text;
+    @apply px-2 py-1 rounded-sm bg-accent text-text;
   }
   .tags::-webkit-scrollbar {
     display: none;

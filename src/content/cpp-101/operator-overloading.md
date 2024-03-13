@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PageLayout.astro'
 title: Operator Overloading
-description: In this section, we will cover the importance of {title}!
+description: In this section, we will cover the importance of operator overloading!
 tags:
   - cpp
   - operators

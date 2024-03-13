@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PageLayout.astro'
 title: STL Containers
-description: In this section, we will cover the importance of {title}!
+description: In this section, we will cover the importance of STL containers!
 tags:
   - cpp
   - stl

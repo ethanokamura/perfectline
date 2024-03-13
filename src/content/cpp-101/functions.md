@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PageLayout.astro'
 title: Functions
-description: In this section, we will cover the importance of {title}!
+description: In this section, we will cover the importance of functions!
 tags:
   - cpp
   - intro to programming

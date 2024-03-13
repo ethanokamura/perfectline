@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PageLayout.astro'
 title: Pointers
-description: In this section, we will cover the importance of {title}!
+description: In this section, we will cover the importance of pointers!
 tags:
   - cpp
   - pointers

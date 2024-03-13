@@ -1,24 +1,23 @@
 ---
-import { formatDate } from '../utils/index.js';
+import Tag from './Tag.astro'
 const { data, url } = Astro.props;
-// const { title, date, author, description, tags } = data
+
 ---
 
-<a href={`${url}`} class='bg-secondary rounded w-72 aspect-square font-manrope mx-auto items-start flex flex-col gap-4 drop-shadow-none'>
+<a href={`${url}`} class='bg-secondary rounded w-72 aspect-square font-manrope mx-auto items-start flex flex-col gap-4 drop-shadow-none hover:scale-110 ease-linear duration-100'>
   <div class="flex gap-2 w-full p-3 border-b-2 border-accent">
     <div class="w-4 h-4 rounded-full bg-red-400 flex items-center justify-center"><div class="w-[0.3rem] h-[0.3rem] rounded-full bg-red-500"></div></div>
     <div class="w-4 h-4 rounded-full bg-yellow-200"></div>
     <div class="w-4 h-4 rounded-full bg-green-300"></div>
   </div>
-  <div class="text-start px-6 pb-4">
-    <div class="text-xs text-text2">
-      <h1 class="capitalize text-xl text-primary drop-shadow-glow">{data.title}</h1>
-      <p>By: {data.author} - {formatDate(data.date)}</p>
+  <div class="h-64 text-start px-6 pb-4 flex flex-col justify-between">
+    <div class="grid gap-2">
+      <h1 class="capitalize text-2xl text-primary drop-shadow-glow">{data.title}</h1>
+      <p class="text-sm capitalize text-text">{data.description}</p>
     </div>
-    <p class="text-sm capitalize">{data.description}</p>
     <div class="tags overflow-y-scroll">
       {data.tags.map((tag: string) =>
-        <button class="tag text-xs">#{tag}</button>
+        <Tag name={tag}/>
       )}
     </div>
   </div>

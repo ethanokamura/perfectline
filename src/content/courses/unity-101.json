@@ -4,7 +4,7 @@
   "description":"Learn About Unity!",
   "author": "Ethan Okamura",
   "date": "11-01-2023",
-  "tags": [ "unity", "beginner", "c#" ],
+  "tags": [ "unity", "beginner", "cs" ],
   "published": true,
   "lang": "unity",
   "course": "unity-101",

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PageLayout.astro'
 title: if/else
-description: In this section, we will cover the importance of {title}!
+description: In this section, we will cover the importance of if statements!
 tags:
   - cpp
   - intro to programming

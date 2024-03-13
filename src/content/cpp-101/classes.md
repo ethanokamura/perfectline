@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PageLayout.astro'
 title: Classes And Objects
-description: In this section, we will cover the importance of {title}!
+description: In this section, we will cover the importance of object oriented programming!
 tags:
   - cpp
   - intro to programming

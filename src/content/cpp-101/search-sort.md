@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PageLayout.astro'
 title: Search and Sort algorithms
-description: In this section, we will cover the importance of {title}!
+description: In this section, we will cover the importance of algorithms!
 tags:
   - cpp
   - algorithms
