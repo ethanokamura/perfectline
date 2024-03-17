@@ -9,7 +9,7 @@ tags:
 published: true
 lang: cpp
 course: cpp-101
-order: 113
+order: 13
 ---
 In this section, we are finally covering the topic of pointers! Pointers are everywhere, in some ways, everything boils down to being a pointer. Pointers are often thought of as one of the most challenging topics to cover in C++. Though, in the right hands, they are really not so complicated.
 
@@ -36,7 +36,7 @@ Before, we get into pointers, lets review some things:
 ### What even is a variable? And what does it hold?
 4 important aspects of any variable:
 1. Type
-2. Name (identifier
+2. Name (identifier)
 3. Value
 4. Location (memory address)
 
@@ -50,6 +50,7 @@ Location is always some integer value! (ie, the memory address of the variable) 
 
 An example of a memory address might look something like `0x744c516a000`
 In a program, each variable holds a unique memory address!
+
 ### Ok now lets talk pointers:
 Here's some syntax that you'll see in the rest of the section:
 

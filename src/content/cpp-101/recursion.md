@@ -6,10 +6,11 @@ tags:
   - cpp
   - recursion
   - functions
-published: false
+published: true
 lang: cpp
 course: cpp-101
-order: 16
+
+order: 9
 ---
 Recursion works because of stack
 

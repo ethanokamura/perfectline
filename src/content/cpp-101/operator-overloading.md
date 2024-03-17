@@ -8,7 +8,7 @@ tags:
 published: true
 lang: cpp
 course: cpp-101
-order: 14
+order: 12
 ---
 You have probably heard the word `operator` before when talking about programming.
 

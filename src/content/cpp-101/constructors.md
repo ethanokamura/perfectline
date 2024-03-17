@@ -9,7 +9,7 @@ tags:
 published: true
 lang: cpp
 course: cpp-101
-order: 13
+order: 11
 ---
 When we create classes and structs, we need to also talk about [constructors](https://www.w3schools.com/cpp/cpp_constructors.asp)!
 ### Default Constructors: 2 Examples

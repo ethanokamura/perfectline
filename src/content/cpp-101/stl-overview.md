@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/PageLayout.astro'
-title: STL
+title: STL Overview
 description: In this section, we will do a general overview of the Standard Template Library and Iterators
 tags:
   - cpp
@@ -8,7 +8,7 @@ tags:
 published: true
 lang: cpp
 course: cpp-101
-order: 10
+order: 14
 ---
 ### Standard Template Library (STL)
 

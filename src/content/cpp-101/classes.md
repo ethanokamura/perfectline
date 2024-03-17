@@ -11,7 +11,7 @@ tags:
 published: true
 lang: cpp
 course: cpp-101
-order: 12
+order: 10
 ---
 In the beginning of this class, we learned about fundamental types in C++ like `int` and `bool`, but now let's look at how to make our own types! We can do this by defining **classes** and **structs**.
 A class is a blueprint or a template for creating objects. It's a way to group together data (attributes) and actions (methods or functions) that operate on that data.
