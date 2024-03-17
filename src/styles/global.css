@@ -65,7 +65,7 @@
     @apply text-primary drop-shadow-glow;
   }
   article {
-    @apply max-w-2xl w-full p-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary;
+    @apply max-w-4xl w-full p-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary;
   }
 }
 
@@ -105,6 +105,9 @@
   }
   .prose :is(ol) {
     @apply list-decimal pl-5;
+  }
+  .prose a {
+    @apply underline;
   }
   .prose :is(ul) {
     @apply list-[circle] pl-5;
