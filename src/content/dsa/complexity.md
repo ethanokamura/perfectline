@@ -4,9 +4,7 @@ title: Complexity
 description: How complex is our structure or algorithm?
 tags:
   - cpp
-  - data-structures
-  - advanced
-  - algorithms
+  - complexity
 published: true
 lang: cpp
 course: dsa
@@ -47,3 +45,32 @@ In general, constant time (or "in place" complexit) is the fastest and exponenti
 Here's a graph:
 
 ![](/imgs/time_complexity.png)
+
+## Example Algorithmic Complexity
+```
+O(1) <- Insertion into a Set
+O(n) <- Linear Search
+O(logn) <- Binary Search
+O(nlogn) <- Merge Sort
+O(n^2) <- Selection Sort, Bubble Sort, Insertion Sort
+```
+
+## Practical Example
+
+The basic idea is that coefficients and smaller powers are ignored.
+
+`O(n)` and `O(5n)` are going to be so close that the difference is negligable.
+
+The notation `O()` typically represents the maximum time complexity or the worst possible outcome.
+
+Here's a real world example:
+
+Let's say there are two programmers at a company and the company will fire one of the two due to budget cuts.
+
+Programmer A is good at optimizing and overall writes clean efficient code. He shows up on time and is attentive. He writes code that does 1 billion instructions per second. For the task at hand, he chooses to use a sorting algorithm called insertion sort.
+
+Programmer B is always late to work and overall writes code that is short, but to the point. He understands programming on a deep level and knows things like when to use `'\n'` vs `std::endl` in C++. His code runs 10 million instructions per second. For this task, programmer B uses merge sort.
+
+Given the task of sorting 10 million values, programmer B's program takes 20 minutes. Where as programmer A takes 2.3 days.
+
+Unfortunately, despite programmer A being an overall better employee, writing clean code, and showing up on time. Programmer B kept his job due to knowing to use the more efficient algorithm.
