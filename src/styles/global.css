@@ -109,6 +109,9 @@
   .prose a {
     @apply underline;
   }
+  .prose img {
+    @apply w-full;
+  }
   .prose :is(ul) {
     @apply list-[circle] pl-5;
   }

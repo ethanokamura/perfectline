@@ -1,0 +1,11 @@
+{
+  "title": "Linked Lists",
+  "description":"Let's learn about one of the most iconic data structures: Doubly Linked Lists!",
+  "author": "Ethan Okamura",
+  "date": "03-20-202",
+  "tags": [ "cpp", "intermediate", "data-structures" ],
+  "published": true,
+  "lang": "cpp",
+  "course": "linked-list",
+  "order": 102
+}
