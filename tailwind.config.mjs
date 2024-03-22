@@ -27,12 +27,12 @@ export default {
       },
       dropShadow: {
         glow: [
-          "0px 0px 7px #2f80b5"
+          "0px 0px 5px #1c6391"
         ]
       },
       textShadow: {
         green: [
-          '0.04em 0.04em #2f80b5, 0.08em 0.08em #1f5e87, 0.12em 0.12em #134261, 0.16em 0.16em #0d2b40, 0.2em 0.2em #061621'
+          '0.05em 0.05em #2f80b5, 0.1em 0.1em #1f5e87, 0.15em 0.15em #134261, 0.2em 0.2em #0d2b40, 0.25em 0.25em #061621'
         ],
         rainbow: [
           '0.04em 0.04em #d94b41, 0.08em 0.08em #f07f3a, 0.12em 0.12em #5df098, 0.16em 0.16em #3a83f0, 0.2em 0.2em #7d3fe8'

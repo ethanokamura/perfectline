@@ -62,7 +62,7 @@
     @apply text-lg;
   }
   h1, h2, b, a, strong {
-    @apply text-primary drop-shadow-glow;
+    @apply text-primary;
   }
   article {
     @apply max-w-4xl w-full p-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary;
@@ -74,13 +74,13 @@
    @apply text-2xl text-primary w-full items-center pt-4 pb-6 px-6 flex flex-wrap gap-6 z-20;
   }
   .headnav a {
-    @apply text-primary hover:text-shadow-green transition-all ease-linear duration-300;
+    @apply text-primary hover:scale-110 transition-all ease-linear duration-100;
   }
   .links {
     @apply flex gap-4;
   }
   .links li a {
-    @apply text-text text-opacity-100 hover:text-opacity-20 transition-all ease-linear duration-100 drop-shadow-none;
+    @apply text-text text-opacity-100 hover:text-opacity-20 transition-all ease-linear duration-100;
   }
   .tags {
     @apply flex flex-wrap gap-4 mt-5;
@@ -91,8 +91,11 @@
   .tags::-webkit-scrollbar {
     display: none;
   }
+  .prose :is(h1, h2) {
+    @apply font-rubik font-[800];
+  }
   .prose :is(h1, h2, h3, h4, h5, h6) {
-    @apply my-3 text-shadow-none;
+    @apply my-3;
   }
   .prose :not(h1, h2, h3, h4, h5, h6) {
     @apply text-base md:text-lg transition-all ease-linear duration-300;

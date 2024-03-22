@@ -12,8 +12,8 @@ const { data, url } = Astro.props;
   </div>
   <div class="h-64 text-start px-6 pb-4 flex flex-col justify-between">
     <div class="grid gap-2">
-      <h1 class="capitalize text-2xl text-primary drop-shadow-glow">{data.title}</h1>
-      <p class="text-sm capitalize text-text">{data.description}</p>
+      <h1 class="capitalize text-xl drop-shadow-none text-text font-rubik font-[800]">{data.title}</h1>
+      <p class="text-sm capitalize text-text2">{data.description}</p>
     </div>
     <div class="tags overflow-y-scroll">
       {data.tags.map((tag: string) =>

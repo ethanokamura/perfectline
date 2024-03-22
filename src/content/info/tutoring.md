@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/InfoLayout.astro'
-title: Tutoring
+title: PRIVATE LESSONS
 description: A More Hands On Experience!
 ---
 
