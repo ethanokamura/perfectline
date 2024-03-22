@@ -81,31 +81,20 @@ list_variable.head_->next->next->next->next->next
 3. No spacial locality: (nodes likely not next to each other in memory) May be difficult for COU cache to optimize.
 
 ## Advantages:
-Compared to other base standard sequence containers (array, vector, deque), lists preform generally better in inserting, extracting and moving elements in any position within the container for which an iterator has already been obtained, and therefore also in algorithms that make intensive use of these, like sorting algorithms.
+### Linked Lists Are Dynamic
+Linked lists allow for efficient memory allocation as nodes can be dynamically allocated and deallocated, enabling flexible memory management compared to arrays, which have a fixed size. Linked lists can be constructed on-the-fly, accommodating elements as needed, making them suitable for situations where the size of the data is unknown in advance.
 
-Keep in mind `std::list` already exists. If we end up making our own specialized linked-list class for some specific purpose, we should make sure it supports iterators!
+Linked lists can grow or shrink dynamically during runtime, allowing for efficient insertion and deletion of elements anywhere in the list without requiring resizing or shifting of elements, as is the case with arrays.
 
-## Goals:
+### Efficientcy:
+Insertion and deletion operations at the beginning or end of a linked list (when you have direct access to the head or tail) can be performed in constant time O(1), regardless of the list size. This makes linked lists efficient for dynamic data structures. More on time complexity [here](https://codesantacruz.com/courses/cpp/dsa/complexity/).
 
-For our list, we will want to allow for stuff other STL containers like vectors can do (insert, pop, push, delete, etc). We may need to include overloading operators so we can make copies and comparisons (ie `= == != < > <= >=`).
+Insertions and deletions in the middle of a linked list can also be efficient if you have direct access to the node where the operation is performed. Unlike arrays, linked lists don't require shifting elements, resulting in faster operations.
 
-Like and array, we will most likely need to index our list in the future so an overloaded `[]` operator will benefit us!
+Linked lists consume memory only for the actual data and the pointers connecting the nodes, making them memory-efficient compared to arrays, which may have unused space due to fixed-size allocation.
 
-We will also want to have iterator-based functions like in `std::list` (and `<algorithm>`). Iterators provide _pointer-like access_ to a position in a data structure. Check out the table on [this](https://cplusplus.com/reference/iterator/) page!
+### Versatility
+Linked lists come in different forms, such as singly linked lists, doubly linked lists, and circular linked lists. Each variant offers unique advantages, allowing developers to choose the type that best fits their requirements.
 
-In the case of a doubly linked list, we probably want to implement a [bidirectional iterator](https://cplusplus.com/reference/iterator/BidirectionalIterator/).
-
-
-If you want to use...
-
-1. Ranged-based for loop
-2. `std::sort`
-3. `std::find`
-4. `std::count`
-5. `std::swap`
-6. `std::fill`
-7. `std::min`
-8. `std::max`
-9. and other things in `<iterator>`
-
-... you must implement iterators for your custom type!
+### Ease of Implementation
+Linked lists are relatively easy to implement and understand compared to more complex data structures like trees and graphs. This simplicity makes them an excellent choice for learning data structures and algorithms.

@@ -50,16 +50,14 @@ This should work fine, but we may want to [throw](https://en.cppreference.com/w/
 
 ```cpp
 // returns the value of the head node
-T& front() const {
-  if (head == nullptr)
-    throw std::domain_error("empty list!");
+T &front() const {
+  if (head == nullptr) throw std::domain_error("empty list!");
   return head->data;
 }
 
 // returns the value of the tail node
-T& back() const {
-  if (tail == nullptr)
-    throw std::domain_error("empty list!");
+T &back() const {
+  if (tail == nullptr) throw std::domain_error("empty list!");
   return tail->data;
 }
 ```

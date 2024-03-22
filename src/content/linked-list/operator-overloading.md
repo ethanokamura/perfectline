@@ -24,8 +24,7 @@ For this function, we will want to clear the list and then put the desired value
 // assigns list to a new list
 LinkedList& operator=(std::initializer_list<T> init_list) {
   clear();
-  for (const T& val : init_list)
-    push_back(val);
+  for (const T& val : init_list) push_back(val);
   return *this;
 }
 ```
@@ -58,8 +57,7 @@ If we finish the loop, at this point we know both linked lists are equal so we r
 bool operator==(const LinkedList &another) {
   if (size() != another.size()) return false;
   for (int i = 0; i < size(); i++)
-    if (another[i] != (*this)[i])
-      return false;
+    if (another[i] != (*this)[i]) return false;
   return true;
 }
 ```
@@ -68,9 +66,7 @@ bool operator==(const LinkedList &another) {
 For this operator, we can just reuse our `==` operator. We just put a `!` operator in front.
 ```cpp
 // checks list for inequivalency to another list
-bool operator!=(const LinkedList &another) {
-  return !(*this == another);
-}
+bool operator!=(const LinkedList &another) { return !(*this == another); }
 ```
 
 Just like that, we have added comparison and copy operators to our linked list! In the next sectoin we will add indexing.

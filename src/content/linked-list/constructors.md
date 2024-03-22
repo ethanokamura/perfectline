@@ -51,8 +51,7 @@ After that, we pretty much just loop through the list and insert it into our lin
 ```cpp
 // list constructor
 LinkedList(std::initializer_list<T> init_list) {
-  for (const T& val : init_list)
-    push_back(val);
+  for (const T &val : init_list) push_back(val);
 }
 ```
 

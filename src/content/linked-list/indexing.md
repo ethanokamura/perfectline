@@ -37,12 +37,11 @@ Ok, so after all that, let's write our indexing operation. This will take the pa
 3. Iterate through the list until we reach the desired index
 4. Return the data at that index.
 ```cpp
-T& operator[](std::size_t index) const {
-  if (index >= list_size && index < 0)
-    throw std::out_of_range("Index out of range");
-  Node* current = head;
-  for (std::size_t i = 0; i < index; ++i)
-    current = current->next;
+// allows indexing functionality
+T &operator[](std::size_t index) const {
+  if (index >= list_size) throw std::out_of_range("Index out of range");
+  Node *current = head;
+  for (std::size_t i = 0; i < index; ++i) current = current->next;
   return current->data;
 }
 ```
@@ -66,10 +65,24 @@ Note that this uses `std::swap` but you can easily write your own swap function.
 Let's say we want to find out if the list contains a certain value. Well, now we can do this with a simple for loop.
 ```cpp
 // check if a value exists in the linked list
-bool contains(const T& value) const {
+bool contains(const T &value) const {
   for (std::size_t i = 0; i < size(); ++i)
-    if ((*this)[i] == value)
-      return true;
+    if ((*this)[i] == value) return true;
   return false;
+}
+```
+
+## Remove All
+We mentioned earlier that we may want to remove all data that matches a certain value. To do this, we index through our list and remove any node that holds data matching the target value.
+
+```cpp
+// function to remove all occurrences of a value from the linked list
+void remove_all(const T &target) {
+  for (std::size_t i = 0; i < size(); i++) {
+    if ((*this)[i] == target) {
+      remove(target);
+      --i;
+    }
+  }
 }
 ```
