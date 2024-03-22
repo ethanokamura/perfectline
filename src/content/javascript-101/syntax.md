@@ -28,7 +28,7 @@ The primitive data types for JavaScript:
 
 Unlike C++, `;` are optional because the JavaScript parser will add them automatically
 
-_However you want to write it, stick with it. Consistency is most important_
+_However, if you want to write it, stick with it. Consistency is the most important_
 
 ### How to use JavaScript:
 Start by creating a file ending with `.js`!
@@ -38,7 +38,7 @@ Define variables using the `var`, `let`, or `const` keywords!
 2. `const` are variables that cannot be reassigned later.
 3. `var` should be avoided unless you know how to use it!
 
-In JavaScript, switching data types is perfectly acceptable meaning that you can change the value of a number to a string to a bool etc.
+In JavaScript, switching data types is perfectly acceptable meaning that you can change the value of a number to a string to a bool, etc.
 
 Keep in mind that `console.log()` prints to standard output, similar to `std::cout` in C++!
 

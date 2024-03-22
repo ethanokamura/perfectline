@@ -12,10 +12,10 @@ course: linked-list
 order: 2
 ---
 
-In this section, we should create some ways for us to build our list! We need to alocate the memory necessary to hold our data. While we're at it, we should also create a destructor. The destructor will clean up any memory that must be deallocated. This will prevent **memory leaks**. All the constructors and destructors will be public member functions!
+In this section, we should create some ways for us to build our list! We need to allocate the memory necessary to hold our data. While we're at it, we should also create a destructor. The destructor will clean up any memory that must be deallocated. This will prevent **memory leaks**. All the constructors and destructors will be public member functions!
 
 ## Memory Leak
-When a long running program that has allocated memory, never gives back or deletes the allocation.
+When a long-running program that has allocated memory, never gives back or deletes the allocation.
 
 `valgrind` helps debug stuff like segmentation faults or memory leaks.
 
@@ -32,7 +32,7 @@ This being said, here are the three constructors we will be using:
 Note that the list and copy constructor use the `push_back()` function! We will create this functionality in the next section.
 
 ### Default Constructor
-The default constructor initializes the object of its class to some meaningful initial state. In our case, we will want to define the head, tail and size of our list! Without setting values to our list (like creating a list), we will want to set the default nodes to null.
+The default constructor initializes the object of its class to some meaningful initial state. In our case, we will want to define the head, tail, and size of our list! Without setting values to our list (like creating a list), we will want to set the default nodes to null.
 
 Here's what it looks like:
 ```cpp
@@ -58,11 +58,11 @@ LinkedList(std::initializer_list<T> init_list) {
 ### Copy Constructor
 The copy constructor will be similar to the list constructor except we are copying values from another list rather than a set of values.
 
-Again this is very similar to the list constructor because we are essentially just looping through the list we want to copy and inserting those values into our own list.
+Again this is very similar to the list constructor because we are essentially just looping through the list we want to copy and inserting those values into our list.
 
 The parameter for this function is a reference to another `LinkedList`!
 
-We start by defining a reference to the head of the other `LinkedList`. We say "while the current node exists" (or is not null), we will push that data into our list! To move onto the next node in the other list, we assign our current node to the next node.
+We start by defining a reference to the head of the other `LinkedList`. We say "While the current node exists" (or is not null), we will push that data into our list! To move on to the next node in the other list, we assign our current node to the next node.
 ```cpp
 // copy constructor
 LinkedList(const LinkedList<T> &another) {
@@ -73,7 +73,7 @@ LinkedList(const LinkedList<T> &another) {
   }
 }
 ```
-Note, this can also be done with a for loop:
+Note, that this can also be done with a for loop:
 ```cpp
 // copy constructor
 LinkedList(const LinkedList<T> &another) {
@@ -83,7 +83,7 @@ LinkedList(const LinkedList<T> &another) {
 ```
 
 ## Destructor:
-To reitterate, the destructor destroys the object and deallocates all memory allocated to the object (with [delete](https://www.geeksforgeeks.org/delete-in-c/))!
+To reiterate, the destructor destroys the object and deallocates all memory allocated to the object (with [delete](https://www.geeksforgeeks.org/delete-in-c/))!
 _Essentially undoes the constructor._
 * This is a pointer-based structure
 * This class will dynamically allocate memory to create (at least) Node objects

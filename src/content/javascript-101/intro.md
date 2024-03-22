@@ -15,11 +15,11 @@ lang: web
 course: javascript-101
 order: 0
 ---
-In this course, you will learn the in's and out's of JavaScript's core concepts and syntax. We will touch on both HTML and CSS, but that is not the main focus of this course.
+In this course, you will learn the ins and outs of JavaScript's core concepts and syntax. We will touch on both HTML and CSS, but that is not the main focus of this course.
 
-The goal of this course is to introduce you to the wonders of web development! The course is fast paced compared to some of our other courses and is not necessarily beginner friendly.
+The goal of this course is to introduce you to the wonders of web development! The course is fast-paced compared to some of our other courses and is not necessarily beginner-friendly.
 
-If you are just starting out in your programming journey I recommend checking out our C++ 101 course!
+If you are just starting in your programming journey I recommend checking out our C++ 101 course!
 
 ## Necessary Software:
 To complete this course, you will need to install [Node](https://nodejs.org/en/download) to run the JavaScript in the terminal.

@@ -12,11 +12,11 @@ order: 12
 ---
 You have probably heard the word `operator` before when talking about programming.
 
-If you haven't heard of it, don't worry, you have definitely used operators! Here's some examples of operators:
+If you haven't heard of it, don't worry, you have used operators! Here are some examples of operators:
 
 `+ - * / % & || ~ -- ++ += >= <= < > [] -> new ! << >>`
 
-I would not be surprised if some of these are new to you! In this course we have not used operators like `~` or `->` yet!
+I would not be surprised if some of these are new to you! In this course, we have not used operators like `~` or `->` yet!
 
 Here are the general types of operators:
 1. **Arithmetic Operators** ->  used to perform arithmetic operations on variables and data (`+ - * /`).
@@ -26,7 +26,7 @@ Here are the general types of operators:
 7. **Bitwise Operators** -> used to perform operations on individual bits. They can only be used alongside char and int data types. `& | ^ ~ << >>`
 8. **Misc. Operators** -> `sizeof ?: . & -> << >>`
 
-That's all good and fun, but what if we want to change the way these operators behave or define operators for our custom types/classes/structs. Well, we do this with [Operator Overloading](https://www.geeksforgeeks.org/operator-overloading-cpp/#).
+That's all good and fun, but what if we want to change the way these operators behave or define operators for our custom types/classes/structs? Well, we do this with [Operator Overloading](https://www.geeksforgeeks.org/operator-overloading-cpp/#).
 
 IBM defines overloading operators as such:
 

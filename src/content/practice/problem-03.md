@@ -13,10 +13,10 @@ course: practice
 order: 3
 ---
 
-Extract any integer from standard input and do the following:
-1. If number is divisible by 3, print fizz
-2. If number is divisible by 5, print buzz
-3. If number is divisible by both 3 and 5 print fizzbuzz
+Extract any integer from the standard input and do the following:
+1. If the number is divisible by 3, print fizz
+2. If the number is divisible by 5, print buzz
+3. If the number is divisible by both 3 and 5 print fizzbuzz
 4. If it is neither divisible by 5 or 3, print the number
 
 (Hint, use the modulus operator `%` to find the remainder of an integer)

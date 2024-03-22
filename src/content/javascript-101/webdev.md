@@ -31,7 +31,7 @@ There are dozens of different tags to accomplish different tasks!
 
 There are tags such as `<video>`, `<audio>`, and `<canvas>` to embed different media types.
 
-The typical html element has an opening and closing tag with content in the middle. The content can be text known as `innerText` or other tags known as `innerHTML`
+The typical HTML element has an opening and closing tag with content in the middle. The content can be text known as `innerText` or other tags known as `innerHTML`
 
 ```html
 <!-- where hi == innerText -->
@@ -53,8 +53,8 @@ The tags can hold attributes as well such as an `id` or `class` for CSS:
 </p>
 ```
 
-A basic webpage starts with an html tag (`<html>`) and has exactly 2 children: `<head>` and `<body>`:
-1. `<head>`contains things that aren't directly shown like a tile or meta data.
+A basic webpage starts with an HTML tag (`<html>`) and has exactly 2 children: `<head>` and `<body>`:
+1. `<head>`contains things that aren't directly shown like a tile or metadata.
 2. `<body>` contains the content of the page itself (UI).
 
 ```html
@@ -73,7 +73,7 @@ A basic webpage starts with an html tag (`<html>`) and has exactly 2 children: `
 </html>
 ```
 
-If an element is self contained the closing tag is optional (ie. `<meta>` or `<img/>`)
+If an element is self-contained the closing tag is optional (ie. `<meta>` or `<img/>`)
 
 It is common to group elements together to style them as a whole unit using `<div>`:
 
@@ -96,11 +96,11 @@ It is common to group elements together to style them as a whole unit using `<di
 ```
 
 ### CSS - Cascading Style Sheets
-A stylesheet language famous for making websites look pretty.
+A stylesheet language that is famous for making websites look pretty.
 
-A typical CSS rule will start with a selector matched to an html element in the document:
+A typical CSS rule will start with a selector matched to an HTML element in the document:
 1. Use braces for a declaration block.
-2. Contains properties that changes the appearance of that element.
+2. Contains properties that change the appearance of that element.
 
 ```css
 p { font-size: 1.2em; }
@@ -110,7 +110,7 @@ p { font-size: 1.2em; }
 <p>This is a paragraph</p>
 ```
 
-Because CSS is cascading, a style sheet may contain multiple rules to the same element. This creates a hierarchy!
+Because CSS is cascading, a style sheet may contain multiple rules for the same element. This creates a hierarchy!
 
 The browser uses the rules of cascade, specificity, and inheritance.
 1. Cascade - the most specific rule will override. In this example, the `inner-class` will override any overlapping class properties from `outer-class`
@@ -136,7 +136,7 @@ We saw this above! But what if we want to change a class like `outer-class` or `
 .outer-class { color: red; }
 ```
 
-To write css you can either create a document ending in `.css` or include a `<style>` tag directly in your html like so:
+To write CSS you can either create a document ending in `.css` or include a `<style>` tag directly in your HTML like so:
 
 ```html
 <style>

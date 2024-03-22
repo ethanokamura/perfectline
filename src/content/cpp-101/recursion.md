@@ -12,7 +12,7 @@ course: cpp-101
 
 order: 9
 ---
-Recursion works because of stack
+Recursion works because of the stack
 
 ```cpp
 uint64_t factorial(uint64_t n) {
@@ -30,7 +30,7 @@ For a recursive function, data is stored on the "stack" (memory typically stored
 Every element is a sum of the previous 2:
 `0, 1, 1, 2, 3, 5, 8, 13, 21, ...`
 
-The `nth` fibonacci number is equal to the one before that plus the one before that.
+The `nth` Fibonacci number is equal to the one before that plus the one before that.
 
 ```cpp
 fib(n) = fib(n - 1) + fib(n - 2);

@@ -15,6 +15,6 @@ order: 3
 GameObjects are objects that the user creates either manually or via a script. GameObjects are objects that are included in the level such as players, enemies, or cameras. This can even include objects that hold data for other objects such as a GameObject that manages things like score.
 
 ## Creating A GameObject Manually
-To create a GameObject, right-click in the hierarchy and click create empty. That's it! It's that simple. Each GameObject is made of components.
+To create a GameObject, right-click in the hierarchy and click "Create Empty". That's it! It's that simple. Each GameObject is made of components.
 
-For now, this is all we need to know, so let's look at components.
+For now, this is all we need to know, so let's look at the components.

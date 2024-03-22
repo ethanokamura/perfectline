@@ -12,7 +12,7 @@ course: linked-list
 order: 1
 ---
 
-As stated previously, each element of the list will consist of a Node object. We will not need to access these outside of our linked list so they will be created and soley avaliable inside this class.
+As stated previously, each element of the list will consist of a Node object. We will not need to access these outside of our linked list so they will be created and solely available inside this class.
 
 Each node consists of:
   1. Data
@@ -21,7 +21,7 @@ Each node consists of:
 
 Keeping track of the next and previous node will help us navigate through our list!
 
-Doubly linked linked list support traversal in both directions and operations at either end so it makes sense to have pointers to both ends of the list (`head` and `tail`)
+Doubly linked linked list supports traversal in both directions and operations at either end so it makes sense to have pointers to both ends of the list (`head` and `tail`)
 
 Here's what our `Node` looks like
 ```cpp

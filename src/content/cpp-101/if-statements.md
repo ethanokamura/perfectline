@@ -11,9 +11,9 @@ lang: cpp
 course: cpp-101
 order: 5
 ---
-if/else statements are crucial for any programming language and are debatably the easiest to learn. They can be read similar to a regular english sentence. "if" a condition is met, do x, "else if" the first condition is not met, but another condition is met, do y, "else", if none of these conditions are met, default to z.
+if/else statements are crucial for any programming language and are debatably the easiest to learn. They can be read similar to a regular English sentence. "if" a condition is met, do x, "else if" the first condition is not met, but another condition is met, do y, "else", if none of these conditions are met, default to z.
 
-A pseudo code version of this would be something like the following:
+A pseudo-code version of this would be something like the following:
 
 ```cpp
 if (condition_a) {
@@ -68,7 +68,7 @@ else {
 }
 ```
 
-Instead write:
+Instead, write:
 
 ```cpp
 if (condition) {

@@ -18,7 +18,7 @@ To do this, we should have an insert function.
 
 If you have used vectors before, you have probably used the function `push_back()` where you put data at the end of the list.
 
-Well, for this list, we may want to add data to the front, back or both the front and back of the list!
+Well, for this list, we may want to add data to the front, back, or both the front and back of the list!
 
 In this section, we will create the functions `push_front()` and `push_back()`
 

@@ -27,13 +27,13 @@ Let's start with removing the head.
 
 ## Pop Front
 This function does the following:
-1. Assigns a temporary node pointing to the head of the linked list.
-2. Assign the head to be the next node in the list and delete the pointer to the old head (temp).
+1. Assign a temporary node pointing to the head of the linked list.
+2. Assign the head to the next node in the list and delete the pointer to the old head (temp).
 3. Check to see if the head is null, if so, the tail should also be null.
 3. Decrease the size of the linked list.
 
 ```cpp
-// removes the current head node from list
+// removes the current head node from the list
 // reassigns new head
 void pop_front() {
   if (empty()) throw std::domain_error("empty list!");
@@ -51,12 +51,12 @@ There could be a simpler way of removing the tail if we had access to the previo
 
 For to remove the tail, we must first see if the head's next node is null. If so, the linked list has a size of one. In this case, we just delete the existing head and set both the head and the tail to null. If this is true, we do not need to do anything further in this function so we return.
 
-Next we want to iterate through the list and look for one node past our tail. To do this, we use double arrow syntax `current->next->next`. If we find that the next next node is null, that means that the next node is the tail. We then delete the tail and set the tail equal to our current node.
+Next, we want to iterate through the list and look for one node past our tail. To do this, we use double arrow syntax `current->next->next`. If we find that the next node is null, that means that the next node is the tail. We then delete the tail and set the tail equal to our current node.
 
 Lastly, we decrement our size variable.
 
 ```cpp
-// removes the current head node from list
+// removes the current head node from the list
 // reassigns new head
 void pop_back() {
   if (empty()) throw std::domain_error("empty list!");
@@ -76,7 +76,7 @@ void pop_back() {
 ```
 
 ## Remove Value
-We may want to remove a specific value inside our linked list. Specifically, removing the first vlaue that matches the target value in the list.
+We may want to remove a specific value inside our linked list. Specifically, removing the first value that matches the target value in the list.
 
 Later in the course, we will cover removing all values in the list that match the target value, but for now, we will remove the first found value.
 

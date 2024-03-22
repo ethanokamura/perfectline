@@ -47,14 +47,14 @@ An object is a collection of **properties**, and a property is an association b
 
 _Anything that isn't a primitive type is an object!_
 
-Objects can be created or defined in a few ways. Here's two examples:
+Objects can be created or defined in a few ways. Here are two examples:
 
 ```js
 const human = {}  // '{}' -> object literal syntax
 const human = new Object();  // 'new' -> constructor syntax
 ```
 
-Here's an example of an objects holding a collection of key/value pairs or properties and values:
+Here's an example of an object holding a collection of key/value pairs or properties and values:
 
 ```js
 const human = {
@@ -67,7 +67,7 @@ const human = {
 }
 ```
 
-A common issue when creating apps is calling a property from within an object that is undefined. This can lead to app breaking errors! To fix this, you can use something called [optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
+A common issue when creating apps is calling a property from within an undefined object. This can lead to app-breaking errors! To fix this, you can use something called [optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining).
 * If you're ever not 100% certain that the object will be defined, use optional chaining.
 
 Here's an example of the syntax:
@@ -77,7 +77,7 @@ const human = undefined;
 human?.name;
 ```
 
-Putting a `?` before the period to call a property on an object that will allow the object to return undefined without throwing an error.
+Putting a `?` before the period to call a property on an object will allow the object to return undefined without throwing an error.
 
 This can be used while accessing items in an array or calling a function with arguments:
 
@@ -101,7 +101,7 @@ human.__proto__.__proto__;  // never use this
 Object.getPrototypeOf(human);  // Recommended way to get prototype
 ```
 
-Essentially, one object can inherit properties or method from another object through something called the prototype chain.
+Essentially, one object can inherit properties or methods from another object through something called the prototype chain.
 * Every object can have exactly one prototype
 * At the end of the chain, the value is `null`
 
@@ -126,7 +126,7 @@ Object.getPrototypeOf(animal) === Object.prototype; // true
 Object.getPrototypeOf(Object.prototype) === null; // true (end of chain)
 
 ```
-### Lets talk about **this**:
+### Let's talk about **this**:
 A keyword that references an object based on how a function is called
 * In global scope, `this` references the browser
 * In an object, `this` references that specific object
@@ -167,7 +167,7 @@ const person = {
 }
 ```
 
-Keep in mind when creating functions, when used as an argument, primitive types are passed by value (creating a copy of original variable) and functions are passed by reference (and stored by heap).****
+Keep in mind when creating functions, when used as an argument, primitive types are passed by value (creating a copy of the original variable) and functions are passed by reference (and stored by heap).****
 
 ### Destructuring Objects
 Objects like this have several properties that we may want to set as individual variables to use throughout the app.

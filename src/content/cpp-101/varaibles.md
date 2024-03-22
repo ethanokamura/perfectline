@@ -16,7 +16,7 @@ A variable is a named storage location in the computer's memory where you can st
 (Try not to use `auto` unless necessary)
 
 Here's a quick breakdown of how to use variables:
-1. **Declaration**: To create a variable, specify the type of data it will hold and a give it a name.
+1. **Declaration**: To create a variable, specify the type of data it will hold and give it a name.
 2. **Initialization**: After declaring a variable, you can also assign an initial value to it. This sets the initial content of the variable. Without initialization, the variable `x` will hold a "garbage value" more on this later.
 3. **Usage**: You can then use the variable in your code. For example, you can perform operations on it, print its value, or use it in calculations.
 

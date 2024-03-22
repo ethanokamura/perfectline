@@ -21,4 +21,4 @@ With queues, we can access the front or back of the list and remove or add from 
 
 Queues can be used as buffers and async functions.
 
-Later in this course we will create something called priority queue using a data structure called a heap.
+Later in this course, we will create something called a priority queue using a data structure called a heap.

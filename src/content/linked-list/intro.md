@@ -38,7 +38,7 @@ Here's a basic visual for a linked list!
 
 ![](/imgs/cpp/linked_list.svg)
 
-Class `LinkedList` is an archetypal doubly linked list. Where `Node` structures and internal list details are kept private. Also note that all member functions are defined inside the class declaration. (No separate .h and .cpp/.cc files.) Template classes are usually defined this way. For this class, the param `T` is the type of the list elements. You can thing of it as a dynamic or generic way to hold data!
+Class `LinkedList` is an archetypal doubly linked list. Where `Node` structures and internal list details are kept private. Also, note that all member functions are defined inside the class declaration. (No separate .h and .cpp/.cc files.) Template classes are usually defined this way. For this class, the param `T` is the type of the list elements. You can think of it as a dynamic or generic way to hold data!
 
 ```cpp
 tempalte<typename T>
@@ -81,15 +81,15 @@ list_variable.head_->next->next->next->next->next
 Occupies more space than an array (overhead). An array of chars of size 3 holds 3 bytes. A doubly linked list of chars, size 3 holds up to 67 bytes (8 pointers, 3 chars) (more likely 88 bytes - memory alignment on 8-byte boundaries faster for CPU)
 
 ### 3. No Spacial Locality
-(nodes likely not next to each other in memory) May be difficult for COU cache to optimize.
+(nodes likely not next to each other in memory) It may be difficult for the CPU cache to optimize.
 
 ## Advantages:
 ### 1. Linked Lists Are Dynamic
-Linked lists allow for efficient memory allocation as nodes can be dynamically allocated and deallocated, enabling flexible memory management compared to arrays, which have a fixed size. Linked lists can be constructed on-the-fly, accommodating elements as needed, making them suitable for situations where the size of the data is unknown in advance.
+Linked lists allow for efficient memory allocation as nodes can be dynamically allocated and deallocated, enabling flexible memory management compared to arrays, which have a fixed size. Linked lists can be constructed on the fly, accommodating elements as needed, making them suitable for situations where the size of the data is unknown in advance.
 
 Linked lists can grow or shrink dynamically during runtime, allowing for efficient insertion and deletion of elements anywhere in the list without requiring resizing or shifting of elements, as is the case with arrays.
 
-### 2. Efficientcy:
+### 2. Efficiency:
 Insertion and deletion operations at the beginning or end of a linked list (when you have direct access to the head or tail) can be performed in constant time O(1), regardless of the list size. This makes linked lists efficient for dynamic data structures. More on time complexity [here](https://codesantacruz.com/courses/cpp/dsa/complexity/).
 
 Insertions and deletions in the middle of a linked list can also be efficient if you have direct access to the node where the operation is performed. Unlike arrays, linked lists don't require shifting elements, resulting in faster operations.

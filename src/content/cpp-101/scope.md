@@ -11,12 +11,12 @@ course: cpp-101
 order: 3
 ---
 ### Scope
-Scope defines the reach of each varaible, meaning where we can use each variable.
+Scope defines the reach of each variable, meaning where we can use each variable.
 1. Global Scope - available everywhere.
 2. Local Scope - can only be used inside the function it was defined in.
 3. Block Scope - can only be used inside the block or statement.
 
-Scope applies to pretty much everything in programming (ie. if/else, loops, function and classes)!
+Scope applies to pretty much everything in programming (ie. if/else, loops, functions, and classes)!
 
 Here's an example:
 

@@ -27,7 +27,7 @@ export default function helper() {
 }
 ```
 
-This allows use to use it in a different file with an import statement:
+This allows us to use it in a different file with an import statement:
 
 ```js
 import helper from './Helper.js';
@@ -47,9 +47,9 @@ import { a, b, c } from './SomeExportFile.js'
 ### Package Managers
 `npm` (Node Package Manager) is most common though **package managers** like `bun` are growing fast.
 
-_Package managers allows you to use code written by other developers._
+_Package managers allow you to use code written by other developers._
 
-When you download a **package** from `npm` it downloads to your `node_modules` folder and creates or edits the `package.json` which lists all the **dependancies** in your project.
+When you download a **package** from `npm` it downloads to your `node_modules` folder and creates or edits the `package.json` which lists all the **dependencies** in your project.
 An example of this is:
 `npm install { package name }`
 
@@ -57,7 +57,7 @@ An example of this is:
 Combines all your JavaScript files into a bundle that can be used by the browser
 
 To do this efficiently, you'll need a tool called a module bundler (`vite` or `webpack`).
-If the JavaScript is too heavy, it can effect performance leading to slower page loading.
+If the JavaScript is too heavy, it can affect performance leading to slower page loading.
 
 You can always split the bundles into multiple files and export them as **dynamic imports** to only import the code as needed.
 

@@ -28,8 +28,8 @@ function add(a, b) {
 
 In JavaScript, functions are just objects and can be used as expressions, meaning you can assign a variable to a function.
 
-An examples of **function expressions** and **function statements**:
-* Function expressions are not created until it is encountered in the code (Any code above it cannot reference / use it)
+Examples of **function expressions** and **function statements**:
+* Function expressions are not created until it is encountered in the code (Any code above it cannot reference/use it)
 
 ```js
 const add = function(a,b) {
@@ -37,7 +37,7 @@ const add = function(a,b) {
 }
 ```
 
-Function expressions can be anonymous meaning you can use them as arguments to other functions without giving it a name:
+Function expressions can be anonymous meaning you can use them as arguments for other functions without giving them a name:
 
 ```js
 const anon = arr.map(function(val) {
@@ -50,11 +50,11 @@ Typically use declarations for global code and expressions for local code.
 
 This can be used to create higher-order-functions
 
-Functions can also be nested to create closures with the goal of encapsulating data and logic from the rest of the program!
+Functions can also be nested to create closures to encapsulate data and logic from the rest of the program!
 
 ### Higher Order Functions (HOF)
-A **higher order function** is a function that takes a function as an argument, or returns a function.
-* They are commonly used in functional programming, and are a powerful tool for abstracting away complexity.
+A **higher-order function** is a function that takes a function as an argument or returns a function.
+* They are commonly used in functional programming and are a powerful tool for abstracting away complexity.
 
 Often, we deal with callbacks. Here's a function that uses a callback as an argument:
 
@@ -116,7 +116,7 @@ funciton pureFun(a,b) {
 }
 ```
 
-But what if the function accesses data outside of its own scope (such as the global environment or outer function)? In this case, you get a closure:
+But what if the function accesses data outside of its scope (such as the global environment or outer function)? In this case, you get a closure:
 
 ```js
 let b = 3;
@@ -126,7 +126,7 @@ funciton pureFun(a) {
 }
 ```
 
-In order for the interpreter to call this function and know the value of these variables, it creates a closure to store them and access them later. They are stored in something called the **heap**, an area of memory that can keep data indefinitely and later decide when to get rid of it via the garbage collector, unlike the **call stack**
+For the interpreter to call this function and know the value of these variables, it creates a closure to store them and access them later. They are stored in something called the **heap**, an area of memory that can keep data indefinitely and later decide when to get rid of it via the garbage collector, unlike the **call stack**
 
 More on [Memory Management](https://www.geeksforgeeks.org/memory-management-in-javascript/)
 
@@ -134,7 +134,7 @@ A closure is a function combined with its outer state or lexical environment.
 
 Take note that closures require more memory and processing power than a pure function, but there are many practical reasons to use them such as data encapsulation.
 
-A closure is basically a function that closes over a state or data so it can be used elsewhere.
+A closure is a function that closes over a state or data so it can be used elsewhere.
 
 Here's a good example:
 

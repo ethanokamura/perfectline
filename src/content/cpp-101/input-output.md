@@ -11,7 +11,7 @@ lang: cpp
 course: cpp-101
 order: 4
 ---
-By including C++'s standard input/output library `<iostream>`, we are able to create both inputs `std::cin` and outputs `std::cout` through the _command line_.
+By including C++'s standard input/output library `<iostream>`, we can create both inputs `std::cin` and outputs `std::cout` through the _command line_.
 
 Command Line: The command line is a text interface for your computer. It's a program that takes in commands, which it passes on to the computer's operating system to run.
 
@@ -26,11 +26,11 @@ When you include libraries you do not need semicolons!
 
 Now let's get into the actual input and output.
 
-We use `std::` to say in simple terms "Inside the standard library we are using \_\_." In this specific case, we are using `std::cin` (console input from the standard library), `std::cout` (console output from the standard library), and `std::string` (a non fundamental type). For any class, type, etc. that is not included in the C++ language, we access it using libraries or headers. To specify which library we are extracting them from we use the "`::`" syntax.
+We use `std::` to say in simple terms "Inside the standard library we are using \_\_." In this specific case, we are using `std::cin` (console input from the standard library), `std::cout` (console output from the standard library), and `std::string` (a non-fundamental type). For any class, type, etc. that is not included in the C++ language, we access it using libraries or headers. To specify which library we are extracting them from we use the "`::`" syntax.
 
 To end an output line you would finish with either `std::endl` or `\n`.
 
-`\n` counts as a single character despite containing 2 characters on first glance. You can think of the backslash as a command.
+`\n` counts as a single character despite containing 2 characters at first glance. You can think of the backslash as a command.
 
 
 ```cpp
@@ -49,17 +49,17 @@ std::cout << "this is an example of how to print the number " << 1 << '\n';
 
 You should see the result of `this is an example of how to print the number 1` where the integer 1 could be replaced by any type of variable.
 
-Notice how I left an empty space after `number` to allow for space infront of the integer/variable.
+Notice how I left a space after the `number` to allow for space in front of the integer/variable.
 
 [More on Insertion Operators](https://faculty.cs.niu.edu/~hutchins/csci241/io-op.htm)
 
-For getting input, we would write something along the lines of
+To get input, we would write something along the lines of
 
 ```cpp
 std::cin >> input;
 ```
 
-Where `input` is a variable. Note that the "extraction operators" `>>` are similar to the insertion operators except they are flipped. This allows us to extract the users input from the console and hold that data in the variable named `input`.
+Where `input` is a variable. Note that the "extraction operators" `>>` are similar to the insertion operators except they are flipped. This allows us to extract the user's input from the console and hold that data in the variable named `input`.
 
 Alternatively, we can put `using namespace std;` under our included libraries. This would negate the need for writing `std::`. However, this can be considered poor practice so we will not be using this for our programs.
 

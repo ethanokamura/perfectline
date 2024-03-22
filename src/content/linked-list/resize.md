@@ -12,10 +12,10 @@ course: linked-list
 order: 8
 ---
 
-The last functions we may want to add is the ability to resize the list. We can do this in two ways. Allocating memory (and inserting null values as placeholders) or by filling the structure with filler values!
+The last two functions we may want to add is the ability to resize the list. We can do this in two ways. Allocating memory (and inserting null values as placeholders) or filling the structure with filler values!
 
 ## Resizing without a filler value
-The first fucntion we will look at is resizing without a value to fill the list with. To do this is simple.
+The first function we will look at is resizing without a value to fill the list with. To do this is simple.
 1. Check to see if the desired size is already met. If so, return.
 2. Push or pop based on whether the resize is larger or smaller than our current size.
 3. Push 0, which will act as a null value.

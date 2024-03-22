@@ -37,8 +37,8 @@ This applies to vectors, strings, etc.
 Order of member functions:
 
 1. `.rend()` is before container
-2. `.begin()` is first value of container
-3. `.rend()` is last value of container
+2. `.begin()` is the first value of the container
+3. `.rend()` is the last value of the container
 4. `.end()` is after container
 
 `r` in `.rbegin()` and `.rend()` stands for reverse!
@@ -83,7 +83,7 @@ Using the template `mean_iterators` from the header file with the previously def
    1. `auto`: figures out the type to get its value (`std::string`).
    2. `pos = collection.begin()`: iterator of the first char in the string (`'h'`).
    3. `pos != collection.end()`: iterate until the end of the container is reached (`'o'`).
-   4. `++pos`: iterate through each item in container.
+   4. `++pos`: iterate through each item in the container.
 4. `sum += *pos`: sum of dereferenced values (in this case it is the sum of ASCII values).
 5. returns the average value of the `char` in the string, `str`.
 

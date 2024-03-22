@@ -11,7 +11,7 @@ lang: cpp
 course: cpp-101
 order: 13
 ---
-In this section, we are finally covering the topic of pointers! Pointers are everywhere, in some ways, everything boils down to being a pointer. Pointers are often thought of as one of the most challenging topics to cover in C++. Though, in the right hands, they are really not so complicated.
+In this section, we are finally covering the topic of pointers! Pointers are everywhere, in some ways, everything boils down to being a pointer. Pointers are often thought of as one of the most challenging topics to cover in C++. Though, in the right hands, they are not so complicated.
 
 Pointers are a fundamental concept in programming, especially in languages like C and C++. They allow you to directly interact with memory locations. Here's a simple explanation:
 Memory Address: Every piece of data in a computer's memory has a unique address. Think of it like a house number on a street.
@@ -31,7 +31,7 @@ So essentially:
 * references -> pointer
 * everything -> pointer
 
-Before, we get into pointers, lets review some things:
+Before, we get into pointers, let's review some things:
 
 ### What even is a variable? And what does it hold?
 4 important aspects of any variable:
@@ -44,17 +44,17 @@ Before, we get into pointers, lets review some things:
 int x;  // where type: int, name: x, value: garbage, locaton: &x
 ```
 
-Any fundamental type in C++ hold a garbage value until it's initialized. This is not true for non-fundamental types such as string which are empty upon declaration.
+Any fundamental type in C++ holds a garbage value until it's initialized. This is not true for non-fundamental types such as string which are empty upon declaration.
 
 Location is always some integer value! (ie, the memory address of the variable) If we need it we can access it via `&` AKA the "address-of" operator
 
 An example of a memory address might look something like `0x744c516a000`
 In a program, each variable holds a unique memory address!
 
-### Ok now lets talk pointers:
+### Ok now let's talk pointers:
 Here's some syntax that you'll see in the rest of the section:
 
-Now lets look at this:
+Now let's look at this:
 ```cpp
 int n = 7;
 int *ptr = &n;  // same as "int* ptr = &n;"
@@ -87,7 +87,7 @@ In this example, `ptr` is a pointer that "points to" (stores the address of) the
 
 Pointers are powerful because they allow you to manipulate data at a lower level, which can be very useful in certain situations. However, they can also be a bit tricky, so it's important to be careful when using them to avoid errors in your code.
 ### C Strings:
-Now let's look at "strings". In C, there is no string type. Instead we have either `char[]` or `char*`. And believe it or not in C and C++, arrays don't actually exist either.
+Now let's look at "strings". In C, there is no string type. Instead, we have either `char[]` or `char*`. And believe it or not, in C and C++, arrays don't exist either.
 
 All of these c strings (strings of characters) are equivalent:
 ```cpp
@@ -131,7 +131,7 @@ To see a nice visual of this syntax keep the following TRUE statements in mind:
 At this point, you might be wondering: When do you _need_ to use pointers
 1. Whenever you are using arrays. (You have no choice)
 2. Rarely! (You should use `std::vector` instead of arrays most time)
-3. Whenever you are using references. (They are really just pointers)
+3. Whenever you are using references. (They are just pointers)
 4. Often. But _smart pointers_ are generally preferable. (more on this later).
 
 So where, if anywhere, do pointers show up in the STL?
@@ -145,7 +145,7 @@ Here is some more helpful information:
 **References**: References are declared using an ampersand (&). They are essentially aliases for existing variables.
 ## Nullability:
 Pointers: Pointers can be assigned a special value `nullptr` to indicate that they are not pointing to any valid memory location.
-Keep in mind, references must always be initialized and cannot be changed to refer to a different object after initialization.
+Keep in mind, that references must always be initialized and cannot be changed to refer to a different object after initialization.
 
 Here's the code example:
 ```cpp

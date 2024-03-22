@@ -24,7 +24,7 @@ In our case, using the index operator `[]` to access elements in a linked list c
 3. **Time Complexity**: While both methods have a time complexity of O(n) for accessing an element at a specific index, using the index operator involves more overhead because it requires traversing the list sequentially from the beginning, while direct traversal using pointers can be more efficient. We cover time complexity in our [DSA course](https://codesantacruz.com/courses/cpp/dsa/complexity).
 
 ## Advantages
-This being said, I think the indexing is worth it because it allows us to traverse to a specific node without using nodes. When working with other structures with a linked list in the background, we will want to access data at a specific point and will not have access to the node type.
+This being said I think the indexing is worth it because it allows us to traverse to a specific node without using nodes. When working with other structures with a linked list in the background, we will want to access data at a specific point and will not have access to the node type.
 
 In practical scenarios, the difference in performance might not be significant for small lists or occasional access operations. It's essential to consider factors such as the size of the list, the frequency of access, and the overall performance requirements of your application when choosing between the two methods.
 
@@ -32,10 +32,10 @@ In general, if you need frequent random access to elements or performance is cri
 
 ## Indexing
 Ok, so after all that, let's write our indexing operation. This will take the parameter of an index to loop to. We will want to do the following:
-1. Make sure the index is in the bounds of our linked list.
+1. Make sure the index is within the bounds of our linked list.
 2. Create a node pointing to our head node.
 3. Iterate through the list until we reach the desired index
-4. Return the data at that index.
+4. Return the data to that index.
 ```cpp
 // allows indexing functionality
 T &operator[](std::size_t index) const {
@@ -48,7 +48,7 @@ T &operator[](std::size_t index) const {
 
 Note that this returns a const value. By adding const after the function declaration, you're indicating that this member function can be called on const objects of LinkedList, and it won't modify the object's state.
 
-This next part is optional but here are some functions we can create with out new indexing operator:
+This next part is optional but here are some functions we can create without out new indexing operator:
 
 ## Reverse The List
 If we want to reverse the list for whatever reason, it is now made extremely easy!
@@ -59,7 +59,7 @@ void reverse() {
     std::swap((*this)[i], (*this)[size() - 1 - i]);
 }
 ```
-Note that this uses `std::swap` but you can easily write your own swap function.
+Note that this uses `std::swap` but you can easily write your swap function.
 
 ## Contains?
 Let's say we want to find out if the list contains a certain value. Well, now we can do this with a simple for loop.

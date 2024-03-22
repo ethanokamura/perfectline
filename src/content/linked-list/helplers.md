@@ -12,13 +12,13 @@ course: linked-list
 order: 4
 ---
 
-We may neeed some helper functions to make our life easier when working within the linked list.
+We may need some helper functions to make our life easier when working within the linked list.
 
 Functions like checking if the list is empty, what the current size is, and a function that lets us print our list!
 
 This will be a very short section!
 
-Let's first start by creating a funciton to check the size of our list!
+Let's first start by creating a function to check the size of our list!
 
 ## Size
 ```cpp

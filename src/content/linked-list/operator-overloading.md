@@ -12,11 +12,11 @@ course: linked-list
 order: 6
 ---
 
-At this point in the course, we will probably want to add the ability to have custom operators. If you have never heard of operator overloading or you want to brush up on vocabulary, you can check out my section in the intro to C++ course [here](https://codesantacruz.com/courses/cpp/cpp-101/operator-overloading). Otherwise, you can learn as you go.
+At this point in the course, we will probably want to add the ability to have custom operators. If you have never heard of operator overloading or you want to brush up on vocabulary, you can check out my section in the Intro to C++ course [here](https://codesantacruz.com/courses/cpp/cpp-101/operator-overloading). Otherwise, you can learn as you go.
 
-We will want to add the following operators into our linked list: `= == !=`. Note that we actaully want 2 different `=` operator functions. One to copy the values from a list and one to copy the values from another linked list.
+We will want to add the following operators to our linked list: `= == !=`. Note that we want two different `=` operator functions. One is to copy the values from a list and one is to copy the values from another linked list.
 
-Now you might be wondering why we would need to copy values when we have the copy and list constructors. Well, the constructors only apply when we are creating the linked list. If we want to set the values of our list to something else, or copy another list at any point when using this data structure, we now can.
+Now you might be wondering why we would need to copy values when we have the copy and list constructors. Well, the constructors only apply when we are creating the linked list. If we want to set the values of our list to something else or copy another list at any point when using this data structure, we now can.
 
 ## Assigning Linked List to A Set of Data
 For this function, we will want to clear the list and then put the desired values into the list.
@@ -29,7 +29,7 @@ LinkedList& operator=(std::initializer_list<T> init_list) {
 }
 ```
 ## Assigning Linked List to Another Linked List
-Just like the last function, we will want to clear the list and then put the desired values into the list. This time however, we ware copying from another linked list. This means we should iterate through the other linked list accordingly.
+Just like the last function, we will want to clear the list and then put the desired values into the list. This time, however, we are copying from another linked list. This means we should iterate through the other linked list accordingly.
 ```cpp
 // assigns list to an existing list
 LinkedList& operator=(const LinkedList &another) {
@@ -43,13 +43,13 @@ LinkedList& operator=(const LinkedList &another) {
 }
 ```
 ## Checking For Equivalence
-For this next operator, we will want to check to see if the linked lists are exactly the same. For this, I think it would be best to use indexing.
+For this next operator, we will want to check to see if the linked lists are the same. For this, I think it would be best to use indexing.
 
-We dont have indexing set up yet, but we will do this in the next section. For now, we will write it and then add the funcitonality after.
+We don't have indexing set up yet, but we will do this in the next section. For now, we will write it and then add the functionality after.
 
 We start by checking the size of the linked lists. If those are not equal then we immediately return false. We do not have to do anything else.
 
-We then loop for each value in the linked lists. Again, we already know that the size of each list are equivalent, so we can use this size or the other linked list's size for the loop. If at any point the values are not equal, we return false.
+We then loop for each value in the linked lists. Again, we already know that the size of each list is equivalent, so we can use this size or the other linked list's size for the loop. If at any point the values are not equal, we return false.
 
 If we finish the loop, at this point we know both linked lists are equal so we return true.
 ```cpp
@@ -65,8 +65,8 @@ bool operator==(const LinkedList &another) {
 ## Checking For Inequivalence
 For this operator, we can just reuse our `==` operator. We just put a `!` operator in front.
 ```cpp
-// checks list for inequivalency to another list
+// checks list for inequivalence to another list
 bool operator!=(const LinkedList &another) { return !(*this == another); }
 ```
 
-Just like that, we have added comparison and copy operators to our linked list! In the next sectoin we will add indexing.
+Just like that, we have added comparison and copy operators to our linked list! In the next section, we will add indexing.

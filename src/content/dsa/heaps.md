@@ -15,7 +15,7 @@ order: 7
 
 A heap is a nearly complete binary tree that respects the heap property.
 
-To clear up confusion, a nearly copmlete binary tree is complete at every level except for the last. *Note that the last level is contiguous (left to right)
+To clear up confusion, a nearly complete binary tree is complete at every level except for the last. *Note that the last level is contiguous (left to right)
 
 The tree on the left is nearly complete and the tree on the right is incomplete:
 ```
@@ -27,7 +27,7 @@ The tree on the left is nearly complete and the tree on the right is incomplete:
 ```
 The heap is a "lazy" data structure.
 
-Normally in life, being lazy is deemed as a bad thing, however, in programming, we try to be as lazy as possible.
+Normally in life, being lazy is deemed a bad thing, however, in programming, we try to be as lazy as possible.
 
 Now let's create a priority queue using a heap data structure
 
@@ -37,9 +37,9 @@ Our heap will be partially ordered and each value in a node is at most the value
 For this, an array will be sufficient to hold our data in our heap.
 
 ## Priority Queue
-A priority queue is a queue where the element with the highest value is removed first. Taking from the queue's FIFO system, we can manipulate the ranking by raising one element's priority. Unlike the queue, first out is not based on time, but rather it's ranking.
+A priority queue is a queue where the element with the highest value is removed first. Taking from the queue's FIFO system, we can manipulate the ranking by raising one element's priority. Unlike the queue, first out is not based on time, but rather its ranking.
 
-For now, we will create a minimum priority queue, meaning the lower the element's ID the faster it will be removed. To increase it's priority, we will decrease the key's value.
+For now, we will create a minimum priority queue, meaning the lower the element's ID the faster it will be removed. To increase its priority, we will decrease the key's value.
 
 Given that the heap is built on an array, we must have a fixed size for our queue.
 
@@ -50,9 +50,9 @@ In our queue, we will need the following functions:
 4. `ExtractMin()` to remove the highest priority element
 5. `DecreaseKey()` to prioritize an element (move them up in the queue)
 
-We will also need helper functions to keep track of relations within the heap (like the left, right, and parent node).
+We will also need helper functions to keep track of relations within the heap (like the left, right, and parent nodes).
 
-Remember that the left and right node are the left and right children of the current node we are working with. For example, 2 (left) and 3 (right) would be child nodes of 1:
+Remember that the left and right nodes are the left and right children of the current node we are working with. For example, 2 (left) and 3 (right) would be child nodes of 1:
 ```
     1
    / \
@@ -64,12 +64,12 @@ One thing to note is that our heap will only take integer values! This structure
 
 
 ### Heap Insert
-The first thing we will most likely want to do is insert values into the heap! To do this, we will need to acomplish the follow tasks:
+The first thing we will most likely want to do is insert values into the heap! To do this, we will need to accomplish the following tasks:
 1. Make sure the heap is not already full (again we are working with arrays)
 2. Increase the size of the heap
     - I created a private variable called size that keeps track of the maximum filled index. This is different than the capacity!
 3. Insert the desired value into the end of the heap
-5. Finally we want to decrease the keys value to make sure that the heap is partially ordered how we would expect. To do this, we call decrease key. (Notice we increased the value of the data we are injecting so that way we can decrease it. More on this later)
+5. Finally we want to decrease the keys value to make sure that the heap is partially ordered how we would expect. To do this, we call the decrease key. (Notice we increased the value of the data we are injecting so that way we can decrease it. More on this later)
 4. Return true upon success!
 ```cpp
 bool heap_insert(int val) {
@@ -81,7 +81,7 @@ bool heap_insert(int val) {
 }
 ```
 
-### Decrase Key (Promoting the Element)
+### Decrease Key (Promoting the Element)
 After we call the insert function, we may want to restructure our heap to make sure it keeps the properties we want. This takes two parameters. The index we want to edit and the value we want to prioritize. To do this, we need to follow to do the following:
 1. Check to make sure our decrease is valid
 2. Set the value at our index equal to the value we want to decrease
@@ -90,7 +90,7 @@ After we call the insert function, we may want to restructure our heap to make s
 5. We then set the parent's index equal to our current index.
 6. Repeat until the conditions are met and the heap is sorted enough to our liking!
 
-Note that you can easily write your own swap function here or use the swap function from `<utility>`
+Note that you can easily write your swap function here or use the swap function from `<utility>`
 ```cpp
 void decrease_key(int index, int val) {
   if (index < 0 || index >= size || arr[index] <= val) return;
@@ -103,9 +103,9 @@ void decrease_key(int index, int val) {
 ```
 
 ### Heapify
-Heapify is arguably the most important function in this data structure. It acts as the backbone for this entire system! I find it fitting to work on this next. The goal is to move higher priority values to the front of the heap.
+Heapify is arguably the most important function in this data structure. It acts as the backbone for this entire system! I find it fitting to work on this next. The goal is to move higher-priority values to the front of the heap.
 
-It takes a parameter of the index in which we want to heapify our tree! From there, we pretty much just swap the value with its child values (given the child values are of higher priority than the current index). If the current value is the higher priority of that of its children, then we just move on.
+It takes a parameter of the index in which we want to heapify our tree! From there, we pretty much just swap the value with its child values (given the child values are of higher priority than the current index). If the current value is a higher priority than that of its children, then we just move on.
 
 Heapify is short and sweet, but extremely powerful. Here's my implementation:
 ```cpp
@@ -117,10 +117,10 @@ void heapify(int index) {
   }
 }
 ```
-Heapify is a recursive funciton that will continue to swap the minimum value with the current value at the desired index! Note that the function `min_of_three()` is not covered, but it just returns the minimum value between 3 integers. If you want to see the code feel free to check out the git repository attached above!
+Heapify is a recursive function that will continue to swap the minimum value with the current value at the desired index! Note that the function `min_of_three()` is not covered, but it just returns the minimum value between 3 integers. If you want to see the code feel free to check out the git repository attached above!
 
 ### Extract Min
-This structure would not be a queue if we did not remove our highest priority element! To do this, we use a function called `extract_min()`!
+This structure would not be a queue if we did not remove our highest-priority element! To do this, we use a function called `extract_min()`!
 
 It will return the value that was extracted.
 
@@ -128,7 +128,7 @@ In this function, we will do the following:
 1. Make sure there is a value to extract
 2. Assign a variable to hold the value of the highest priority element (in our case the root of the tree).
 3. Move the current highest priority element to the end of the list.
-4. Make the list shrink in order to remove the element.
+4. Make the list shrink to remove the element.
 5. Heapify once again to partially order the heap!
 ```cpp
 int extract_min() {
@@ -142,12 +142,12 @@ int extract_min() {
 ```
 
 ### Heap Sort
-We may want to completely sort the heap at some point. To do this, we will create a function called heap sort. This will create a copy of our heap, sort it and return the copy!
+We may want to completely sort the heap at some point. To do this, we will create a function called heap sort. This will create a copy of our heap, sort it, and return the copy!
 
 This function takes no parameters, but returns the sorted array and the size of that array!
-  - note that the size of the sorted array is not equal to the capacity of our heap's array. Instead it is equal to total number of assigned elements in the heap.
+  - note that the size of the sorted array is not equal to the capacity of our heap's array. Instead, it is equal to the total number of assigned elements in the heap.
 
-This function will order them in decending order, meaning from lowest priority to highest priority!
+This function will order them in descending order, meaning from lowest priority to highest priority!
 
 This function is quite long and takes a lot of steps! So, without any more yapping, let's break it down:
 1. Check to see if the heap is empty. If it is, return an empty array of size 0.
@@ -184,7 +184,7 @@ std::pair<int*, int> heap_sort() {
   return _pair;
 }
 ```
-Just like that! We have working priority queue and heap!
+Just like that! We have a working priority queue and heap!
 
 ## In Conclusion
-We finally created the main components and functions in our priority queue using the heap as a data structure. You will want to run tests and double check that your code functions as expected! Again, to see the completed code, check out the git repository at the top!
+We finally created the main components and functions in our priority queue using the heap as a data structure. You will want to run tests and double-check that your code functions as expected! Again, to see the completed code, check out the git repository at the top!

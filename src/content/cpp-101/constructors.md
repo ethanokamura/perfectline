@@ -49,7 +49,7 @@ This code example shows that we have successfully copied `a` to `b`, but they ha
 
 _Transfers ownership of pointer(s). No copies of internal data are made._
 
-Classes with pointer members or other _non-trivial_ initialization need customized copy constructor. Otherwise, just let the compiler do it. Same goes for a [Move Constructor](https://en.cppreference.com/w/cpp/language/move_constructor)!
+Classes with pointer members or other _non-trivial_ initialization need customized copy constructors. Otherwise, just let the compiler do it. The same goes for a [Move Constructor](https://en.cppreference.com/w/cpp/language/move_constructor)!
 
 More on [Copy Constructors](https://en.cppreference.com/w/cpp/language/copy_constructor).
 

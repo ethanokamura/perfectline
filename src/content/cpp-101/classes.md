@@ -13,10 +13,10 @@ lang: cpp
 course: cpp-101
 order: 10
 ---
-In the beginning of this class, we learned about fundamental types in C++ like `int` and `bool`, but now let's look at how to make our own types! We can do this by defining **classes** and **structs**.
-A class is a blueprint or a template for creating objects. It's a way to group together data (attributes) and actions (methods or functions) that operate on that data.
+At the beginning of this class, we learned about fundamental types in C++ like `int` and `bool`, but now let's look at how to make our types! We can do this by defining **classes** and **structs**.
+A class is a blueprint or a template for creating objects. It's a way to group data (attributes) and actions (methods or functions) that operate on that data.
 
-In simple terms, you can think of a class as a cookie cutter and the objects as the cookies themselves. One cookie cutter can create many objects. It makes creating multiple cookies with the same attributes more efficient. Just like with functions, the goal is to write once and use many times.
+In simple terms, you can think of a class as a cookie cutter and the objects as the cookies themselves. One cookie cutter can create many objects. It makes creating multiple cookies with the same attributes more efficient. Just like with functions, the goal is to write once and use it many times.
 
 `class` in C++ is the building block that leads to Object-Oriented programming. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. For Example: Consider the `class` of Cats. There may be many cats with different names and colors but all of them will share some common properties (ie. all of them will have 2 eyes, 4 legs, a nose, etc). So here, Cat is the class, and coat color, age, and weight are their properties.
   1. **Attributes:** These are like variables that hold information about an object. For example, if you're creating a class for cats, attributes could be things like color, name, age, etc.

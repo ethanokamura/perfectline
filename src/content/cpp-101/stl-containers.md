@@ -17,13 +17,13 @@ order: 15
 ---
 
 ### Containers in STL:
-1. Vector: good at inserting and removing at the end of the container and are accessible by index!
+1. Vector: good at inserting and removing at the end of the container and is accessible by index!
 2. List: efficient at inserting/removing at the front, the back, or during iteration, but does not support indexing (no `[]` operator).
-3. Set: efficient at search, insert, and removing!
-4. Map: also efficient at search, insert, and removing!
+3. Set: efficient at searching, inserting, and removing!
+4. Map: also efficient at searching, inserting, and removing!
 
 ### Vectors: A nice alternative to arrays.
-Vectors are the same as dynamic arrays with the ability to resize itself automatically when an element is inserted or deleted, with their storage being handled automatically by the container. Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators. In vectors, data is inserted at the end. Inserting at the end takes differential time, as sometimes the array may need to be extended. Removing the last element takes only constant time because no resizing happens. Inserting and erasing at the beginning or in the middle is linear in time.
+Vectors are the same as dynamic arrays with the ability to resize themselves automatically when an element is inserted or deleted, with their storage being handled automatically by the container. Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators. In vectors, data is inserted at the end. Inserting at the end takes differential time, as sometimes the array may need to be extended. Removing the last element takes only constant time because no resizing happens. Inserting and erasing at the beginning or in the middle is linear in time.
 
 Vectors are sequence containers representing arrays that can change in size.
 
@@ -39,7 +39,7 @@ Here's a simple explanation:
 
 `vector` is one of several [sequence containers](https://en.cppreference.com/w/cpp/named_req/SequenceContainer) in the STL, i.e. types that support functions like `push_back`, `size`, etc. The STL sequence containers are `array`, `deque`, `forward_list`, `list`, `string`, and `vector`. We will discuss STL more in the advanced C++ course!
 
-A vector object maintains an “array” internally, and will manage that in order to support an arbitrary number of elements in the sequence.
+A vector object maintains an “array” internally, and will manage that to support an arbitrary number of elements in the sequence.
 
 It's common to use a vector instead of an array, so you don't have to manually allocate/deallocate arrays and manage array sizes.
 
@@ -54,7 +54,7 @@ Some member functions:
 8. `capacity()`: Returns the allocated size of the actual internal array
 
 Vectors are efficient at:
-Inserting/removing at end of the container and is accessible via indexing!
+Inserting/removing at the end of the container and is accessible via indexing!
 
 Here's an example of how you might use a vector:
 
@@ -84,7 +84,7 @@ Results: All whitespace delimited tokens in `stdin`, in order
 
 Vectors are very versatile and useful for a wide range of tasks where you need to store collections of data of variable size. They're one of the many powerful tools available in C++ to help you manage and manipulate data.
 
-Vectors are less efficient at inserting unless its only adding to the end of the container.
+Vectors are less efficient at inserting unless it's only adding to the end of the container.
 ### Lists: A sequential, non-indexable container
 Good for modifying (inserting, removing) at any point! [More on Lists](https://cplusplus.com/reference/list/list/)
 1. A `list` appears similar to a `vector` in terms of its interface (very similar functions, e.g. `push_pack`, `size`, etc.), but it is implemented very differently (usually as a “doubly linked list” —more on that later).
@@ -92,7 +92,7 @@ Good for modifying (inserting, removing) at any point! [More on Lists](https://c
 3. `list` does not support indexing! It would be a computationally inefficient operation, and the STL is focused on providing efficiency.
 4. Can resize itself dynamically (details handled by a list class)
 5. Efficient:
-   - Inserting/removing at front or back, and during iteration
+   - Inserting/removing at the front or back and during iteration
    - Does not support indexing (no operator[ ] function)
 
 ### Sets: A computationally efficient collection of unique values

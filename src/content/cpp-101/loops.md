@@ -19,7 +19,7 @@ In programming, loops are used to repeat a block of code multiple times. They're
 ### While Loops
 
 A while loop repeatedly executes a block of code as long as a specified condition is true.
-It's like saying "keep doing this while something is true".
+It's like saying "Keep doing this while something is true".
 While loop is used when the number of iterations is unknown.
 
 ```cpp
@@ -30,7 +30,7 @@ while (condition) {
 
 ### For Loops
 A for loop is used to iterate (or loop) over a range of values.
-It's like saying "do this for a specific number of times".
+It's like saying "Do this for a specific number of times".
 For loop is used when the number of iterations is already known.
 
 ```cpp
@@ -67,9 +67,9 @@ This loop will print out `01234`.
 
 Remember, both types of loops are important tools in programming and are used in different situations depending on what you're trying to achieve!
 
-The last thing I should cover are range-based `for` loops. Ranged based for loops are similar to `foreach` loops in other languages. For example, for each `char` in a `std::string` do something!
+The last thing I should cover is range-based `for` loops. Ranged-based for loops are similar to `foreach` loops in other languages. For example, for each `char` in a `std::string` do something!
 
-In this snippet, the ranged-based for loop capitalized each letter in the given string.
+In this snippet, the ranged-based loop capitalized each letter in the given string.
 
 ```cpp
 std::string str = "hello!";
@@ -81,4 +81,4 @@ std::cout << std::endl;
 ```
 This will output: `HELLO!`
 
-At the end of the day, the output of any of these loops are the same if written correctly.
+At the end of the day, the output of any of these loops is the same if written correctly.

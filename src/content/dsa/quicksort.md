@@ -22,9 +22,9 @@ We want to accomplish the following tasks:
 3. Next, we partition the array.
     - It might be easier to think of start and end as left and right from here on out.
 4. We want to put all the numbers smaller than the pivot into to the left partition and all the numbers greater than the pivot into the right partition.
-5. If they are out of place, swap the numbers at the left and right indecies.
-6. Once the left is greater than or equal to the pivot and right is less than or equal to the pivot, we reapeat the process.
-7. When left and right cross eachother, our list is correctly partitioned.
+5. If they are out of place, swap the numbers at the left and right indices.
+6. Once the left is greater than or equal to the pivot and the right is less than or equal to the pivot, we repeat the process.
+7. When left and right cross each other, our list is correctly partitioned.
 
 This may look something like this:
 ```
@@ -58,10 +58,10 @@ Repeat again
 [ 2, 3 ] sort
 [ 2 ] [ 3 ] partition
 ```
-As you can see, quicksort is recursive in nature. For this section, we are looking at Lomuto's take on the quicksort algorithm. It as written as such:
+As you can see, quicksort is recursive. For this section, we are looking at Lomuto's take on the quicksort algorithm. It is written as such:
 
 ```cpp
-// lomuto's implimentation of quicksort
+// Lomuto's implementation of quicksort
 void quicksort(std::vector<int>& list, int start, int end) {
   if (start < end) {
     int pivot = partition(list, start, end);  // create partition

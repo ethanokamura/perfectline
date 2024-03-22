@@ -70,7 +70,7 @@ for(const val of arr) {
 }
 ```
 
-This syntax is great for most cases, but sometime you'll need the index of the array.
+This syntax is great for most cases, but sometimes you'll need the index of the array.
 
 To do this use `entries()`:
 1. Each entry is an array itself that contains the index and value.
