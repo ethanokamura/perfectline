@@ -29,7 +29,7 @@ This being said, here are the three constructors we will be using:
 2. List constructor
 3. Copy constructor
 
-Note that the list and copy constructor use the `push_back()` function! We will code this in the next section.
+Note that the list and copy constructor use the `push_back()` function! We will create this functionality in the next section.
 
 ### Default Constructor
 The default constructor initializes the object of its class to some meaningful initial state. In our case, we will want to define the head, tail and size of our list! Without setting values to our list (like creating a list), we will want to set the default nodes to null.
@@ -37,7 +37,7 @@ The default constructor initializes the object of its class to some meaningful i
 Here's what it looks like:
 ```cpp
 // default constructor
-LinkedList() : head(nullptr), tail(nullptr), size_(0) {}
+LinkedList() : head(nullptr), tail(nullptr), list_size(0) {}
 ```
 
 ### List Constructor

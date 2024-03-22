@@ -29,11 +29,10 @@ char* data = "hello"
 
 In this case we have a char and two pointers in each node:
 1. `char data` would be `'h'`
-2. `Node *prev` would be a `nullptr`
-3. `Node *next` would be a pointer to the next node (`'e'`)
+2. `Node *next` would be a pointer to the next node (`'e'`)
 
 ## Doubly Linked List
-Each list element (ie node) contains a pointer to the next and previous node in the list. Along with the data each node holds.
+Each list element (ie node) contains a pointer to the next node in the list. Along with the data each node holds.
 
 Here's a basic visual for a linked list!
 
@@ -55,11 +54,10 @@ class LinkedList {
   struct Node {
     T data;
     Node* next = nullptr;
-    Node* prev = nullptr;
   };
-  Node* head_ = nullptr;
-  Node* tail_ = nullptr;
-  std::size_t size_ = 0;
+  Node* head = nullptr;
+  Node* tail = nullptr;
+  std::size_t list_size = 0;
 };
 ```
 
