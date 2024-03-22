@@ -66,7 +66,7 @@ For the same reason that `std::vector` is actually `std::vector<T>`
 (ie T is the element type)
 
 ## Disadvantages:
-1. No direct access (unlike an array)
+### 1. No direct access (unlike an array)
 Address of value at index 5 in an array: (ie a single integer addition).
 ```cpp
 array_variable + 5
@@ -77,26 +77,29 @@ Address of node representing index 5 in a linked list: (ie multiple pointer dere
 list_variable.head_->next->next->next->next->next
 ```
 
-2. Occupies more space than an array (overhead). An array of chars of size 3 holds 3 bytes. A doubly linked list of chars, size 3 holds up to 67 bytes (8 pointers, 3 chars) (more likely 88 bytes - memory alignment on 8-byte boundaries faster for CPU)
-3. No spacial locality: (nodes likely not next to each other in memory) May be difficult for COU cache to optimize.
+### 2. Overhead
+Occupies more space than an array (overhead). An array of chars of size 3 holds 3 bytes. A doubly linked list of chars, size 3 holds up to 67 bytes (8 pointers, 3 chars) (more likely 88 bytes - memory alignment on 8-byte boundaries faster for CPU)
+
+### 3. No Spacial Locality
+(nodes likely not next to each other in memory) May be difficult for COU cache to optimize.
 
 ## Advantages:
-### Linked Lists Are Dynamic
+### 1. Linked Lists Are Dynamic
 Linked lists allow for efficient memory allocation as nodes can be dynamically allocated and deallocated, enabling flexible memory management compared to arrays, which have a fixed size. Linked lists can be constructed on-the-fly, accommodating elements as needed, making them suitable for situations where the size of the data is unknown in advance.
 
 Linked lists can grow or shrink dynamically during runtime, allowing for efficient insertion and deletion of elements anywhere in the list without requiring resizing or shifting of elements, as is the case with arrays.
 
-### Efficientcy:
+### 2. Efficientcy:
 Insertion and deletion operations at the beginning or end of a linked list (when you have direct access to the head or tail) can be performed in constant time O(1), regardless of the list size. This makes linked lists efficient for dynamic data structures. More on time complexity [here](https://codesantacruz.com/courses/cpp/dsa/complexity/).
 
 Insertions and deletions in the middle of a linked list can also be efficient if you have direct access to the node where the operation is performed. Unlike arrays, linked lists don't require shifting elements, resulting in faster operations.
 
 Linked lists consume memory only for the actual data and the pointers connecting the nodes, making them memory-efficient compared to arrays, which may have unused space due to fixed-size allocation.
 
-### Versatility
+### 3. Versatility
 Linked lists come in different forms, such as singly linked lists, doubly linked lists, and circular linked lists. Each variant offers unique advantages, allowing developers to choose the type that best fits their requirements.
 
-### Ease of Implementation
+### 4. Ease of Implementation
 Linked lists are relatively easy to implement and understand compared to more complex data structures like trees and graphs. This simplicity makes them an excellent choice for learning data structures and algorithms.
 
 
