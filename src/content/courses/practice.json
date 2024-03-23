@@ -1,6 +1,6 @@
 
 {
-  "title": "Practice Exercises",
+  "title": "Practice Problems",
   "description":"Put your Skills to Use With These Practice Problems!",
   "author": "Ethan Okamura",
   "date": "11-01-2023",
@@ -9,5 +9,5 @@
   "lang": "misc",
   "course": "practice",
   "img": "/imgs/thumbnails/practice-problems.png",
-  "order": 0
+  "order": 50
 }
