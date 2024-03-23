@@ -4,7 +4,7 @@ title: Unity Hub
 description: Learn How to Create a New Unity Project
 tags:
   - unity
-  - beginner
+  - unity-hub
 published: true
 lang: unity
 course: unity-101

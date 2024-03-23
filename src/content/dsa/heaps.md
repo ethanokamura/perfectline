@@ -3,10 +3,10 @@ layout: '../../layouts/PageLayout.astro'
 title: Heaps
 description: A nearly complete binary tree
 tags:
-  - cpp
-  - data-structures
-  - advanced
+  - data-structure
   - algorithms
+  - binary-tree
+  - heap
 published: true
 lang: cpp
 course: dsa

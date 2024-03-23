@@ -4,7 +4,9 @@ title: Intro
 description: Learn About Unity!
 tags:
   - unity
-  - beginner
+  - unity-hub
+  - unity-editor
+  - game-development
 published: true
 lang: unity
 course: unity-101

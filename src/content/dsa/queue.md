@@ -3,10 +3,9 @@ layout: '../../layouts/PageLayout.astro'
 title: Queues
 description: First in first out.
 tags:
-  - cpp
-  - data-structures
-  - advanced
-  - algorithms
+  - queue
+  - data-structure
+  - fifo
 published: true
 lang: cpp
 course: dsa

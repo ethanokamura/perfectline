@@ -3,9 +3,15 @@ layout: '../../layouts/PageLayout.astro'
 title: Constructors
 description: Building and destroying our list!
 tags:
-  - cpp
-  - intermediate
+  - linked-list
+  - classes
+  - template-classes
+  - constructors
+  - destructors
+  - memory
+  - memory-allocation
   - data-structure
+  - functions
 published: true
 lang: cpp
 course: linked-list

@@ -4,11 +4,11 @@ title: Imports
 description: In this section, we will cover the importance of imports and exports!
 date: '11.1.2023'
 tags:
-  - web
   - javascript
-  - css
-  - html
-  - intermediate
+  - import
+  - export
+  - package
+  - dependency
 published: true
 lang: web
 course: javascript-101

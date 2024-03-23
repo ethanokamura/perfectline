@@ -8,5 +8,6 @@
   "published": true,
   "lang": "web",
   "course": "javascript-101",
+  "img": "/imgs/thumbnails/javascript-101.png",
   "order": 300
 }

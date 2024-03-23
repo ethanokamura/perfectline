@@ -3,11 +3,7 @@ layout: '../../layouts/PageLayout.astro'
 title: JavaScript
 description: In this section, we will cover the basics of JavaScript!
 tags:
-  - web
   - javascript
-  - css
-  - html
-  - intermediate
 published: true
 lang: web
 course: javascript-101

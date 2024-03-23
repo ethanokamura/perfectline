@@ -3,10 +3,9 @@ layout: '../../layouts/PageLayout.astro'
 title: Stacks
 description: They're like pancakes...
 tags:
-  - cpp
-  - data-structures
-  - advanced
-  - algorithms
+  - data-structure
+  - stack
+  - LIFO
 published: true
 lang: cpp
 course: dsa

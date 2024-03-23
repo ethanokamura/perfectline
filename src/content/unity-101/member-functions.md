@@ -4,7 +4,7 @@ title: Member Functions
 description: Learn About Unity's Included Functions
 tags:
   - unity
-  - beginner
+  - functions
 published: true
 lang: unity
 course: unity-101

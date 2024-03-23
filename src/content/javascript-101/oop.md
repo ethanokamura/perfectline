@@ -3,11 +3,11 @@ layout: '../../layouts/PageLayout.astro'
 title: OOP
 description: Everything you need to know about Object Oriented Programming (OOP) in JavaScript!
 tags:
-  - web
   - javascript
-  - css
-  - html
-  - intermediate
+  - oop
+  - classes
+  - objects
+  - prototypes
 published: true
 lang: web
 course: javascript-101

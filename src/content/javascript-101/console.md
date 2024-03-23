@@ -3,11 +3,10 @@ layout: '../../layouts/PageLayout.astro'
 title: Console Tips
 description: In this section, I'll show you tips and tricks for console.log!
 tags:
-  - web
   - javascript
-  - css
-  - html
-  - intermediate
+  - console
+  - standard-output
+  - output
 published: true
 lang: web
 course: javascript-101

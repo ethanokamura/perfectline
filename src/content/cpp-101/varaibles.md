@@ -3,9 +3,8 @@ layout: '../../layouts/PageLayout.astro'
 title: Variables
 description: Learn all about variables!
 tags:
-  - cpp
-  - intro to programming
   - variables
+  - types
 published: true
 lang: cpp
 course: cpp-101

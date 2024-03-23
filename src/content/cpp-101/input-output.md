@@ -3,8 +3,8 @@ layout: '../../layouts/PageLayout.astro'
 title: iostream
 description: In this section, we will cover the importance of iostream!
 tags:
-  - cpp
-  - intro to programming
+  - standard-input
+  - standard-output
   - iostream
 published: true
 lang: cpp

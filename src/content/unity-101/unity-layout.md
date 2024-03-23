@@ -4,7 +4,7 @@ title: Unity Editor Layout
 description: Learn The In's and Out's of the Unity UI
 tags:
   - unity
-  - beginner
+  - unity-editor
 published: true
 lang: unity
 course: unity-101

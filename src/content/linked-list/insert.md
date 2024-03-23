@@ -3,9 +3,9 @@ layout: '../../layouts/PageLayout.astro'
 title: Insert
 description: Let's add data to our list!
 tags:
-  - cpp
-  - intermediate
   - data-structure
+  - linked-list
+  - functions
 published: true
 lang: cpp
 course: linked-list

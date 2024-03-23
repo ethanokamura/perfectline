@@ -3,9 +3,9 @@ layout: '../../layouts/PageLayout.astro'
 title: Quicksort
 description: Divide and Conquer
 tags:
-  - cpp
-  - advanced
-  - algorithms
+  - quick-sort
+  - sorting
+  - algorithm
 published: true
 lang: cpp
 course: dsa

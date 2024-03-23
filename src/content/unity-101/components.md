@@ -4,7 +4,8 @@ title: Components
 description: Learn About Unity's Components
 tags:
   - unity
-  - beginner
+  - components
+  - game-objects
 published: true
 lang: unity
 course: unity-101

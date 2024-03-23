@@ -3,8 +3,7 @@ layout: '../../layouts/PageLayout.astro'
 title: Prerequisites
 description: Learn a bit of terminology, syntax and types for C++
 tags:
-  - cpp
-  - intro to programming
+  - type
   - syntax
 published: true
 lang: cpp

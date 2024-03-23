@@ -3,9 +3,8 @@ layout: '../../layouts/PageLayout.astro'
 title: Wrapping Up
 description: We have finally finished our doubly linked list!
 tags:
-  - cpp
-  - intermediate
   - data-structure
+  - linked-list
 published: true
 lang: cpp
 course: linked-list

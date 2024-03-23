@@ -3,11 +3,10 @@ layout: '../../layouts/PageLayout.astro'
 title: Web Development
 description: In this section, we will cover the basics of web developement!
 tags:
-  - web
+  - web-development
   - javascript
   - css
   - html
-  - intermediate
 published: true
 lang: web
 course: javascript-101

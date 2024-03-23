@@ -3,11 +3,12 @@ layout: '../../layouts/PageLayout.astro'
 title: Event Loops
 description: In this section, we will cover the importance of event loops!
 tags:
-  - web
   - javascript
-  - css
-  - html
-  - intermediate
+  - event-loop
+  - callback
+  - promise
+  - async
+  - await
 published: true
 lang: web
 course: javascript-101

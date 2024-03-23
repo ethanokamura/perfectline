@@ -3,10 +3,9 @@ layout: '../../layouts/PageLayout.astro'
 title: Basic Searching
 description: Let's learn about Binary and Linear Search
 tags:
-  - cpp
-  - intermediate
-  - advanced
-  - algorithms
+  - algorithm
+  - binary-search
+  - linear-search
 published: true
 lang: cpp
 course: dsa

@@ -3,10 +3,8 @@ layout: '../../layouts/PageLayout.astro'
 title: Intro
 description: In this section, we will cover what C++ is and why one might use it.
 tags:
-  - full course
   - cpp
   - beginner
-  - basics
 published: true
 lang: cpp
 course: cpp-101

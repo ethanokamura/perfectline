@@ -1,12 +1,7 @@
 ---
 layout: '../../layouts/InfoLayout.astro'
 title: Our Server
-description: Instructions on how to log into our SSH server.
-subdescription: Access all your files and see examples over the internet!
-author: Ethan Okamura
-date: 11.1.2023
-published: true
-order: 0
+description: Access all your files and see examples over the internet!
 ---
 ## How to Log In (Default Terminal):
 1. To log in, open a terminal window and type `ssh username@98.207.210.35` in the command line. Your username will be the first letter of your first name followed by your last name. For me, Ethan Okamura, my username would be `eokamura`.

@@ -3,9 +3,11 @@ layout: '../../layouts/PageLayout.astro'
 title: Remove
 description: Let's remove data from our list!
 tags:
-  - cpp
-  - intermediate
   - data-structure
+  - functions
+  - memory
+  - deallocation
+  - delete
 published: true
 lang: cpp
 course: linked-list

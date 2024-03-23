@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7bc79b30d1bfb155",
+        "id": "70cc133c3da7c5fd",
         "type": "tabs",
         "children": [
           {
-            "id": "fd8e875355b8041f",
+            "id": "beb02d43357aa3b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "unity-101/unity-layout.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "unity-101/unity-layout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "unity-101/unity-layout.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "unity-101/unity-layout.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd8e875355b8041f",
+  "active": "beb02d43357aa3b4",
   "lastOpenFiles": [
+    "dsa/intro.md",
+    "git-101/intro.md",
+    "clean-code/lifecycle.md",
+    "clean-code/intro.md",
+    "cpp-101/array.md",
+    "unity-101/unity-layout.md",
+    "clean-code",
     "info/about.md",
     "unity-101/unity-hub.md",
     "unity-101/member-functions.md",
@@ -167,12 +166,6 @@
     "linked-list/operator-overloading.md",
     "linked-list/node.md",
     "linked-list/intro.md",
-    "linked-list/insert.md",
-    "linked-list/indexing.md",
-    "linked-list/helplers.md",
-    "linked-list/constructors.md",
-    "linked-list/conclusion.md",
-    "javascript-101/webdev.md",
-    "javascript-101/syntax.md"
+    "linked-list/insert.md"
   ]
 }

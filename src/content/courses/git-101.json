@@ -7,5 +7,6 @@
   "published": true,
   "lang": "misc",
   "course": "git-101",
+  "img": "/imgs/thumbnails/git-101.png",
   "order": 1000
 }

@@ -3,13 +3,13 @@ layout: '../../layouts/PageLayout.astro'
 title: STL Containers
 description: In this section, we will cover the importance of STL containers!
 tags:
-  - cpp
   - stl
-  - lists
-  - maps
-  - vectors
-  - sets
-  - containers
+  - list
+  - map
+  - vector
+  - set
+  - container
+  - data-structure
 published: true
 lang: cpp
 course: cpp-101

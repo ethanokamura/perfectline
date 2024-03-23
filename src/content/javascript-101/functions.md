@@ -3,11 +3,13 @@ layout: '../../layouts/PageLayout.astro'
 title: Functions
 description: In this section, we will cover the importance of Functions!
 tags:
-  - web
+  - functions
+  - closure
+  - heap
+  - variables
   - javascript
-  - css
-  - html
-  - intermediate
+  - higher-order-functions
+
 published: true
 lang: web
 course: javascript-101

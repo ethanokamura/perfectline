@@ -3,11 +3,12 @@ layout: '../../layouts/PageLayout.astro'
 title: Data Structures
 description: In this section, we will cover the importance of data structures!
 tags:
-  - web
   - javascript
-  - css
-  - html
-  - intermediate
+  - data-structure
+  - array
+  - set
+  - map
+  - container
 published: true
 lang: web
 course: javascript-101

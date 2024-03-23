@@ -3,7 +3,6 @@ layout: '../../layouts/PageLayout.astro'
 title: Scope
 description: In this section, we will cover the importance of scope!
 tags:
-  - cpp
   - scope
 published: true
 lang: cpp

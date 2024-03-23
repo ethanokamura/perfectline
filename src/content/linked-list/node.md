@@ -3,9 +3,14 @@ layout: '../../layouts/PageLayout.astro'
 title: Nodes
 description: Let's start off by covering the node class!
 tags:
-  - cpp
-  - intermediate
   - data-structure
+  - linked-list
+  - references
+  - pointers
+  - custom-data
+  - classes
+  - objects
+  - oop
 published: true
 lang: cpp
 course: linked-list

@@ -3,8 +3,10 @@ layout: '../../layouts/PageLayout.astro'
 title: Complexity
 description: How complex is our structure or algorithm?
 tags:
-  - cpp
   - complexity
+  - space-complexity
+  - time-complexity
+  - algorithms
 published: true
 lang: cpp
 course: dsa

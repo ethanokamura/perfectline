@@ -3,9 +3,11 @@ layout: '../../layouts/PageLayout.astro'
 title: Linked Lists
 description: Let's learn about Doubly Linked Lists!
 tags:
-  - cpp
-  - intermediate
   - data-structure
+  - linked-list
+  - memory
+  - template-classes
+  - classes
 published: true
 lang: cpp
 course: linked-list

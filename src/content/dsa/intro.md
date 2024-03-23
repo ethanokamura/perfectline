@@ -3,11 +3,8 @@ layout: ../../layouts/PageLayout.astro
 title: Intro
 description: In this course, we will cover intermediate to advanced topics in C++ while covering various data structures and algorithms
 tags:
-  - cpp
-  - intermediate
-  - advanced
-  - algorithms
-  - data-structures
+  - algorithm
+  - data-structure
 published: true
 lang: cpp
 course: dsa

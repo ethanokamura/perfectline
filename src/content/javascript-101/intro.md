@@ -5,11 +5,10 @@ description: In this course, we will cover various topics in web development.
 author: Ethan Okamura
 date: 2023-11-01
 tags:
-  - web
+  - web-dev
   - javascript
   - css
   - html
-  - intermediate
 published: true
 lang: web
 course: javascript-101

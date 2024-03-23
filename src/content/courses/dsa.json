@@ -1,11 +1,12 @@
 {
-  "title": "Data Structures And Algorithms",
-  "description":"In this course, we will cover advanced topics in C++ and learn about data structures and algorithms",
+  "title": "Data Structures And Algorithms - DSA",
+  "description":"Learn about data structures and algorithms using C++",
   "author": "Ethan Okamura",
   "date": "11-01-2023",
-  "tags": [ "cpp", "advanced", "algorithms", "data-structures", "algorithms" ],
+  "tags": [ "advanced", "algorithms", "data-structures" ],
   "published": true,
   "lang": "cpp",
   "course": "dsa",
+  "img": "/imgs/thumbnails/dsa.png",
   "order": 103
 }

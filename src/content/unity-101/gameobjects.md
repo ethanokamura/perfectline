@@ -4,7 +4,7 @@ title: Game Objects
 description: Learn About Game Objects
 tags:
   - unity
-  - beginner
+  - game-objects
 published: true
 lang: unity
 course: unity-101

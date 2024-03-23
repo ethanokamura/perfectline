@@ -3,9 +3,9 @@ layout: '../../layouts/PageLayout.astro'
 title: Constructors
 description: In this section, we will cover the importance of constructors!
 tags:
-  - cpp
-  - beginner
-  - basics
+  - oop
+  - classes
+  - objects
 published: true
 lang: cpp
 course: cpp-101

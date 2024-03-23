@@ -3,9 +3,7 @@ layout: '../../layouts/PageLayout.astro'
 title: Binary Tree
 description: It's like a tree, but in binary...
 tags:
-  - cpp
-  - data-structures
-  - advanced
+  - data-structure
   - binary-tree
 published: true
 lang: cpp
