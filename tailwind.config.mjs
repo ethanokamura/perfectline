@@ -56,7 +56,7 @@ export default {
       },
       animation: {
         title: "title 1.5s infinite",
-        typing: "typing 4s steps(60)",
+        typing: "typing 2s steps(25)",
         blink: "blink 0.75s infinite"
       },
       keyframes: {

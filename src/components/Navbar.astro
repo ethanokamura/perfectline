@@ -5,6 +5,8 @@ interface Props {
   course: any,
 }
 const { course } = Astro.props;
+const path = Astro.url.pathname;
+const slug = path.split("/")[4];
 const pages = await getCollection(course);
 const orderedPages = orderPages(pages, {
   filterOutDrafts: true,
@@ -12,15 +14,17 @@ const orderedPages = orderPages(pages, {
 });
 ---
 
-<div class="flex flex-wrap gap-2 mb-10 justify-start">
+<nav class="flex flex-wrap gap-2 mb-10 justify-start">
   {orderedPages?.map((page: any, index: number) =>
-    <div class="text-lg flex gap-2 flex-nowrap">
-      {index < 10 ?
-        <span class="text-text2"> 0{index}:</span>
-      :
-        <span class="text-text2">{index}:</span>
-      }
-      <a class="flex gap-4 text-primary" href={`/courses/${page.data.lang}/${page.data.course}/${page.slug}`}>{page.data.title}</a>
-    </div>
+    <a href={`/courses/${page.data.lang}/${page.data.course}/${page.slug}`}>
+      <li class="text-lg flex flex-nowrap">
+        {index < 10 ?
+          <span class={`${slug === page.slug ? "text-text" : "text-text2"}`}>0{index}</span>
+          :
+          <span class={`${slug === page.slug ? "text-text" : "text-text2"}`}>{index}</span>
+        }
+        <p class="hidden md:visible md:flex gap-2 text-text2">:<span class="text-primary">{page.data.title}</span></p>
+      </li>
+    </a>
   )}
-</div>
+</nav>

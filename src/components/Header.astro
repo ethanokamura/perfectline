@@ -3,11 +3,21 @@ interface Props {
 	title: string;
   path: string;
 }
+import { Icon } from 'astro-icon/components'
+
 const { title, path } = Astro.props;
 ---
 
-<nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"} `}>
-  { path === "/" ? <></> : <a class="font-rubik font-[800]" href="/">{title}</a> }
-  { path === "/" ? <a class="font-rubik font-[800]" href="/tutoring">Private Tutoring</a> : <></> }
-  { path === "/" ? <a class="font-rubik font-[800]" href="/courses">Start Learning</a> : <a class="font-rubik font-[800]" href="/courses">Courses</a> }
+<nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"} text-lg md:text-2xl lg:text-3xl`}>
+  { path === "/" ? <></> : <a href="/"><Icon name="ic:round-home" /></a> }
+
+  { path.includes("/courses") ?
+      <a class="font-rubik font-[800]" href="/courses">Courses</a>
+      :
+      <div class="flex gap-4 md:gap-10">
+        <a class="font-rubik font-[800]" href="/about">About</a>
+        <a class="font-rubik font-[800]" href="/tutoring">Tutoring</a>
+        <a class="font-rubik font-[800]" href="/courses">Courses</a>
+      </div>
+    }
 </nav>

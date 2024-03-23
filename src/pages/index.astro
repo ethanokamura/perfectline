@@ -1,6 +1,25 @@
 ---
-import { getEntry } from 'astro:content';
-const entry = await getEntry('info', 'home');
-const { Content } = await entry.render();
+import Layout from "../layouts/Layout.astro";
+import Window from "../components/Window.astro";
+import Title from '../components/Title.astro';
+import * as config from '../utils/config.js'
 ---
-<Content />
+
+<Layout>
+  <main class="grid justify-center text-center pb-20">
+    <header class="gap-4 p-6">
+      <div class="my-10">
+        <h1 class="font-rubik font-[800] text-text drop-shadow-none md:text-6xl text-3xl mb-6 transition-all ease-linear duration-300">&lcub; {config.title} &rcub;</h1>
+        <h2 class="font-rubik font-[800] drop-shadow-none">CODING ACADEMY</h2>
+        <h3 class="text-text2">{config.description}</h3>
+      </div>
+      <Window width="w-fit">
+        <div class="flex">
+          <span class="text-text2 font-rubik text-md md:text-xl max-w-fit inline-block animate-typing overflow-hidden whitespace-nowrap w-fit">&gt; Created By Ethan Okamura</span>
+          <div class="animate-blink text-md md:text-xl">_</div>
+        </div>
+      </Window>
+    </header>
+    <h2 class="text-text my-10"><span class="text-red-500">Complex</span> Problems. <span class="text-green-300">Simple</span> Solutions.</h2>
+  </main>
+</Layout>

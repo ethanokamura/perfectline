@@ -47,19 +47,16 @@
     @apply ps-0;
   }
   h1 {
-    @apply text-5xl;
+    @apply text-3xl md:text-5xl;
   }
   h2 {
-    @apply text-3xl;
+    @apply text-2xl md:text-3xl;
   }
   h3 {
-    @apply text-2xl;
+    @apply text-xl md:text-2xl;
   }
   h4 {
-    @apply text-xl;
-  }
-  h5 {
-    @apply text-lg;
+    @apply text-lg md:text-xl;
   }
   h1, h2, b, a, strong {
     @apply text-primary;

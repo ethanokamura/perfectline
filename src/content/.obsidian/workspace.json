@@ -148,6 +148,7 @@
   },
   "active": "fd8e875355b8041f",
   "lastOpenFiles": [
+    "info/about.md",
     "unity-101/unity-hub.md",
     "unity-101/member-functions.md",
     "unity-101/intro.md",
@@ -172,7 +173,6 @@
     "linked-list/constructors.md",
     "linked-list/conclusion.md",
     "javascript-101/webdev.md",
-    "javascript-101/syntax.md",
-    "javascript-101/oop.md"
+    "javascript-101/syntax.md"
   ]
 }

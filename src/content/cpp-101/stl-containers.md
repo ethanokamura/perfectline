@@ -37,7 +37,7 @@ Here's a simple explanation:
 2. Similar to Arrays: Vectors behave a lot like arrays, but they offer more flexibility. You can access elements by index, just like with arrays.
 3. Automatic Memory Management: Vectors handle memory allocation and deallocation for you. You don't need to worry about managing memory manually.
 
-`vector` is one of several [sequence containers](https://en.cppreference.com/w/cpp/named_req/SequenceContainer) in the STL, i.e. types that support functions like `push_back`, `size`, etc. The STL sequence containers are `array`, `deque`, `forward_list`, `list`, `string`, and `vector`. We will discuss STL more in the advanced C++ course!
+`vector` is one of several [sequence containers](https://en.cppreference.com/w/cpp/named_req/SequenceContainer) in the STL, i.e. types that support functions like **push_back**, **size**, etc. The STL sequence containers are **array**, **deque**, **forward_list**, **list**, **string**, and **vector**. We will discuss STL more in the advanced C++ course!
 
 A vector object maintains an “array” internally, and will manage that to support an arbitrary number of elements in the sequence.
 

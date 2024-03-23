@@ -11,7 +11,7 @@ const { frontmatter } = Astro.props;
 <Head title={frontmatter.title} description={frontmatter.description}/>
 
 <Layout>
-  <main class="grid justify-center pb-20 pt-10">
+  <main class="grid justify-center pb-20">
     <header class="grid max-w-4xl w-full text-center items-start mx-auto gap-4 p-6">
       <Title description={frontmatter.title} subdescription={frontmatter.description}/>
     </header>
