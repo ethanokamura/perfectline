@@ -16,11 +16,6 @@ const { frontmatter } = Astro.props;
     <hgroup>
       <h1 class="capitalize font-rubik font-[800]">{frontmatter.title}</h1>
       <h3 class="text-text">{frontmatter.description}</h3>
-      <!-- <div class="tags overflow-y-scroll">
-      {frontmatter.tags.map((tag: string) =>
-          <span class="tag">#{tag}</span>
-          )}
-      </div> -->
     </hgroup>
     <div class="prose">
       <slot/>
