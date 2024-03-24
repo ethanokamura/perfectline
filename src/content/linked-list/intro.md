@@ -38,7 +38,7 @@ Each list element (ie node) contains a pointer to the next node in the list. Alo
 
 Here's a basic visual for a linked list!
 
-![](/imgs/cpp/linked_list.svg)
+![](/svg/linked-list.svg)
 
 Class `LinkedList` is an archetypal doubly linked list. Where `Node` structures and internal list details are kept private. Also, note that all member functions are defined inside the class declaration. (No separate .h and .cpp/.cc files.) Template classes are usually defined this way. For this class, the param `T` is the type of the list elements. You can think of it as a dynamic or generic way to hold data!
 
