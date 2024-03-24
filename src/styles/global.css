@@ -110,7 +110,7 @@
     @apply underline;
   }
   .prose img {
-    @apply w-full;
+    @apply w-4/5 mx-auto;
   }
   .prose :is(ul) {
     @apply list-[circle] pl-5;
@@ -122,7 +122,7 @@
     @apply font-brains text-text;
   }
   .prose code:not(:is(pre code)) {
-    @apply bg-accent px-2 py-1 rounded-md;
+    @apply bg-accent px-2 rounded-md;
   }
   .prose pre {
     @apply mt-3 overflow-x-scroll p-4 rounded-md max-w-full;
