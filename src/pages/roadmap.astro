@@ -1,0 +1,41 @@
+---
+// Utils
+import { orderPages } from "../utils/index.js";
+import { getCollection } from 'astro:content';
+
+// Components
+import Layout from "../layouts/Layout.astro";
+import Window from "../components/Window.astro";
+import Head from "../components/Head.astro";
+import Title from "../components/Title.astro";
+
+const allCourses = await getCollection('courses');
+
+
+const pages = await getCollection("practice");
+const orderedPages = orderPages(pages, {
+  filterOutDrafts: true,
+  sortByOrder: true,
+});
+
+---
+
+<Head title="Courses" description="A List of Courses We Offer"/>
+<Layout>
+  <main class="grid justify-center pb-20">
+  <header class="grid max-w-4xl w-full text-center items-start mx-auto gap-4 p-6">
+    <Title description="Road Map" subdescription="Our Recommended Path To Success"/>
+  </header>
+  <section class="text-center grid gap-4">
+    <div class="flex flex-col items-start justify-around gap-6 p-5">
+      {orderedPages.map((course:any) =>
+        // <Card data={ course.data } url={ `/courses/${course.data.lang}/${course.data.course}/intro` }/>
+        <Window width="w-64">
+          <h1 class="text-xl text-text">{course.data.title}</h1>
+          <span class="text-text2">{course.data.description}</span>
+        </Window>
+      )}
+    </div>
+  </section>
+  </main>
+</Layout>

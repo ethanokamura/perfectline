@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PageLayout.astro'
-title: Problem 02
-description: Increasing / Decreasing
+title: Increasing or Decreasing Numbers
+description: if / else statements
 tags:
   - cpp
   - python

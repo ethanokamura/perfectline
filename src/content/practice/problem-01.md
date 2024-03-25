@@ -1,12 +1,11 @@
 ---
 layout: '../../layouts/PageLayout.astro'
-title: Problem 01
+title: iostream
 description: My name is
-tags:
-  - cpp
-  - python
-  - intro to programming
-  - practice problems
+relation:
+  - basics
+  - if-else
+  - io
 published: true
 lang: misc
 course: practice

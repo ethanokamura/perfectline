@@ -25,17 +25,17 @@ export function orderPages(course, {
   return orderedPages;
 }
 
-export function formatCourses(course, tag, {
+export function formatCourses(course, langInput, {
   filterOutDrafts = true,
   filterOutTags = true,
   sortByOrder = true,
 } = {}){
   const filteredCourses = course.reduce((acc, course) => {
-    const { published, tags } = course.data;
+    const { published, lang } = course.data;
     // filterOutDrafts if true
     if (filterOutDrafts && !published) return acc;
     // filterOutTopics if true
-    if (filterOutTags && !tags.includes(tag)) return acc;
+    if (filterOutTags && !(lang == langInput)) return acc;
     // add post
     acc.push(course);
     return acc;

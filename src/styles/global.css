@@ -119,10 +119,10 @@
     @apply my-2 px-2;
   }
   .prose code {
-    @apply font-brains text-text;
+    @apply font-brains;
   }
   .prose code:not(:is(pre code)) {
-    @apply bg-accent px-2 rounded-md;
+    @apply bg-accent px-2 rounded-md text-text;
   }
   .prose pre {
     @apply mt-3 overflow-x-scroll p-4 rounded-md max-w-full;

@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/PageLayout.astro'
-title: Problem 03
+title: fizzbuzz
 description: Fizzbuzz
 tags:
   - cpp
