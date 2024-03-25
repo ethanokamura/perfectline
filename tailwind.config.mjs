@@ -9,7 +9,7 @@ export default {
         'text': '#ffffff',
         'text2': '#a6a6a6',
         'background': '#13151a',
-        'accent': '#1f232e',
+        'accent': '#272c3b',
         'primary': '#54b6f7',
         'secondary': '#191c24',
 
