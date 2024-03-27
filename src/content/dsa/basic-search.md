@@ -27,9 +27,9 @@ _"Much of the time/effort/energy spent by computer programs involves searching a
 
 When searching for a number between 1 and 100:
 ```cpp
-int linear_search(int target, int max) {
-  for (int i = 0; i < max; i++)
-    if (i == target) return i;
+int linear_search(int* list, const int size, int target) {
+  for (int i = 0; i < size; i++)
+    if (list[i] == target) return i;
   return -1;
 }
 ```
@@ -45,9 +45,9 @@ int linear_search(int target, int max) {
 When searching for a number between 1 and 100:
 
 ```cpp
-int binary_search(vector<int> list, int target) {
+int binary_search(int* list, const int size, int target) {
   int low = 0;
-  int high = list.size() - 1;
+  int high = size - 1;
   while (low != high) {
     int mid = (low + high) / 2;
     if (list[mid] > target) high = mid - 1;
