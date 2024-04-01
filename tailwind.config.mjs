@@ -46,7 +46,6 @@ export default {
       },
       fontFamily: {
         brains: 'brains',
-        manrope: 'manrope',
         rubik: 'rubik',
       },
       gridTemplateRows: {

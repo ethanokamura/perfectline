@@ -8,11 +8,6 @@
   src: url('/fonts/JetBrainsMonoNL-Regular.ttf');
 }
 @font-face {
-  font-family: "manrope";
-  font-weight: 300;
-  src: url('/fonts/Manrope-SemiBold.ttf');
-}
-@font-face {
   font-family: "rubik";
   font-weight: 300;
   src: url('/fonts/Rubik-Regular.ttf');
