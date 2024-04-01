@@ -3,13 +3,12 @@ interface Props {
 	title: string;
   path: string;
 }
-import { Icon } from 'astro-icon/components'
 
 const { path } = Astro.props;
 ---
 
 <nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"} text-lg md:text-2xl`}>
-  { path === "/" ? <></> : <a href="/"><Icon name="ic:round-home" /></a> }
+  { path === "/" ? <></> : <a href="/" class="flex gap-2 items-center">Home</a> }
 
   <div class="flex gap-4 md:gap-10">
     <a href="/about">About</a>
