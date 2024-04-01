@@ -14,6 +14,7 @@ const courseCollection = defineCollection({
     published: z.boolean(),
     lang: z.string(),
     img: z.string().optional(),
+    alt: z.string().optional(),
     order: z.number().optional(),
   }),
 });

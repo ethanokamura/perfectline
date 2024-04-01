@@ -9,5 +9,6 @@
   "lang": "misc",
   "course": "practice",
   "img": "/imgs/thumbnails/practice-problems.webp",
+  "alt": "practice-problems-thumbnail",
   "order": 150
 }
