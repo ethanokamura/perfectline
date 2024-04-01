@@ -39,12 +39,14 @@
   body {
     @apply h-full w-screen p-0 m-0;
   }
-  ul,
-  ol {
+  ul, ol {
     @apply list-none p-0;
   }
   li {
     @apply ps-0;
+  }
+  h1, h2, h3, h4 {
+    @apply font-[800];
   }
   h1 {
     @apply text-3xl md:text-5xl;
@@ -58,8 +60,8 @@
   h4 {
     @apply text-lg md:text-xl;
   }
-  h1, h2, b, a, strong {
-    @apply text-primary;
+  span {
+    @apply text-text2;
   }
   article {
     @apply max-w-4xl w-full p-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary;
@@ -88,8 +90,8 @@
   .tags::-webkit-scrollbar {
     display: none;
   }
-  .prose :is(h1, h2) {
-    @apply font-rubik font-[800];
+  .prose :is(h1, h2, b, a, strong) {
+    @apply text-primary;
   }
   .prose :is(h1, h2, h3, h4, h5, h6) {
     @apply my-3;

@@ -1,14 +1,12 @@
 ---
-import * as config from '../utils/config.js';
 interface Props {
 	description: string;
 	subdescription: string;
 }
 const { description, subdescription } = Astro.props;
 ---
-
-<div class="my-10">
-  <h1 class="font-rubik font-[800] text-text drop-shadow-none md:text-6xl text-3xl mb-6 transition-all ease-linear duration-300">&lcub; {config.title} &rcub;</h1>
-  <h2 class="font-rubik font-[800] drop-shadow-none">{description}</h2>
-  { subdescription == "" ? <></> : <h3 class="font-rubik font-[300] text-text2 text-lg">{subdescription}</h3> }
-</div>
+<header class="my-10 w-full text-center mx-auto">
+  <h1 class="md:text-6xl text-3xl">&lcub; CodeSantaCruz &rcub;</h1>
+  <h2 class="text-primary uppercase">{description}</h2>
+  { subdescription == "" ? <></> : <h3 class="text-text2">{subdescription}</h3> }
+</header>

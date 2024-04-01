@@ -1,16 +1,13 @@
 ---
 // components
 import Layout from './Layout.astro';
-import Head from '../components/Head.astro'
 import Navbar from '../components/Navbar.astro';
 
 // utils
 const { frontmatter } = Astro.props;
 ---
 
-<Head title={frontmatter.title} description={frontmatter.description}/>
-
-<Layout>
+<Layout title={frontmatter.title} description={frontmatter.description}>
   <article >
     <Navbar course={frontmatter.course} />
     <hgroup>

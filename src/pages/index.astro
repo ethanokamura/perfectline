@@ -1,32 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Window from "../components/Window.astro";
-import Title from '../components/Title.astro';
-import * as config from '../utils/config.js'
+import Title from "../components/Title.astro";
 ---
 
-<Layout>
-  <main class="grid justify-center text-center pb-20">
-    <header class="gap-4 p-6">
-      <div class="my-10">
-        <h1 class="font-rubik font-[800] text-text drop-shadow-none md:text-6xl text-3xl mb-6 transition-all ease-linear duration-300">&lcub; {config.title} &rcub;</h1>
-        <h2 class="font-rubik font-[800] drop-shadow-none">CODING ACADEMY</h2>
-        <h3 class="text-text2">{config.description}</h3>
+<Layout title="CodeSantaCruz" description="Premium, Interactive, Project-Based Courses.">
+  <main class="text-center">
+    <Title description="Coding Academy" subdescription="Premium, Interactive, Project-Based Courses."/>
+    <Window>
+      <div class="flex">
+        <span class="text-md md:text-xl max-w-fit inline-block animate-typing overflow-hidden whitespace-nowrap w-fit">&gt; Created By Ethan Okamura</span>
+        <div class="animate-blink text-md md:text-xl">_</div>
       </div>
-      <Window width="w-fit">
-        <div class="flex">
-          <span class="text-text2 font-rubik text-md md:text-xl max-w-fit inline-block animate-typing overflow-hidden whitespace-nowrap w-fit">&gt; Created By Ethan Okamura</span>
-          <div class="animate-blink text-md md:text-xl">_</div>
-        </div>
-      </Window>
-    </header>
-    <h2 class="text-text my-10"><span class="text-red-500">Complex</span> Problems. <span class="text-green-300">Simple</span> Solutions.</h2>
-    <Window width="w-fit">
-      <h1 class="text-2xl font-[800]">Lastest Changes:</h1>
-      <ul class="text-xl">
-        <ol><span class="text-text2">March 23, 2024 - </span> UI Changes</ol>
-        <ol><span class="text-text2">March 23, 2024 - </span> Added Thumbnails To Courses</ol>
-        <ol><span class="text-text2">March 21, 2024 - </span> Added Linked List Course</ol>
+    </Window>
+    <div class="flex gap-2">
+      <h2><span class="text-red-500">Complex</span> Problems. <span class="text-green-300">Simple</span> Solutions.</h2>
+    </div>
+    <Window>
+      <h4 class="text-primary">Lastest Changes:</h4>
+      <ul class="text-lg md:text-xl">
+        <ol><span>March 23, 2024 - </span> UI Changes</ol>
+        <ol><span>March 23, 2024 - </span> Added Thumbnails To Courses</ol>
+        <ol><span>March 21, 2024 - </span> Added Linked List Course</ol>
       </ul>
     </Window>
   </main>

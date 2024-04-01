@@ -1,20 +1,15 @@
 ---
 // components
 import Layout from './Layout.astro';
-import Head from '../components/Head.astro'
 import Title from '../components/Title.astro';
 
 // utils
 const { frontmatter } = Astro.props;
 ---
 
-<Head title={frontmatter.title} description={frontmatter.description}/>
-
-<Layout>
+<Layout title={frontmatter.title} description={frontmatter.description}>
   <main class="grid justify-center pb-20">
-    <header class="grid max-w-4xl w-full text-center items-start mx-auto gap-4 p-6">
-      <Title description={frontmatter.title} subdescription={frontmatter.description}/>
-    </header>
+    <Title description={frontmatter.title} subdescription={frontmatter.description}/>
     <article>
       <div class="prose">
         <slot/>

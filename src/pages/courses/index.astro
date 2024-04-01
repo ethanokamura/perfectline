@@ -6,7 +6,6 @@ import { getCollection } from 'astro:content';
 // Components
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
-import Head from "../../components/Head.astro";
 import Title from "../../components/Title.astro";
 
 const allCourses = await getCollection('courses');
@@ -16,20 +15,20 @@ const formattedCourses = formatCourses(allCourses, "all", {
   filterOutTags: false,
   sortByOrder: true,
 });
+
+const title = "Courses";
+const description = "A List of Courses We Offer"
 ---
 
-<Head title="Courses" description="A List of Courses We Offer"/>
-<Layout>
+<Layout title={title} description={description}>
   <main class="grid justify-center pb-20">
-  <header class="grid max-w-4xl w-full text-center items-start mx-auto gap-4 p-6">
-    <Title description="COURSES" subdescription="List of Completed Courses"/>
-  </header>
-  <section class="text-center grid gap-4">
-    <div class="flex flex-wrap items-start justify-around gap-6 p-5">
-      {formattedCourses.map((course:any) =>
-        <Card data={ course.data } url={ `/courses/${course.data.lang}/${course.data.course}/intro` }/>
-      )}
-    </div>
-  </section>
+    <Title description={title} subdescription={description}/>
+    <section class="text-center grid gap-4">
+      <div class="flex flex-wrap items-start justify-around gap-6 p-5">
+        {formattedCourses.map((course:any) =>
+          <Card data={ course.data } url={ `/courses/${course.data.lang}/${course.data.course}/intro` }/>
+        )}
+      </div>
+    </section>
   </main>
 </Layout>

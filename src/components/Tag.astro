@@ -1,17 +1,6 @@
 ---
 const { name } = Astro.props;
 let css;
-// switch (name) {
-//   case "cpp": css = "bg-blue-700 text-text"; break;
-//   case "cs": css = "bg-green-700 text-text"; break;
-//   case "javascript": css = "bg-yellow-500 text-background"; break;
-//   case "css": css = "bg-blue-500 text-text"; break;
-//   case "html": css = "bg-orange-600 text-text"; break;
-//   case "git": css = "bg-red-500 text-text"; break;
-//   case "python": css = "bg-blue-500 text-yellow-300"; break;
-//   case "unity": css = "bg-primary text-background"; break;
-//   default: css = "bg-accent"; break;
-// }
 let tagID = name;
 if (tagID == "cpp") tagID = "c++";
 if (tagID == "cs") tagID = "c#";

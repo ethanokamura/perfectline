@@ -5,7 +5,7 @@ interface Props {
 }
 import { Icon } from 'astro-icon/components'
 
-const { title, path } = Astro.props;
+const { path } = Astro.props;
 ---
 
 <nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"} text-lg md:text-2xl`}>
