@@ -8,7 +8,7 @@ import { Icon } from 'astro-icon/components'
 const { path } = Astro.props;
 ---
 
-<nav class={`font-[800] headnav ${path === "/" ? "justify-end" : "justify-between"} text-lg md:text-2xl`}>
+<nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"} text-lg md:text-2xl`}>
   { path === "/" ? <></> : <a href="/"><Icon name="ic:round-home" /></a> }
 
   <div class="flex gap-4 md:gap-10">

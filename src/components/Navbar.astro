@@ -14,17 +14,14 @@ const orderedPages = orderPages(pages, {
 });
 ---
 
-<nav class="flex flex-wrap gap-2 mb-10 justify-start">
+<nav class="flex flex-wrap gap-4 pb-10 px-12">
   {orderedPages?.map((page: any, index: number) =>
-    <a href={`/courses/${page.data.lang}/${page.data.course}/${page.slug}`}>
-      <li class="text-lg flex flex-nowrap">
-        {index < 10 ?
-          <span class={`${slug === page.slug ? "text-text" : "text-text2"}`}>0{index}</span>
-          :
-          <span class={`${slug === page.slug ? "text-text" : "text-text2"}`}>{index}</span>
-        }
-        <p class="hidden md:visible md:flex gap-2 text-text2">:<span class="text-primary">{page.data.title}</span></p>
-      </li>
-    </a>
+    <div class={`w-fit flex gap-2 items-center px-2 rounded-lg bg-gradient-to-br from-secondary to-background border-2 ${slug === page.slug ? "border-primary" : "border-secondary"}`}>
+      <a class="text-base flex gap-1 flex-nowrap" href={`/courses/${page.data.lang}/${page.data.course}/${page.slug}`}>
+        <span class={`flex flex-nowrap ${slug === page.slug ? "text-primary" : "text-text2"}`}>
+          {index < 10 ?<p>0</p>:<></>}
+          {index}: {page.data.title}</span>
+      </a>
+    </div>
   )}
 </nav>

@@ -13,10 +13,11 @@ const currentPath = Astro.url.pathname;
 	<body class="flex flex-col justify-between">
     <div class="flex flex-col justify-start">
       <Header title={title} path={currentPath}/>
-      <main class="py-6 px-12 grid items-center h-full">
+      <main class="grid items-center h-full pb-20">
         <slot/>
       </main>
     </div>
     <Footer title={title}/>
 	</body>
 </html>
+

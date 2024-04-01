@@ -8,12 +8,8 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title} description={frontmatter.description}>
-  <main class="grid justify-center pb-20">
-    <Title description={frontmatter.title} subdescription={frontmatter.description}/>
-    <article>
-      <div class="prose">
-        <slot/>
-      </div>
-    </article>
-  </main>
+  <Title description={frontmatter.title} subdescription={frontmatter.description}/>
+  <div class="prose">
+    <slot/>
+  </div>
 </Layout>
