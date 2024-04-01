@@ -6,22 +6,26 @@
   font-family: "brains";
   font-weight: 300;
   src: url('/fonts/JetBrainsMonoNL-Regular.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: "rubik";
   font-weight: 300;
   src: url('/fonts/Rubik-Regular.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: "rubik";
   font-weight: 800;
   src: url('/fonts/Rubik-Bold.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: "rubik";
   font-weight: 300;
   font-style: italic;
   src: url('/fonts/Rubik-Italic.ttf');
+  font-display: swap;
 }
 @layer base {
   html::-webkit-scrollbar {
