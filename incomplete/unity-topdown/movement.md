@@ -46,7 +46,7 @@ With our variables this means the following:
 In Unity, there are 2D and 3D vectors called `Vector2` and `Vector3` respectively. They hold an x, y, and z value (if it is a `Vector3`).
 
 Here is a diagram of a vector in relation to physics:
-![](/imgs/unity/unity-topdown/BasicVector.png)
+![](/imgs/unity/unity-topdown/BasicVector.webp)
 
 For our specific case, we will be basing our vector on something called the #unit-circle. The general idea is that the radius of the circle is always 1 and the angle (theta) varies. For our `Vector2`, we need our x and y in `Vector2(x,y)` to always have a radius of 1 despite the angle. To do this we normalize the vector. This means in simple terms, we force the vector to a value of `1` This is important because we need some sort of consistency to have fluid movement.
 
@@ -83,9 +83,9 @@ void Update() {
 Here are some before and afters with normalization:
 
 Before:
-![](/imgs/unity/unity-topdown/NonNormalized.png)
+![](/imgs/unity/unity-topdown/NonNormalized.webp)
 After:
-![](/imgs/unity/unity-topdown/Normalized.png)
+![](/imgs/unity/unity-topdown/Normalized.webp)
 
 We put anything physics based because we need the movement to be based on time, for example, m/s or mph. Therefore, we need the movement itself. We can simply put this in `FixedUpdate()`. We want to manipulate our `Rigidbody` to utilize Unity's built in physics engine. When we multiply `direction` (a vector) by a number or scalar, we return a new vector with the direction of `direction` and the magnitude of speed:
 
@@ -94,4 +94,4 @@ private void FixedUpdate() {
 	rb.velocity = direction * speed;
 }
 ```
-![](/imgs/unity/unity-topdown/VelocityVector.png)
+![](/imgs/unity/unity-topdown/VelocityVector.webp)

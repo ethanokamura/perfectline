@@ -46,7 +46,7 @@ In general, constant time (or "in place" complexity) is the fastest, and exponen
 
 Here's a graph:
 
-![](/imgs/cpp/time_complexity.jpeg)
+![](/imgs/cpp/time_complexity.webp)
 
 ## Example Algorithmic Complexity
 ```
