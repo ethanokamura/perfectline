@@ -8,5 +8,6 @@
   "lang": "cpp",
   "course": "linked-list",
   "img": "/imgs/thumbnails/linked-lists.png",
+  "alt": "linked-list-thumbnail",
   "order": 2
 }

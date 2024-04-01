@@ -8,5 +8,6 @@
   "lang": "misc",
   "course": "git-101",
   "img": "/imgs/thumbnails/git-101.png",
+  "alt": "git-thumbnail",
   "order": 301
 }

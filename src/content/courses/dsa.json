@@ -8,5 +8,6 @@
   "lang": "cpp",
   "course": "dsa",
   "img": "/imgs/thumbnails/dsa.png",
+  "alt": "dsa-thumbnail",
   "order": 3
 }
