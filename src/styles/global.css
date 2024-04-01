@@ -20,19 +20,13 @@
   src: url('/fonts/Rubik-Bold.ttf');
   font-display: swap;
 }
-@font-face {
-  font-family: "rubik";
-  font-weight: 300;
-  font-style: italic;
-  src: url('/fonts/Rubik-Italic.ttf');
-  font-display: swap;
-}
+
 @layer base {
   html::-webkit-scrollbar {
     display: none;
   }
   html {
-    @apply w-screen p-0 m-0 font-rubik font-[300] text-text bg-gradient-to-r from-black to-background;
+    @apply p-0 m-0 font-rubik font-[300] text-text bg-gradient-to-r from-black to-background;
   }
   html,
   body {
@@ -63,32 +57,16 @@
     @apply text-text2;
   }
   /* article {
-     @apply max-w-4xl w-full p-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary;
-
+    @apply max-w-4xl w-full p-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary;
   } */
 }
 
 @layer components {
   .headnav {
-   @apply text-2xl font-[800] text-primary w-screen items-center pt-4 pb-6 px-6 flex flex-wrap gap-6 z-20;
+   @apply text-xl md:text-2xl font-[800] text-primary w-screen items-center pt-4 pb-6 px-6 flex gap-6 z-20;
   }
   .headnav a {
-    @apply text-primary hover:scale-110 transition-all ease-linear duration-100;
-  }
-  .links {
-    @apply flex gap-4;
-  }
-  .links li a {
-    @apply text-text text-opacity-100 hover:text-opacity-20 transition-all ease-linear duration-100;
-  }
-  .tags {
-    @apply flex flex-wrap gap-4 mt-5;
-  }
-  .tags > * {
-    @apply px-2 py-1 rounded-sm bg-accent text-text;
-  }
-  .tags::-webkit-scrollbar {
-    display: none;
+    @apply hover:scale-110 transition-all ease-linear duration-100;
   }
   .prose {
     @apply w-screen px-12;
@@ -100,7 +78,7 @@
     @apply my-3;
   }
   .prose :not(h1, h2, h3, h4, h5, h6) {
-    @apply text-base md:text-lg transition-all ease-linear duration-300;
+    @apply text-base md:text-lg;
   }
   .prose :not(h1, h2, h3, h4, h5, h6, b, a, strong) {
     @apply text-text2;
@@ -108,7 +86,7 @@
   .prose p:not(:is(h1, h2, h3, h4, h5, h6) + p) {
     @apply mt-7
   }
-  .prose :is(ol) {
+  .prose :is(ol, ul) {
     @apply list-decimal pl-5;
   }
   .prose a {
@@ -116,9 +94,6 @@
   }
   .prose img {
     @apply w-4/5 mx-auto;
-  }
-  .prose :is(ul) {
-    @apply list-[circle] pl-5;
   }
   .prose :is(ul, ol) li {
     @apply my-2 px-2;
