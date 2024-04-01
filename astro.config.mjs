@@ -10,5 +10,8 @@ export default defineConfig({
   // site: 'https://paperwrld.github.io',
   // base: '/codesantacruz_v2',
   // output: 'static',
+  build: {
+    redirects: false,
+  },
   integrations: [tailwind(), mdx(), icon()]
 });
