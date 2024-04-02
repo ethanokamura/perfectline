@@ -38,7 +38,7 @@ if (age >= 18) {
 }
 ```
 
-### Syntax:
+## Syntax:
 
 in C++, we use curly brackets to encase blocks of code as previously discussed. To write and if statement, we write "`if`" in lowercase, followed by a set of parenthesis to encase our condition that we are checking. If the condition is met, the code in the curly brackets or block will be executed.
 
@@ -48,7 +48,7 @@ if (condition) {
 }
 ```
 
-### Ternary Operations
+## Ternary Operations
 
 A condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if/else statement. This should typically only be used for (if / else) NOT (if / else if / else):
 

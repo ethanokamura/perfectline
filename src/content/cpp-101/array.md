@@ -32,7 +32,7 @@ The syntax for arrays are pretty simple:
 2. Define the name of the array.
 3. Use the `[]` operator to signify that you want to create an array.
 4. Define the size of the array (how many elements are inside it).
-5. (Optionally) set default values for the items in the array using curly brackets. Be sure to seperate each element with a comma.
+5. (Optionally) set default values for the items in the array using curly brackets. Be sure to separate each element with a comma.
 
 There are a few ways to initialize an array. Here are 3 examples:
 ```cpp

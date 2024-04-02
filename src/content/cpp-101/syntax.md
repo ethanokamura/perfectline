@@ -10,7 +10,7 @@ lang: cpp
 course: cpp-101
 order: 1
 ---
-## Now let's cover some basic programming terminology:
+## Now let's cover some basic programming terminology
 1. **Syntax**: Grammar rules for forming statements
 2. **Semantics**: The meaning of statements (ie how they can concretely be translated into machine code).
 3. **Type System**: How data and expression values are categorized.
@@ -28,7 +28,7 @@ With anything, of course, there are tradeoffs:
 4. Compilers are complicated to make but can produce highly optimized code making C++ suitable for things like game engines or robotics.
 5. There are infinite ways to accomplish the same goal... which is great until the code you write doesn't work and no one has solved the problem in the same way.
 
-## C++ Fundamental Types:
+## C++ Fundamental Types
 A fundamental type is one that is built into the language. In C++ there are 4 major categories:
 1. A lack thereof (no type): `void` -> for functions that don't return a value (and potentially other more exotic uses)
 2. A nonexistent memory address: `std::nullptr_t` -> To mark a memory address as invalid/uninitialized (more on this later)
@@ -37,7 +37,7 @@ A fundamental type is one that is built into the language. In C++ there are 4 ma
 
 _With fundamental types, there is no need to `#include` "built-in" (keywords)_
 
-## The building Blocks of C++:
+## The building Blocks of C++
 Most common blocks:
 1. `if` statement: Selects a block to execute based on a Boolean or `bool` (`true`/`false`) condition.
 2. `while` loop: Repeats a block as long as a `bool` condition remains true.
@@ -47,7 +47,7 @@ Most common blocks:
 
 Blocks of code are typically wrapped in "curly brackets" `{}`
 
-## Comments:
+## Comments
 You might notice above a greyed-out line of code that starts with `//`.
 
 The two slashes signify that a comment is written and will negate anything until the end of that line. When code is compiled (more on this later) the computer does not read comments. It sees the slashes and skips to the next line.
@@ -63,7 +63,7 @@ comment
 */
 ```
 
-## The `main` Function:
+## The `main` Function
 Looking back at the comment itself in the program above, it says, "Every C++ program must define at least a main function!". This is true!
 
 1. `main` function definition:
@@ -80,7 +80,7 @@ int main() {
 }
 ```
 
-## Statements:
+## Statements
 The line that contains:
 ```cpp
 cout << "Hi Mom!\n";
@@ -96,7 +96,7 @@ You can think of semicolons as punctuation for programming (like a period). `cou
 
 In basic terms, this entire statement essentially says, _Insert the string "Hi Mom!" into the standard output_
 
-## Running the Program!
+## Running the Program
 1. Create and edit a source-code file using a text editor (such as VS Code).
 2. Open the terminal to input commands to run the program.
 3. Use a "compiler" to **preprocess**, **compile**, and **link** the code to create an **executable** (in a file named a.out or a.exe in the current directory by default) with the command `g++` or `clang++` followed by the filename `helloworld.cpp`.

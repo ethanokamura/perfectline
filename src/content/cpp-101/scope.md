@@ -9,7 +9,7 @@ lang: cpp
 course: cpp-101
 order: 3
 ---
-### Scope
+
 Scope defines the reach of each variable, meaning where we can use each variable.
 1. **Global Scope** - available everywhere.
 2. **Local Scope** - can only be used inside the function it was defined in.

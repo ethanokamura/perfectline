@@ -55,7 +55,7 @@ An example of a memory address might look something like `0x744c516a000`
 
 In a program, each variable holds a unique memory address!
 
-## Syntax:
+## Syntax
 Here's some syntax that you'll see in the rest of the section:
 1. **Pointers**: Pointers are declared using an asterisk (\*). They directly hold the memory address of another variable.
 2. **References**: References are declared using an ampersand (&). They are essentially aliases for existing variables.
@@ -77,7 +77,7 @@ In this example:
 
 Pointers are powerful because they allow you to manipulate data at a lower level, which can be very useful in certain situations. However, they can also be a bit tricky, so it's important to be careful when using them to avoid errors in your code.
 
-### C Strings:
+## C Strings
 Now let's look at "strings". In C, there is no string type. Instead, we have either `char[]` or `char*`. And believe it or not, in C and C++, arrays don't exist either.
 
 All of these c strings (strings of characters) are equivalent:
@@ -120,7 +120,7 @@ So where, if anywhere, do pointers show up in the STL?
 ## Difference between references and pointers:
 In C++, both references and pointers are used to work with memory addresses, but they have some important differences:
 
-### Nullability:
+### Nullability
 Pointers: Pointers can be assigned a special value `nullptr` to indicate that they are not pointing to any valid memory location.
 
 **NOTE**: References must always be initialized and cannot be changed to refer to a different object after initialization.
@@ -131,7 +131,7 @@ int* ptr = nullptr; // Valid
 int& ref; // Error: References must be initialized
 ```
 
-### Dereferencing:
+### Dereferencing
 **Pointers**: To access the value pointed to by a pointer, you use the dereference operator (*) like `*ptr`.
 
 **References**: References do not require dereferencing. They are used directly, similar to regular variables.
@@ -140,7 +140,7 @@ cout << *ptr << endl; // Access value pointed to by ptr
 cout << ref << endl;  // Access value through ref
 ```
 
-### Reassignment:
+### Reassignment
 **Pointers**: Pointers can be reassigned to point to different memory locations.
 **References**: References cannot be reassigned after initialization. They always refer to the same object.
 ```cpp
@@ -150,7 +150,7 @@ int& ref2 = num2; 
 // ref2 = &num; // Error: Cannot reassign a reference
 ```
 
-## Pointer Arithmetic:
+## Pointer Arithmetic
 **Pointers**: You can perform arithmetic operations on pointers, like adding or subtracting an integer to move between memory locations.
 **References**: References don't have a notion of memory address arithmetic.
 ```cpp
@@ -159,7 +159,7 @@ int* ptr_arr = arr; // Points to the first element of arr
 // References don't have this capability
 ```
 
-## Function Parameters:
+## Function Parameters
 **Pointers**: They can be passed as arguments to functions, allowing the function to directly modify the original variable.
 **References**: They can also be used as function parameters, offering similar benefits to pointers, but with a more intuitive syntax.
 ```cpp

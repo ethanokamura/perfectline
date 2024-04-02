@@ -33,7 +33,7 @@ For a recursive function, data is stored on the "stack" (memory typically stored
 
 Recursion is typically slower than a regular loop, but has important use cases and can be optimized. However, we won't be covering this in the course.
 
-## The Fibonacci Sequence:
+## The Fibonacci Sequence
 The Fibonacci sequence is a classic mathematical pattern where the current number is the sum of the previous 2 numbers. It looks like this: 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 
 The **nth** Fibonacci number is equal to the one before that plus the one before that.

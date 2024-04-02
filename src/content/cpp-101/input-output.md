@@ -17,7 +17,7 @@ By including C++'s standard input/output library `<iostream>`, we can create bot
 
 Command Line Interface: The command line is a text interface for your computer. It's a program that takes in commands, which it passes on to the computer's operating system to run.
 
-## Import the Library:
+## Import the Library
 To start, let's include the [iostream](https://cplusplus.com/reference/iostream/) library at the top of our file:
 ```cpp
 #include <iostream>
@@ -50,7 +50,7 @@ cout << "hello, world" << endl;
 ```
 These 2 variations work interchangeably. Personally, I prefer the `\n`.
 
-## Multi-threaded output:
+## Multi-threaded output
 To include multiple pieces or variable types in an output you use the [insertion operators](https://faculty.cs.niu.edu/~hutchins/csci241/io-op.htm) `<<` like glue. For example:
 
 ```cpp
@@ -61,7 +61,7 @@ You should see the result of `this is an example of how to print the number 1` w
 
 Notice how I left a space after the `number` to allow for space in front of the integer/variable. This is purely preference. I believe it allows for a more desirable outcome.
 
-## Basic Input:
+## Basic Input
 To get input, we use `cin` or "console in".
 
 ```cpp
