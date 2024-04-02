@@ -15,7 +15,9 @@ order: 7
 
 A heap is a nearly complete binary tree that respects the heap property.
 
-To clear up confusion, a nearly complete binary tree is complete at every level except for the last. *Note that the last level is contiguous (left to right)
+To clear up confusion, a nearly complete binary tree is complete at every level except for the last.
+
+**NOTE** The last level is contiguous (left to right)
 
 The tree on the left is nearly complete and the tree on the right is incomplete:
 ```
@@ -90,7 +92,7 @@ After we call the insert function, we may want to restructure our heap to make s
 5. We then set the parent's index equal to our current index.
 6. Repeat until the conditions are met and the heap is sorted enough to our liking!
 
-Note that you can easily write your swap function here or use the swap function from `<utility>`
+**NOTE**: You can easily write your swap function here or use the swap function from `<utility>`
 ```cpp
 void decrease_key(int index, int val) {
   if (index < 0 || index >= size || arr[index] <= val) return;
@@ -117,7 +119,9 @@ void heapify(int index) {
   }
 }
 ```
-Heapify is a recursive function that will continue to swap the minimum value with the current value at the desired index! Note that the function `min_of_three()` is not covered, but it just returns the minimum value between 3 integers. If you want to see the code feel free to check out the git repository attached above!
+Heapify is a recursive function that will continue to swap the minimum value with the current value at the desired index!
+
+**NOTE**: The function `min_of_three()` is not covered, but it just returns the minimum value between 3 integers. If you want to see the code feel free to check out the git repository attached above!
 
 ### Extract Min
 This structure would not be a queue if we did not remove our highest-priority element! To do this, we use a function called `extract_min()`!

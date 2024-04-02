@@ -35,7 +35,7 @@ This being said, here are the three constructors we will be using:
 2. List constructor
 3. Copy constructor
 
-Note that the list and copy constructor use the `push_back()` function! We will create this functionality in the next section.
+**NOTE**: The list and copy constructor use the `push_back()` function! We will create this functionality in the next section.
 
 ### Default Constructor
 The default constructor initializes the object of its class to some meaningful initial state. In our case, we will want to define the head, tail, and size of our list! Without setting values to our list (like creating a list), we will want to set the default nodes to null.
@@ -79,7 +79,7 @@ LinkedList(const LinkedList<T> &another) {
   }
 }
 ```
-Note, that this can also be done with a for loop:
+**NOTE**: This can also be done with a for loop:
 ```cpp
 // copy constructor
 LinkedList(const LinkedList<T> &another) {

@@ -32,7 +32,9 @@ Let's take a look at the ones relevant to us. (Projects, Installs, and Learn).
 The projects tab is home to all of your Unity projects. This also is where you see version control, meaning you can see what version of Unity a specific project uses. This will likely be the most important tab.
 
 ### Installs:
-Here, you can check to see what versions of the Unity Editor (more on this later) are installed. This is also where you can install the latest version of Unity. Let's go ahead and install the latest version. In the top right, there is a blue button that says `Install Editor`. For the best results, stick to the official releases of Unity. The newest version (as of Feb 15th, 2024) is 2022.3.20f1. Go ahead and install this so we can move on to creating our first project. Note that this could take a while on the first install.
+Here, you can check to see what versions of the Unity Editor (more on this later) are installed. This is also where you can install the latest version of Unity. Let's go ahead and install the latest version. In the top right, there is a blue button that says `Install Editor`. For the best results, stick to the official releases of Unity. The newest version (as of Feb 15th, 2024) is 2022.3.20f1. Go ahead and install this so we can move on to creating our first project.
+
+**NOTE**: This could take a while on the first install.
 ![](/imgs/unity/unity-101/UnityVersion.webp)
 
 ### Learn:

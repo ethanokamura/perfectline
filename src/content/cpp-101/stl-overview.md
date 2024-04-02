@@ -5,7 +5,7 @@ description: In this section, we will do a general overview of the Standard Temp
 tags:
   - stl
   - iterators
-published: true
+published: false
 lang: cpp
 course: cpp-101
 order: 14

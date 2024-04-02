@@ -84,7 +84,7 @@
     @apply text-primary;
   }
   .prose :is(h1, h2, h3, h4, h5, h6) {
-    @apply my-3;
+    @apply my-3 capitalize;
   }
   .prose :not(h1, h2, h3, h4, h5, h6) {
     @apply text-base md:text-lg;
@@ -95,8 +95,11 @@
   .prose p:not(:is(h1, h2, h3, h4, h5, h6) + p) {
     @apply mt-7
   }
-  .prose :is(ol, ul) {
+  .prose :is(ol) {
     @apply list-decimal pl-5;
+  }
+  .prose :is(ul) {
+    @apply list-disc pl-5;
   }
   .prose a {
     @apply underline;
@@ -111,7 +114,7 @@
     @apply font-brains;
   }
   .prose code:not(:is(pre code)) {
-    @apply bg-accent px-2 rounded-md text-text;
+    @apply bg-secondary px-2 rounded-md text-text;
   }
   .prose pre {
     @apply mt-3 overflow-x-scroll p-4 rounded-md max-w-full;

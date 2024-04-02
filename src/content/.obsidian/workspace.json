@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "socketio/intro.md",
+                "file": "cpp-102/intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "socketio/intro.md",
+                "file": "cpp-102/intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "socketio/intro.md",
+                "file": "cpp-102/intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "socketio/intro.md"
+                "file": "cpp-102/intro.md"
               }
             }
           }
@@ -148,34 +148,40 @@
   },
   "active": "beb02d43357aa3b4",
   "lastOpenFiles": [
+    "cpp-101 copy/stl-overview.md",
+    "cpp-101 copy/operator-overloading.md",
+    "cpp-101 copy/functions.md",
+    "cpp-101 copy/varaibles.md",
+    "cpp-101 copy/pointers.md",
+    "cpp-101 copy/prerequisites.md",
+    "cpp-101 copy/recursion.md",
+    "cpp-101 copy/input-output.md",
+    "cpp-101 copy/array.md",
+    "cpp-101 copy/classes.md",
+    "cpp-101 copy/intro.md",
+    "cpp-101 copy/scope.md",
+    "cpp-101 copy/constructors.md",
+    "cpp-101 copy/loops.md",
+    "cpp-101 copy/if-statements.md",
+    "cpp-101 copy/stl-containers.md",
+    "cpp-101 copy",
+    "courses/cpp-102.json",
+    "courses/cpp-100.json",
+    "courses/cpp-100",
+    "cpp-100/varaibles.md",
+    "cpp-100/stl-overview.md",
+    "cpp-100/stl-containers.md",
+    "cpp-100/scope.md",
+    "cpp-100/recursion.md",
+    "cpp-100/prerequisites.md",
+    "cpp-100/pointers.md",
+    "cpp-100/operator-overloading.md",
+    "cpp-100/loops.md",
+    "cpp-100/intro.md",
+    "cpp-100",
     "Pasted image 20240323122039.png",
     "Pasted image 20240323121936.png",
-    "socketio/intro.md",
     "socketio",
-    "dsa/intro.md",
-    "git-101/intro.md",
-    "clean-code/lifecycle.md",
-    "clean-code/intro.md",
-    "cpp-101/array.md",
-    "unity-101/unity-layout.md",
-    "clean-code",
-    "info/about.md",
-    "unity-101/unity-hub.md",
-    "unity-101/member-functions.md",
-    "unity-101/intro.md",
-    "unity-101/gameobjects.md",
-    "unity-101/export.md",
-    "unity-101/components.md",
-    "practice/problem-07.md",
-    "practice/problem-06.md",
-    "practice/problem-05.md",
-    "practice/problem-04.md",
-    "practice/problem-03.md",
-    "practice/problem-01.md",
-    "practice/intro.md",
-    "linked-list/resize.md",
-    "linked-list/pop.md",
-    "linked-list/operator-overloading.md",
-    "linked-list/node.md"
+    "clean-code"
   ]
 }

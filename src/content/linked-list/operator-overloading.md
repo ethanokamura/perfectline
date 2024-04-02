@@ -17,7 +17,9 @@ order: 6
 
 At this point in the course, we will probably want to add the ability to have custom operators. If you have never heard of operator overloading or you want to brush up on vocabulary, you can check out my section in the Intro to C++ course [here](https://codesantacruz.com/courses/cpp/cpp-101/operator-overloading). Otherwise, you can learn as you go.
 
-We will want to add the following operators to our linked list: `= == !=`. Note that we want two different `=` operator functions. One is to copy the values from a list and one is to copy the values from another linked list.
+We will want to add the following operators to our linked list: `= == !=`.
+
+**NOTE**: We want two different `=` operator functions. One is to copy the values from a list and one is to copy the values from another linked list.
 
 Now you might be wondering why we would need to copy values when we have the copy and list constructors. Well, the constructors only apply when we are creating the linked list. If we want to set the values of our list to something else or copy another list at any point when using this data structure, we now can.
 

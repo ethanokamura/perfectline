@@ -9,33 +9,53 @@ lang: cpp
 course: cpp-101
 order: 8
 ---
-Functions are "self-contained" modules of code that accomplish a specific task. Functions usually "take in" data, process it, and "return" a result. Once a function is written, it can be used over and over and over again. Functions can be "called" from the inside of other functions.
+Functions are "self-contained" modules of code that accomplish a specific task. Functions usually "take in" data, process it, and "return" a result. Once a function is written, it can be used over and over and over again. When we extract the value or use a function we refer to it as "calling the function".
 
-A function can even call itself in the function body. This is called recursion and will be covered in the advanced C++ course.
+**NOTE**: You can use functions to call other functions.
 
-Here's an example of a function to calculate the volume of a triangular prism:
+When we use other, smaller functions to help us complete the task of a bigger function, we call them helper functions.
+
+A function can even call itself in the function body. This is called recursion and will be covered in the next section.
+
+## Function Definition:
+A function definition is just like it sounds. We are defining a function to complete a specific task.
+
+Similar to a variable delcaration, we need to state the data type. However, when we define the type, we are determining what type of value the function would return. For example, if we had a function that calculated the total cost of a road trip, we would want to return a **double** to represent the total cost!
+
+The function will need **parameters** or **arguments** such as the price per gallon of gas, the miles per gallon your car produces and the total number of miles in your trip!
+
+Here's what that function may look like:
 ```cpp
-#include <iostream>
+double price_of_trip(double price_per_gallon, double mpg, double miles);
+```
 
-double PrismVolume(double length, double width, double height) {
-	double base = length * width;
-	double volume = (height/3) * base;
-	return volume;
-}
+We have the function **parameters** inside the parathesis to complete the declaration of the funtion. The parameters take in both a type and the name of the variable. Your function can have any number **arguments**.
 
-int main () {
-  double length = 3;
-  double width = 3;
-  double height = 9;
-  std::cout << "The volume of a prism with the length "
-            << length << ", width "
-            << width << ", and height "
-            << height << " is: "
-            << PrismVolume(length,width,height) << '\n';
-	return 0;
+The parameters do not have to be of the same type as the function's **return value**. Meaning a function could take a string as a parameter, but return a true or false value.
+
+**NOTE**: The parameters have **scope** local to the function, meaning they are used inside the function, but cannot be referenced outside the function.
+
+## Function Implementaion
+In order for the function to do anything, we now need to implement the code. For this specific function, all we would need is a little bit of math!
+
+Here's what that would look like:
+```cpp
+double price_of_trip(double price_per_gallon, int mpg, int miles) {
+  return miles / mpg * price_per_gallon;
 }
 ```
-The function will return a `double` with the value of `27`.
 
-The overall output should return the following:
-`The volume of a prism with the length 3, width 3, and height 9 is: 27`.
+Though this is an extremely simple example, functional programming is crutial! The ability to break tasks down into smaller tasks will be a necessity throughout your lifetime as a programmer.
+
+**NOTE**: A function should never do more than one thing, if a function is doing multiple tasks, break it into smaller functions!
+
+## Calling the Function
+We then need to call the function in order for it to be executed. We normally call the functions within the `main` function.
+
+This might look something like this:
+```cpp
+double total_price = price_of_trip(3.20, 22, 500);
+cout << "total price: " << total_price << '\n';  // total price: 70.4
+```
+
+The function will return a `double` with the value of `70.4`. We held the return value inside the `total_price` variable.

@@ -33,7 +33,7 @@ Next, lets create a function to check to see if the list is empty:
 bool empty() const { return head == nullptr; }
 ```
 
-Note that both of these functions have the const keyword. That is because the return value should not be changed.
+**NOTE**: Both of these functions have the const keyword. That is because the return value should not be changed.
 
 ## Iterators
 Other member functions we may want would be a **front** and **back** function. These will return a reference to the value at the front and back of the lists.

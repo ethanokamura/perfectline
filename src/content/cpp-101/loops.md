@@ -12,24 +12,33 @@ course: cpp-101
 order: 7
 ---
 
-In programming, loops are used to repeat a block of code multiple times. They're like a set of instructions that the computer follows in a loop until a certain condition is met.
+In programming, loops are used to repeat a block of code multiple times. They're like a set of instructions that the computer repeats until a certain condition is met.
 
-### While Loops
+## While Loops:
 
-A while loop repeatedly executes a block of code as long as a specified condition is true.
-It's like saying "Keep doing this while something is true".
-While loop is used when the number of iterations is unknown.
+A **while loop** repeatedly executes as long as a specified condition is true.
+It's like saying "Keep doing this while something the coniditon is met".
+**While loops** are useful when the number of times needed to repeat the instructions are unknown.
 
 ```cpp
 while (condition) {
 	// execute block
 }
 ```
+### Code Example:
+Here's an example of a **while loop** that reads user input and outputs the value:
+```cpp
+int input;
+while (cin >> input) {
+  cout << input << '\n';
+}
+```
+To stop inputting values hit `ctrl-d` to end the loop. When `ctrl-d` is pressed the condition for the while loop is no longer true.
 
-### For Loops
-A for loop is used to iterate (or loop) over a range of values.
+## For Loops:
+A **for loop** is used to iterate (or loop) over a range of values.
 It's like saying "Do this for a specific number of times".
-For loop is used when the number of iterations is already known.
+For loops are useful while the number of iterations is already known.
 
 ```cpp
 for (initialization; condition; increment/decrement) {
@@ -37,46 +46,41 @@ for (initialization; condition; increment/decrement) {
 }
 ```
 
-Here, `initialization` sets the starting point, `condition` is the condition for continuing the loop, and `increment/decrement` specifies how the loop variable changes after each iteration.
+The syntax for a **for loop** is not as straight forward, but after seeing it a few times, you'll quickly see the pattern.
 
-### Code Examples
-Here's an example of a `while` loop that will be executed until the end of stdin:
-```cpp
-std::string input;
-while (std::cin >> input) {
-  std::cout << input << '\n';
-}
-```
-To stop inputting values hit `ctrl-d` to end the loop.
+With a typical **for loop**, we do the following:
+1. Define a variable (usually an **integer**) to keep track of the current iteration inside the loop.
+2. Define a stopping condition.
+3. Increment the loop.
 
-Here's an example of a `for` loop that will be executed 5 times where `i` is the value of the current index or iteration of the loop:
+### Code Example:
+Here's an example of a **for loop** that will be executed 5 times where `i` is the value of the current index or iteration of the loop:
 ```cpp
 for (int i = 0; i < 5; i++) {
-  std::cout << i;
+  cout << i;
 }
-std::cout << '\n';
+cout << '\n';
 ```
 This loop will print out `01234`.
 
-### The Difference:
-**While Loop**: Used when you want to repeat a block of code based on a condition. You might not know in advance how many times the loop will run.
-
-**For Loop**: Used when you know exactly how many times you want to repeat a block of code. It's great for iterating over a range of values or performing a specific task a known number of times. For example, looping over arrays!
-
-Remember, both types of loops are important tools in programming and are used in different situations depending on what you're trying to achieve!
-
-The last thing I should cover is range-based `for` loops. Ranged-based for loops are similar to `foreach` loops in other languages. For example, for each `char` in a `std::string` do something!
+## Ranged-Based For Loop:
+The last thing I should cover is a **range-based for loop**. **Ranged-based for loops** are similar to **foreach** loops in other languages. For example, "for each" `char` in a `string` do something!
 
 In this snippet, the ranged-based loop capitalized each letter in the given string.
 
 ```cpp
-std::string str = "hello!";
+string str = "hello!";
 for (char c : str) {
-  if (c >= 'a' && c 'z') c += ('A'-'a');
-  std::cout << c;
+  if (c >= 'a' && c <= 'z') {
+    c += ('A'-'a');
+  }
 }
-std::cout << std::endl;
+cout << str << '\n';  // HELLO!
 ```
-This will output: `HELLO!`
 
-At the end of the day, the output of any of these loops is the same if written correctly.
+## The Difference:
+**While Loop**: Used when you want to repeat a block of code based on a condition. You might not know in advance how many times the loop will run.
+
+**For Loop**: Used when you know exactly how many times you want to repeat a block of code. It's great for iterating over a range of values or performing a specific task a known number of times. For example, looping over arrays or strings!
+
+Depending on your specific use case, you can reproduce the same results with either loop.

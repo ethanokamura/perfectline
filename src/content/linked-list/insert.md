@@ -23,7 +23,9 @@ Well, for this list, we may want to add data to the front, back, or both the fro
 In this section, we will create the functions `push_front()` and `push_back()`
 
 ## Push Front
-To insert data to the front of the list, we will need to assign the list a new head (the node we want to insert). Note that when we do this, we will also need to increase the size of the `list_size` variable.
+To insert data to the front of the list, we will need to assign the list a new head (the node we want to insert).
+
+**NOTE**: When we do this, we will also need to increase the size of the `list_size` variable.
 
 To save us some time, we may want to check to see if the list is empty, if so, we will need to make the new node both the head and tail of our linked list.
 

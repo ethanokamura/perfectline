@@ -6,59 +6,76 @@ tags:
   - oop
   - classes
   - objects
-published: true
+published: false
 lang: cpp
 course: cpp-101
 order: 11
 ---
 When we create classes and structs, we need to also talk about [constructors](https://www.w3schools.com/cpp/cpp_constructors.asp)!
-### Default Constructors: 2 Examples
-1. Example #1: no constructors defined. Member variables exist, with default initialization.
-```cpp
-class X {
- private:
-	 int var;
-};
 
-X obj;  // the value of obj.var is garbage! (never initialized)
-```
+## What is a Constructor?
+Constructures initialize our classes so that we can create and use objects! There are a whole bunch of different ways to construct a class. For now, let's look at 4 examples:
+1. Default Constructors
+2. List Constructors
+3. Copy Constructors
+4. Range Constructors
 
-2. Example #2: class has a parameterless constructor (just a regular constructor)
+## Default Constructors
+A default constructor is a constructor where no value is assigned on the creation of an object. Essentially it is like creating a variable but not assigning it a value, so, by **default** we assign it values.
+
+Here's an example of a **Default Constructor** for a class.
 ```cpp
-class X {
+class Pizza {
  public:
-	X() : var(100) {}
+	Pizza() : slices(12) {}
  private:
-	int var;
+	int slices;
 }
 
-X obj;  // the value of obj.var is 100.
+// create a pizza object!
+Pizza pizza;
 ```
+When the object is created, we automatically assign its number of slices to 12. Meaning that any pizza we create starts with 12 slices!
 
 More on  [Default Constructors](https://en.cppreference.com/w/cpp/language/default_constructor)
 
-### Copy Constructors:
-Purpose: Initialize an object using another object of the same type (thus creating a copy).
+### Initializer List Constructor
+We may want to create an object using a list of values (in braces).
+
+This allows us to intilize our object in the same way we would initilaize a variable. For this, let's create a couple pizzas.
+
 ```cpp
-std::vector<int> a{ 1, 2, 3 }
-std::vector<int> b(a);
-std::assert(a == b && &a != &b);
+class Pizza {
+ public:
+	Pizza(int amount_of_slices) {
+    slices = amount_of_slices;
+  }
+ private:
+	int slices;
+}
+
+Pizza pizza1{14};
+Pizza pizza2{6};
+Pizza pizza3{342};
+```
+We now create a pizza that starts off with a dynamic amount of slices!
+
+Here, we initialized our vector to hold the values 1, 2, and 3!
+
+## Copy Constructors:
+We may want to make a copy of our object to either replicate or manipulate the values without disturbing the integrity of the original object. To do this, we create a new object by copying all the values from the original object to the new object.
+
+To do this, we initialize an object using another object of the same type (thus creating a copy).
+
+Here's and example with a vector.
+```cpp
+vector<int> a{ 1, 2, 3 };
+vector<int> b(a);
 ```
 
-This code example shows that we have successfully copied `a` to `b`, but they have unique memory addresses!
-
-_Transfers ownership of pointer(s). No copies of internal data are made._
-
-Classes with pointer members or other _non-trivial_ initialization need customized copy constructors. Otherwise, just let the compiler do it. The same goes for a [Move Constructor](https://en.cppreference.com/w/cpp/language/move_constructor)!
+This code example shows that we have successfully copied `a` to `b`, but they have unique **memory addresses** (more on this later)!
 
 More on [Copy Constructors](https://en.cppreference.com/w/cpp/language/copy_constructor).
-
-### Initializer List Constructor
-Purpose: Initialize an object using a list of values (in braces).
-
-ie `std::vector<int> a{ 1, 2, 3 };`
-
-An initializer_list object is iterable with `begin()` and `end()` functions.
 
 ### Range Constructor:
 Purpose: initialize an object using a range of values specified by iterators.

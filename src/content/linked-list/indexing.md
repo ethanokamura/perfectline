@@ -50,7 +50,7 @@ T &operator[](std::size_t index) const {
 }
 ```
 
-Note that this returns a const value. By adding const after the function declaration, you're indicating that this member function can be called on const objects of LinkedList, and it won't modify the object's state.
+**NOTE**: This returns a const value. By adding const after the function declaration, you're indicating that this member function can be called on const objects of LinkedList, and it won't modify the object's state.
 
 This next part is optional but here are some functions we can create without out new indexing operator:
 
@@ -63,7 +63,7 @@ void reverse() {
     std::swap((*this)[i], (*this)[size() - 1 - i]);
 }
 ```
-Note that this uses `std::swap` but you can easily write your swap function.
+**NOTE**: This uses `std::swap` but you can easily write your swap function.
 
 ## Contains?
 Let's say we want to find out if the list contains a certain value. Well, now we can do this with a simple for loop.
