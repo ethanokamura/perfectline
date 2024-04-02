@@ -13,7 +13,7 @@ const { frontmatter } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-  <Head title={frontmatter.course} description={frontmatter.description}/>
+  <Head title={frontmatter.title} description={frontmatter.description}/>
 	<body class="flex flex-col justify-between">
     <main class="flex flex-col justify-start">
       <Header title={frontmatter.title} path={currentPath}/>
