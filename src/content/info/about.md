@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/InfoLayout.astro'
-title: ABOUT
+title: About
 description: A little about me!
 ---
 

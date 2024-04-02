@@ -26,7 +26,7 @@
     display: none;
   }
   html {
-    @apply p-0 m-0 font-rubik font-[300] text-text bg-gradient-to-r from-black to-background;
+    @apply w-screen p-0 m-0 font-rubik font-[300] text-text bg-gradient-to-r from-black to-background;
   }
   html,
   body {
@@ -67,6 +67,15 @@
   }
   .headnav a {
     @apply hover:scale-110 transition-all ease-linear duration-100;
+  }
+  .tags {
+    @apply flex flex-wrap gap-4 mt-5;
+  }
+  .tags > * {
+    @apply px-2 py-1 rounded-sm bg-accent text-text;
+  }
+  .tags::-webkit-scrollbar {
+    display: none;
   }
   .prose {
     @apply w-screen px-12;
