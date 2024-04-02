@@ -7,12 +7,17 @@ export default {
 		extend: {
       colors: {
         'text': '#ffffff',
-        'text2': '#a6a6a6',
-        'background': '#13151a',
-        'accent': '#272c3b',
-        'primary': '#54b6f7',
-        'secondary': '#191c24',
-
+        'text2': '#ABB2BF',
+        'background': '#1D2025',
+        'accent': '#3b414d',
+        'primary': '#61AFEF',
+        'secondary': '#282C34',
+        green: {
+          100:  '#98C379',
+        },
+        red: {
+          100: '#E06C75',
+        },
         gray: {
           900: '#08090a',
           800: '#13151a',

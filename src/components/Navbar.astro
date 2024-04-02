@@ -16,7 +16,7 @@ const orderedPages = orderPages(pages, {
 
 <nav class="flex flex-wrap gap-4 pb-10 px-12">
   {orderedPages?.map((page: any, index: number) =>
-    <div class={`w-fit flex gap-2 items-center px-2 rounded-lg bg-gradient-to-br from-secondary to-background border-2 ${slug === page.slug ? "border-primary" : "border-secondary"}`}>
+    <div class={`w-fit flex gap-2 items-center px-2 rounded-lg bg-secondary border-2 ${slug === page.slug ? "border-primary" : "border-accent"}`}>
       <a class="text-base flex gap-1 flex-nowrap" href={`/courses/${page.data.lang}/${page.data.course}/${page.slug}`}>
         <span class={`flex flex-nowrap ${slug === page.slug ? "text-primary" : "text-text2"}`}>
           {index < 10 ?<p>0</p>:<></>}

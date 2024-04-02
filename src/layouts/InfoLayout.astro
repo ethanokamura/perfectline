@@ -2,6 +2,7 @@
 // components
 import Layout from './Layout.astro';
 import Title from '../components/Title.astro';
+import Window from '../components/Window.astro';
 
 // utils
 const { frontmatter } = Astro.props;
@@ -9,7 +10,10 @@ const { frontmatter } = Astro.props;
 
 <Layout title={frontmatter.title} description={frontmatter.description}>
   <Title description={frontmatter.title} subdescription={frontmatter.description}/>
-  <div class="prose">
-    <slot/>
-  </div>
+  <Window>
+    <div class="prose max-w-2xl">
+      <slot/>
+    </div>
+    <br/>
+  </Window>
 </Layout>

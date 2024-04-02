@@ -3,7 +3,7 @@ import Tag from './Tag.astro'
 const { data, url } = Astro.props;
 ---
 
-<a href={`${url}`} class='bg-gradient-to-br from-background to-secondary rounded-lg w-[312px] mx-auto items-start flex flex-col gap-4 drop-shadow-none hover:scale-110 ease-linear duration-100'>
+<a href={`${url}`} class='border-primary hover:border-4 bg-secondary rounded-lg w-[312px] mx-auto items-start flex flex-col gap-4 drop-shadow-none hover:scale-110 ease-linear duration-100'>
   <img class="rounded-t-lg w-[312px] h-[175.5px]" src={data.img} alt={data.alt}/>
   <div class="text-start px-6 pb-4 flex flex-col justify-between">
     <div class="grid gap-4">
