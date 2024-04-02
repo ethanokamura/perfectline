@@ -28,7 +28,7 @@ Keeping track of the next and previous node will help us navigate through our li
 
 Doubly linked linked list supports traversal in both directions and operations at either end so it makes sense to have pointers to both ends of the list (`head` and `tail`)
 
-Here's what our `Node` looks like
+Here's what our `Node` data type looks like
 ```cpp
 struct Node {
   T data;

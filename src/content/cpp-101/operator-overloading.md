@@ -5,10 +5,10 @@ description: In this section, we will cover the importance of operator overloadi
 tags:
   - operator-overloading
   - operators
-published: false
+published: true
 lang: cpp
 course: cpp-101
-order: 12
+order: 13
 ---
 You have probably heard the word `operator` before when talking about programming.
 

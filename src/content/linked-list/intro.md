@@ -42,8 +42,10 @@ Here's a basic visual for a linked list!
 
 Class `LinkedList` is an archetypal doubly linked list. Where `Node` structures and internal list details are kept private. Also, note that all member functions are defined inside the class declaration. (No separate .h and .cpp/.cc files.) Template classes are usually defined this way. For this class, the param `T` is the type of the list elements. You can think of it as a dynamic or generic way to hold data!
 
+## Starter Code
+For this course, we will be building off of this code! If you would like to follow along with code, I recommend copying this template class.
 ```cpp
-tempalte<typename T>
+template<typename T>
 class LinkedList {
   // A forward declaration for a nested type named "Node"
   // We can refer to the Node type in the body of public member functions even though it hasn't been fully defined yet
@@ -56,6 +58,9 @@ class LinkedList {
   struct Node {
     T data;
     Node* next = nullptr;
+    Node* prev = nullptr;
+    // default constructor!
+    Node(T value) : data(value), next(nullptr), prev(nullptr) {}
   };
   Node* head = nullptr;
   Node* tail = nullptr;
@@ -64,7 +69,8 @@ class LinkedList {
 ```
 
 A list type should almost always be a template type
-For the same reason that `std::vector` is actually `std::vector<T>`
+
+An example of this is with **vectors**. `std::vector` is actually `std::vector<T>`
 (ie T is the element type)
 
 ## Disadvantages:

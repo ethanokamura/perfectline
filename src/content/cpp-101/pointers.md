@@ -9,7 +9,7 @@ tags:
 published: true
 lang: cpp
 course: cpp-101
-order: 13
+order: 11
 ---
 In this section, we are finally covering the topic of pointers! Pointers are everywhere, in some ways, everything boils down to being a pointer. Pointers are often thought of as one of the most challenging topics to cover in C++ but, in the right hands, they are not so complicated.
 
