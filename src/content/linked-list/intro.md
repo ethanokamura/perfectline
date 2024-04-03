@@ -29,7 +29,7 @@ char* data = "hello"
 
 (Where `data[0] == h` and `data[4] == o`)
 
-In this case we have a char and two pointers in each node:
+In this case, we have a char and two pointers in each node:
 1. `char data` would be `'h'`
 2. `Node *next` would be a pointer to the next node (`'e'`)
 
@@ -43,7 +43,7 @@ Here's a basic visual for a linked list!
 Class `LinkedList` is an archetypal doubly linked list. Where `Node` structures and internal list details are kept private. Also, note that all member functions are defined inside the class declaration. (No separate .h and .cpp/.cc files.) Template classes are usually defined this way. For this class, the param `T` is the type of the list elements. You can think of it as a dynamic or generic way to hold data!
 
 ## Starter Code
-For this course, we will be building off of this code! If you would like to follow along with code, I recommend copying this template class.
+For this course, we will be building off of this code! If you would like to follow along with the code, I recommend copying this template class.
 ```cpp
 template<typename T>
 class LinkedList {

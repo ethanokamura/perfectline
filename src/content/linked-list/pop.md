@@ -51,7 +51,7 @@ Now it's time to remove the tail!
 ## Pop Back
 There could be a simpler way of removing the tail if we had access to the previous node, however, for this course, we will not be implementing a pointer to the node's previous node.
 
-For to remove the tail, we must first see if the head's next node is null. If so, the linked list has a size of one. In this case, we just delete the existing head and set both the head and the tail to null. If this is true, we do not need to do anything further in this function so we return.
+To remove the tail, we must first see if the head's next node is null. If so, the linked list has a size of one. In this case, we just delete the existing head and set both the head and the tail to null. If this is true, we do not need to do anything further in this function so we return.
 
 Next, we want to iterate through the list and look for one node past our tail. To do this, we use double arrow syntax `current->next->next`. If we find that the next node is null, that means that the next node is the tail. We then delete the tail and set the tail equal to our current node.
 
