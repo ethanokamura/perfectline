@@ -35,14 +35,14 @@ class Pizza {
 // create a pizza object!
 Pizza pizza;
 ```
-When the object is created, we automatically assign its number of slices to 12. Meaning that any pizza we create starts with 12 slices!
+When the object is created, we automatically assign its number of slices to 12. This means that any pizza we create starts with 12 slices!
 
 More on  [Default Constructors](https://en.cppreference.com/w/cpp/language/default_constructor)
 
 ### Initializer List Constructor
 We may want to create an object using a list of values (in braces).
 
-This allows us to intilize our object in the same way we would initilaize a variable. For this, let's create a couple pizzas.
+This allows us to initialize our object in the same way we would initialize a variable. For this, let's create a couple of pizzas.
 
 ```cpp
 class Pizza {
@@ -58,7 +58,7 @@ Pizza pizza1{14};
 Pizza pizza2{6};
 Pizza pizza3{342};
 ```
-We now create a pizza that starts off with a dynamic amount of slices!
+We now create a pizza that starts with a dynamic amount of slices!
 
 Here, we initialized our vector to hold the values 1, 2, and 3!
 
@@ -67,7 +67,7 @@ We may want to make a copy of our object to either replicate or manipulate the v
 
 To do this, we initialize an object using another object of the same type (thus creating a copy).
 
-Here's and example with a vector.
+Here's an example with a vector.
 ```cpp
 vector<int> a{ 1, 2, 3 };
 vector<int> b(a);

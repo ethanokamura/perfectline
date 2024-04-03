@@ -34,21 +34,21 @@ We use `std::` to say in simple terms "Inside the standard library we are using.
 using namespace std;
 ```
 
-With this line, we no long have to include `std::` when referencing something from the standard library.
+With this line, we no longer have to include `std::` when referencing something from the standard library.
 
 ## Basic Output
 To start a line of output, we use `cout` or "console out".
 
 To end an output line you would finish with either `endl` or `'\n'`.
 
-`\n` counts as a single character despite containing 2 characters at first glance. You can think of the backslash as a command. This is faster than writing `endl` not only for the user, but also for the computer when executing the program.
+`\n` counts as a single character despite containing 2 characters at first glance. You can think of the backslash as a command. This is faster than writing `endl` not only for the user but also for the computer when executing the program.
 
 ```cpp
 cout << "hello, world\n";
 //  OR
 cout << "hello, world" << endl;
 ```
-These 2 variations work interchangeably. Personally, I prefer the `\n`.
+These 2 variations work interchangeably. I prefer the `\n`.
 
 ## Multi-threaded output
 To include multiple pieces or variable types in an output you use the [insertion operators](https://faculty.cs.niu.edu/~hutchins/csci241/io-op.htm) `<<` like glue. For example:
@@ -84,5 +84,5 @@ cout << "you are " << age << " years old!\n";
 ```
 We have accomplished the following:
 1. Prompted the user to input data.
-2. Extracted the data from the command line.
+2. Extract the data from the command line.
 3. Output the data that we extracted.

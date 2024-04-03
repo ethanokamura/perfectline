@@ -37,7 +37,7 @@ A fundamental type is one that is built into the language. In C++ there are 4 ma
 
 _With fundamental types, there is no need to `#include` "built-in" (keywords)_
 
-## The building Blocks of C++
+## The Building Blocks of C++
 Most common blocks:
 1. `if` statement: Selects a block to execute based on a Boolean or `bool` (`true`/`false`) condition.
 2. `while` loop: Repeats a block as long as a `bool` condition remains true.

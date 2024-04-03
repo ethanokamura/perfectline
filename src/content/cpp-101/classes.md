@@ -22,7 +22,7 @@ A class is a blueprint or a template for creating **objects**. It's a way to gro
 
 Consider the `class` of Cats. There may be many cats with different names and colors but all of them will share some common properties (ie. all of them will have 2 eyes, 4 legs, a nose, etc). So here, Cat is the class, and coat color, age, and weight are their properties.
   1. **Attributes:** These are like variables that hold information about an object. For example, if you're creating a class for cats, attributes could be things like `color`, `name`, `age`, etc.
-  2. **Methods:** These are functions that define what actions an object can perform. For our cat example, methods could be things like `Meow()`, `Eat()`, `Scratch()` and so on.
+  2. **Methods:** These are functions that define what actions an object can perform. For our cat example, methods could be things like `Meow()`, `Eat()`, `Scratch()`, and so on.
 
 Here's an example of a simple class in C++:
 

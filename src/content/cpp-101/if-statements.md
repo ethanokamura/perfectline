@@ -12,7 +12,7 @@ order: 5
 ---
 if/else statements are crucial for any programming language and are debatably the easiest to learn.
 
-They can be read similar to a regular English sentence. "if" a condition is met, do this, "else", do that.
+They can be read similarly to a regular English sentence. "if" a condition is met, do this, "else", do that.
 
 Keep in mind we may want to check for more than just one condition. To accomplish this, we use "else if" as well.
 
@@ -40,7 +40,7 @@ if (age >= 18) {
 
 ## Syntax:
 
-in C++, we use curly brackets to encase blocks of code as previously discussed. To write and if statement, we write "`if`" in lowercase, followed by a set of parenthesis to encase our condition that we are checking. If the condition is met, the code in the curly brackets or block will be executed.
+in C++, we use curly brackets to encase blocks of code as previously discussed. To write an if statement, we write "`if`" in lowercase, followed by a set of parenthesis to encase the condition that we are checking. If the condition is met, the code in the curly brackets or block will be executed.
 
 ```cpp
 if (condition) {
@@ -56,7 +56,7 @@ A condition followed by a question mark (?), then an expression to execute if th
 condition ? true do this : false do this;
 ```
 
-With the example from earlier, we could rewrite the code to look a little more consice:
+With the example from earlier, we could rewrite the code to look a little more concise:
 
 ```cpp
 cout << (age >= 18 ? "Access Granted" : "Access Denied") << '\n';

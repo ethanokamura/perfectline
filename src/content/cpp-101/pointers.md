@@ -60,7 +60,7 @@ Here's some syntax that you'll see in the rest of the section:
 1. **Pointers**: Pointers are declared using an asterisk (\*). They directly hold the memory address of another variable.
 2. **References**: References are declared using an ampersand (&). They are essentially aliases for existing variables.
 
-Here's and example:
+Here's an example:
 ```cpp
 int n = 7;      // seems normal
 int *ptr = &n;  // a pointer to n's memory address

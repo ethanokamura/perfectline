@@ -17,8 +17,8 @@ In programming, loops are used to repeat a block of code multiple times. They're
 ## While Loops:
 
 A **while loop** repeatedly executes as long as a specified condition is true.
-It's like saying "Keep doing this while something the coniditon is met".
-**While loops** are useful when the number of times needed to repeat the instructions are unknown.
+It's like saying "Keep doing this while something the condition is met".
+**While loops** are useful when the number of times needed to repeat the instructions is unknown.
 
 ```cpp
 while (condition) {
@@ -46,7 +46,7 @@ for (initialization; condition; increment/decrement) {
 }
 ```
 
-The syntax for a **for loop** is not as straight forward, but after seeing it a few times, you'll quickly see the pattern.
+The syntax for a **for loop** is not as straightforward, but after seeing it a few times, you'll quickly see the pattern.
 
 With a typical **for loop**, we do the following:
 1. Define a variable (usually an **integer**) to keep track of the current iteration inside the loop.
@@ -64,7 +64,7 @@ cout << '\n';
 This loop will print out `01234`.
 
 ## Ranged-Based For Loop:
-The last thing I should cover is a **range-based for loop**. **Ranged-based for loops** are similar to **foreach** loops in other languages. For example, "for each" `char` in a `string` do something!
+The last thing I should cover is a **range-based for loop**. **Ranged-based loops** are similar to **foreach** loops in other languages. For example, "for each" `char` in a `string` do something!
 
 In this snippet, the ranged-based loop capitalized each letter in the given string.
 
