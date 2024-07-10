@@ -10,10 +10,8 @@ const { frontmatter } = Astro.props;
 
 <Layout title={frontmatter.title} description={frontmatter.description}>
   <Title description={frontmatter.title} subdescription={frontmatter.description}/>
-  <Window>
-    <div class="prose max-w-2xl">
-      <slot/>
-    </div>
-    <br/>
-  </Window>
+  <div class="prose max-w-2xl">
+    <slot/>
+  </div>
+  <br/>
 </Layout>
