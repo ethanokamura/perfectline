@@ -67,7 +67,7 @@ A basic webpage starts with an HTML tag (`<html>`) and has exactly 2 children: `
 		<p>sometimes...</p>
 		<img src="./path-to-image.jpg" alt="image"/>
 		<!-- Direct someone to another link using anchor! -->
-		<a href="https://codesantacruz.com">learn to code</a>
+		<a href="https://PerectLine.com">learn to code</a>
 	</body>
 </html>
 ```
@@ -88,7 +88,7 @@ It is common to group elements together to style them as a whole unit using `<di
 			<p>sometimes...</p>
 			<img src="./path-to-image.jpg" alt="image"/>
 			<!-- Direct someone to another link using anchor! -->
-			<a href="https://codesantacruz.com">learn to code</a>
+			<a href="https://PerectLine.com">learn to code</a>
 		</div>
 	</body>
 </html>

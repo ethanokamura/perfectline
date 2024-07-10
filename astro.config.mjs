@@ -6,7 +6,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://codesantacruz.com',
+  site: 'https://perfectline.io',
   // site: 'https://paperwrld.github.io',
   // base: '/codesantacruz_v2',
   // output: 'static',
