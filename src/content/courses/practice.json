@@ -1,0 +1,13 @@
+{
+  "title": "Practice Problems",
+  "description":"In this section, we will practice everything we've learned so far.",
+  "author": "Ethan Okamura",
+  "date": "11-01-2023",
+  "tags": [ "cpp", "beginner", "intermediate", "advanced" ],
+  "published": false,
+  "lang": "cpp",
+  "course": "practice",
+  "img": "/imgs/thumbnails/practice.webp",
+  "alt": "practice-thumbnail",
+  "order": 99
+}

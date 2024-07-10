@@ -1,0 +1,29 @@
+{
+  "array": [
+    {
+      "title": "Palindrome Number",
+      "description": "Given an integer x, return true if x is a palindrome, and false otherwise.",
+      "type": "misc",
+      "difficulty": "easy",
+      "slug": "palindrome-number",
+      "url": "https://leetcode.com/problems/palindrome-number/"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock",
+      "description": "Given an array of stock prices, find the best day to buy and sell the stock.",
+      "type": "array",
+      "difficulty": "easy",
+      "slug": "max-profit",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    },
+    {
+      "title": "Single Number",
+      "description": "iven a non-empty array of integers nums, every element appears twice except for one. Find that single one.",
+      "type": "array",
+      "difficulty": "easy",
+      "slug": "single-number",
+      "url": "https://leetcode.com/problems/single-number/"
+    }
+
+  ]
+}

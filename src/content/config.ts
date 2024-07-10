@@ -46,6 +46,7 @@ const infoCollection = defineCollection({
 export const collections = {
   'courses': courseCollection,
   'cpp-101': pageCollection,
+  'solutions': pageCollection,
   'linked-list': pageCollection,
   'dsa': pageCollection,
   'unity-101': pageCollection,

@@ -15,7 +15,7 @@ Functions are "self-contained" modules of code that accomplish a specific task. 
 
 When we use other, smaller functions to help us complete the task of a bigger function, we call them helper functions.
 
-A function can even call itself in the function body. This is called recursion and will be covered in the next section.
+A function can even call itself in the function body. This is called recursion and will be covered in a different section.
 
 ## Function Definition:
 A function definition is just like it sounds. We are defining a function to complete a specific task.

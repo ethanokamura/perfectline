@@ -56,12 +56,21 @@
   span {
     @apply text-text2;
   }
+  button {
+    @apply border-2 px-2 rounded-lg bg-secondary border-accent hover:bg-accent;
+  }
   /* article {
     @apply max-w-4xl w-full p-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary;
   } */
 }
 
 @layer components {
+  .instructions {
+    @apply w-full py-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary mb-10;
+  }
+  .instructions .prose {
+    @apply max-w-4xl
+  }
   .headnav {
    @apply text-xl md:text-2xl font-[800] text-primary w-screen items-center pt-4 pb-6 px-6 flex gap-6 z-20;
   }
@@ -76,6 +85,9 @@
   }
   .tags::-webkit-scrollbar {
     display: none;
+  }
+  .btn {
+    @apply px-2 bg-background text-text2 rounded hover:bg-primary hover:text-background;
   }
   .prose {
     @apply w-screen px-12;
@@ -99,7 +111,7 @@
     @apply list-decimal pl-5;
   }
   .prose :is(ul) {
-    @apply list-disc pl-5;
+    @apply list-['>'] pl-5;
   }
   .prose a {
     @apply underline;

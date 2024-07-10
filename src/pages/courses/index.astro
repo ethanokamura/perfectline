@@ -26,7 +26,7 @@ const description = "A List of Courses We Offer"
     <section class="text-center grid gap-4">
       <div class="flex flex-wrap items-start justify-around gap-6 p-5">
         {formattedCourses.map((course:any) =>
-          <Card data={ course.data } url={ `/courses/${course.data.lang}/${course.data.course}/intro` }/>
+          <Card data={ course.data } url={`/courses/${course.data.lang}/${course.data.course}/intro`}/>
         )}
       </div>
     </section>

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "70cc133c3da7c5fd",
+        "id": "eef5a22da757915f",
         "type": "tabs",
         "children": [
           {
-            "id": "beb02d43357aa3b4",
+            "id": "311b92be3cf0d972",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cpp-101/array.md",
+                "file": "linked-list/resize.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cpp-101/array.md",
+                "file": "linked-list/resize.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cpp-101/array.md",
+                "file": "linked-list/resize.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cpp-101/array.md"
+                "file": "linked-list/resize.md"
               }
             }
           }
@@ -146,42 +146,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "beb02d43357aa3b4",
+  "active": "311b92be3cf0d972",
   "lastOpenFiles": [
-    "cpp-101 copy/stl-overview.md",
-    "cpp-101 copy/operator-overloading.md",
-    "cpp-101 copy/functions.md",
-    "cpp-101 copy/varaibles.md",
-    "cpp-101 copy/pointers.md",
-    "cpp-101 copy/prerequisites.md",
-    "cpp-101 copy/recursion.md",
-    "cpp-101 copy/input-output.md",
-    "cpp-101 copy/array.md",
-    "cpp-101 copy/classes.md",
-    "cpp-101 copy/intro.md",
-    "cpp-101 copy/scope.md",
-    "cpp-101 copy/constructors.md",
-    "cpp-101 copy/loops.md",
-    "cpp-101 copy/if-statements.md",
-    "cpp-101 copy/stl-containers.md",
-    "cpp-101 copy",
-    "courses/cpp-102.json",
-    "courses/cpp-100.json",
-    "courses/cpp-100",
-    "cpp-100/varaibles.md",
-    "cpp-100/stl-overview.md",
-    "cpp-100/stl-containers.md",
-    "cpp-100/scope.md",
-    "cpp-100/recursion.md",
-    "cpp-100/prerequisites.md",
-    "cpp-100/pointers.md",
-    "cpp-100/operator-overloading.md",
-    "cpp-100/loops.md",
-    "cpp-100/intro.md",
-    "cpp-100",
+    "solutions/palindrome-number.md",
+    "solutions",
+    "practice/palindrome-number.md",
+    "solution/palindrome-number.md",
+    "solution",
+    "problems/palindrome-number.json",
+    "problems",
+    "problem-list/palindrome-number.json",
+    "problem-list",
+    "linked-list/resize.md",
+    "linked-list/pop.md",
+    "linked-list/operator-overloading.md",
+    "linked-list/node.md",
+    "linked-list/intro.md",
+    "linked-list/insert.md",
+    "linked-list/indexing.md",
+    "linked-list/helplers.md",
+    "linked-list/constructors.md",
+    "linked-list/conclusion.md",
+    "cpp-101/varaibles.md",
+    "cpp-101/syntax.md",
+    "cpp-101/stl-containers.md",
+    "cpp-101/scope.md",
+    "cpp-101/recursion.md",
+    "cpp-101/operator-overloading.md",
+    "cpp-101/pointers.md",
+    "cpp-101/loops.md",
+    "cpp-101/intro.md",
+    "cpp-101/input-output.md",
+    "cpp-101/if-statements.md",
+    "cpp-101/functions.md",
+    "cpp-101/constructors.md",
+    "practice/intro",
+    "practice",
+    "courses/practice.json",
+    "courses/practice",
     "Pasted image 20240323122039.png",
-    "Pasted image 20240323121936.png",
-    "socketio",
-    "clean-code"
+    "Pasted image 20240323121936.png"
   ]
 }
