@@ -1,22 +1,37 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 interface Props {
+  section: string;
 	title: string;
   description: string;
 }
-const { title, description } = Astro.props;
+const { section, title, description } = Astro.props;
+const image = "/favicon.svg";
+const url = `https://perfectline.io/${section}`;
 ---
 
 <head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
   <title>{title}</title>
-  <meta property="type" content="article" />
   <meta property="title" content={title} />
   <meta name="description" content={description} />
-  <meta name="viewport" content="width=device-width" />
+  <meta property="type" content="website" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
   <ViewTransitions/>
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={image}>
+  <meta property="og:url" content={url}>
+  <meta property="og:type" content="website">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={image}>
 </head>
