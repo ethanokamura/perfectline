@@ -8,10 +8,10 @@ export default {
       colors: {
         'text': '#ffffff',
         'text2': '#ABB2BF',
-        'background': '#1D2025',
-        'accent': '#3b414d',
-        'primary': '#61AFEF',
-        'secondary': '#282C34',
+        'background': '#1D2025',  // 29, 32, 37
+        'accent': '#3b414d',  // 59, 65, 77,
+        'primary': '#61AFEF',  // 97, 175, 239
+        'secondary': '#282C34',  // 40, 44, 52
         green: {
           100:  '#98C379',
         },

@@ -7,7 +7,7 @@ description: Access all your files and see examples over the internet!
 1. To log in, open a terminal window and type `ssh username@98.207.210.35` in the command line. Your username will be the first letter of your first name followed by your last name. For me, Ethan Okamura, my username would be `eokamura`.
 2. If it's your first time logging in on this device, you will be prompted to verify the server's fingerprint. Just type `yes` and hit `enter`.
 3. Finally you will be prompted to enter your password. For first-time users, your password is your username with an `!` at the end. For example, `eokamura!`.
-4. That's it! Just like that, you've connected to the PerectLine server!
+4. That's it! Just like that, you've connected to the PerfectLine server!
 
 ## How to Log In (Visual Studio Code):
 1. For Visual Studio Code, we will need to install the `Remote - SSH` extension. To do this, head over to the extensions tab on the left and look up `SSH`. It should be the first option created by Microsoft.

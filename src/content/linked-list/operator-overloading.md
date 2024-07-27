@@ -15,7 +15,7 @@ course: linked-list
 order: 6
 ---
 
-At this point in the course, we will probably want to add the ability to have custom operators. If you have never heard of operator overloading or you want to brush up on vocabulary, you can check out my section in the Intro to C++ course [here](https://perectline.io/courses/cpp/cpp-101/operator-overloading). Otherwise, you can learn as you go.
+At this point in the course, we will probably want to add the ability to have custom operators. If you have never heard of operator overloading or you want to brush up on vocabulary, you can check out my section in the Intro to C++ course [here](https://PerfectLine.io/courses/cpp/cpp-101/operator-overloading). Otherwise, you can learn as you go.
 
 We will want to add the following operators to our linked list: `= == !=`.
 

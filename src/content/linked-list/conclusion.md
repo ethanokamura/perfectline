@@ -17,4 +17,4 @@ We will not get into that in this course, but those functions are available in t
 
 I hope you found this helpful. Linked lists are a crucial topic to understand. Lots of data structures use linked lists behind the scenes. They can be very fast and having a custom structure can be very useful!
 
-The next recommended course will be the Data Structures and Algorithms course (DSA). Found [here](https://perectline.io/courses/cpp/dsa/intro/).
+The next recommended course will be the Data Structures and Algorithms course (DSA). Found [here](https://PerfectLine.io/courses/cpp/dsa/intro/).
