@@ -1,54 +1,12 @@
-# Astro Starter Kit: Basics
+# PerfectLine Programming Courses:
 
-```sh
-npm create astro@latest -- --template basics
-```
+## About Our Company
+Welcome to PerfectLine, where we aim to empower students in their programming journey. We will set students up for success by engaging in detailed programming projects ranging from beginning to advanced levels. We push our students to think outside the box by offering a supportive environment to explore coding as a healthy outlet for creativity. Our comprehensive curriculum teaches programming concepts and delves into real-world applications and general computer science topics. To ensure accessibility, we use free software programs, except for artistic tools like Aseprite or Photoshop. Join us at PerfectLine to unlock your potential in the exciting world of software development and embark on a transformative educational journey.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## About Me
+A little about me: my name is Ethan Okamura. I am a computer science major with the end goal of obtaining a master's degree alongside practical experience in software engineering. As the creator of PerfectLine, I aim to be a mentor and teacher, providing affordable resources for people of all backgrounds. With a decade of programming expertise and a background in teaching, my goal is to instill a love for programming in anyone who wants to take these courses while they have fun creating their dream projects. I am committed to the continuous journey of learning and higher education and strive to offer my students comprehensive knowledge and support. Learn more about my experience by checking out [my portfolio](https://ethanokamura.io).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## End Goal
+My goal with these lessons and courses is to offer a personalized learning experience. When I was young, I taught myself how to program but took many wrong steps and skipped over important topics. Now that I am older, more experienced, and have succeeded in structured college courses within this field, I am prepared to share my experiences and knowledge with others to help them learn to code efficiently and effectively. With two years of teaching experience, I have worked with students of all ages and backgrounds. I am prepared to work with anyone who has an interest in programming or wants to express themselves creatively. I believe programming is not just a hobby but also a healthy, beneficial, and practical skill.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Regarding my teaching style, I strongly believe in learning by doing. Throughout my life, I have been a hands-on learner, and I find this approach works best for myself and many other creatively inclined individuals, especially younger students. I find long, drawn-out lectures challenging. To address this, I offer project-based courses where students learn a topic and immediately put it into practice. Through repetition and practice, students quickly grasp everything they need to know to succeed in the future. I aim to inspire students to continue their programming journey even after they have completed their time with me.
