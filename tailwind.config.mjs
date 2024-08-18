@@ -31,25 +31,6 @@ export default {
           100: '#f5f6f7'
         },
       },
-      dropShadow: {
-        glow: [
-          "0px 0px 5px #1c6391"
-        ]
-      },
-      textShadow: {
-        green: [
-          '0.05em 0.05em #2f80b5, 0.1em 0.1em #1f5e87, 0.15em 0.15em #134261, 0.2em 0.2em #0d2b40, 0.25em 0.25em #061621'
-        ],
-        rainbow: [
-          '0.04em 0.04em #d94b41, 0.08em 0.08em #f07f3a, 0.12em 0.12em #5df098, 0.16em 0.16em #3a83f0, 0.2em 0.2em #7d3fe8'
-        ],
-        title: [
-          '0.02em 0.02em #d94b41, 0.04em 0.04em #f07f3a, 0.06em 0.06em #5df098, 0.08em 0.08em #3a83f0, 0.1em 0.1em #7d3fe8'
-        ],
-        none: [
-          'none'
-        ]
-      },
       fontFamily: {
         brains: 'brains',
         rubik: 'rubik',
@@ -60,22 +41,10 @@ export default {
         ]
       },
       animation: {
-        title: "title 1.5s infinite",
-        typing: "typing 2s steps(25)",
+        typing: "typing 2s steps(50)",
         blink: "blink 0.75s infinite"
       },
       keyframes: {
-        title: {
-          '0%': {
-            textShadow: '0.02em 0.02em #d94b41, 0.04em 0.04em #f07f3a, 0.06em 0.06em #5df098, 0.08em 0.08em #3a83f0, 0.1em 0.1em #7d3fe8'
-          },
-          '60%': {
-            textShadow: '0.04em 0.04em #d94b41, 0.08em 0.08em #f07f3a, 0.12em 0.12em #5df098, 0.16em 0.16em #3a83f0, 0.2em 0.2em #7d3fe8'
-          },
-          '100%': {
-            textShadow: '0.02em 0.02em #d94b41, 0.04em 0.04em #f07f3a, 0.06em 0.06em #5df098, 0.08em 0.08em #3a83f0, 0.1em 0.1em #7d3fe8'
-          },
-        },
         typing: {
           from: {
             width: "0",

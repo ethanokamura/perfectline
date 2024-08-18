@@ -5,7 +5,11 @@ description: A little about me!
 ---
 
 ## About Our Company
-Welcome to PerfectLine, where we aim to empower students in their programming journey. We will set students up for success by engaging in detailed programming projects ranging from beginning to advanced levels. We push our students to think outside the box by offering a supportive environment to explore coding as a healthy outlet for creativity. Our comprehensive curriculum teaches programming concepts and delves into real-world applications and general computer science topics. To ensure accessibility, we use free software programs, except for artistic tools like Aseprite or Photoshop. Join us at PerfectLine to unlock your potential in the exciting world of software development and embark on a transformative educational journey.
+Welcome to PerfectLine, where we aim to empower you in your programming journey. We will set you up for success by engaging in detailed programming projects ranging from beginning to advanced difficulty. We push our you to think outside the box by offering a supportive environment to explore coding as a healthy outlet for creativity.
+
+Not to mention, it's FREE!
+
+Join us at PerfectLine to unlock your potential in the exciting world of software development and embark on a transformative educational journey.
 
 ## About Me
 A little about me: my name is Ethan Okamura. I am a computer science major with the end goal of obtaining a master's degree alongside practical experience in software engineering. As the creator of PerfectLine, I aim to be a mentor and teacher, providing affordable resources for people of all backgrounds. With a decade of programming expertise and a background in teaching, my goal is to instill a love for programming in anyone who wants to take these courses while they have fun creating their dream projects. I am committed to the continuous journey of learning and higher education and strive to offer my students comprehensive knowledge and support. Learn more about my experience by checking out [my portfolio](https://ethanokamura.io).
