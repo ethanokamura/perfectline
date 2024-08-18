@@ -68,9 +68,6 @@
   .instructions {
     @apply w-full py-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary mb-10;
   }
-  .instructions .prose {
-    @apply max-w-4xl
-  }
   .headnav {
    @apply text-xl md:text-2xl font-[800] text-primary w-screen items-center pt-4 pb-6 px-6 flex gap-6 z-20;
   }
@@ -90,7 +87,7 @@
     @apply px-2 bg-background text-text2 rounded hover:bg-primary hover:text-background;
   }
   .prose {
-    @apply w-screen px-12;
+    @apply w-full;
   }
   .prose :is(h1, h2, b, a, strong) {
     @apply text-primary;

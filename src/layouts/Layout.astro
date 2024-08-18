@@ -6,18 +6,16 @@ import '../styles/global.css';
 const { title, description } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
-
 <!doctype html>
 <html lang="en">
-  <Head title={title} description={description} section=''/>
+  <Head title={title} description={description} section=""/>
 	<body class="flex flex-col justify-between">
     <main class="flex flex-col justify-start">
       <Header title={title} path={currentPath}/>
-      <article class="flex flex-col items-center h-full pb-20">
+      <article class="grid items-center h-full pb-16 px-12 max-w-4xl mx-auto">
         <slot/>
       </article>
     </main>
     <Footer title="PerfectLine"/>
 	</body>
 </html>
-

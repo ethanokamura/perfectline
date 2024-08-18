@@ -17,13 +17,11 @@ const { frontmatter } = Astro.props;
 	<body class="flex flex-col justify-between">
     <main class="flex flex-col justify-start">
       <Header title={frontmatter.title} path={currentPath}/>
-      <article class="grid items-center h-full pb-16">
+      <article class="grid items-center h-full pb-16 px-12 max-w-4xl mx-auto">
         <Navbar course={frontmatter.course} />
-        <div class="mx-12">
-          <h1 class="capitalize text-primary">{frontmatter.title}</h1>
-          <h2 class="font-[300] text-xl md:text-2xl">{frontmatter.description}</h2>
-          <div class="border-b-2 border-secondary my-4 border-dashed"></div>
-        </div>
+        <h1 class="capitalize text-primary">{frontmatter.title}</h1>
+        <h2 class="font-[300] text-xl md:text-2xl">{frontmatter.description}</h2>
+        <div class="border-b-2 border-accent my-4 border-dashed"></div>
         <div class="prose">
           <slot/>
         </div>
