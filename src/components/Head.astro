@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
   section: string;
 	title: string;
@@ -32,24 +34,33 @@ const url = `https://perfectline.io/${section}`;
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content={image}>
+  <ViewTransitions/>
   <script is:inline>
-    const theme = (() => {
-      if (
-        typeof localStorage !== "undefined" &&
-        localStorage.getItem("color-theme")
-      ) {
-        return localStorage.getItem("color-theme");
+    const setTheme = () => {
+      const theme = (() => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("color-theme")
+        ) {
+          return localStorage.getItem("color-theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+  
+      if (theme === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
       }
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
-      }
-      return "light";
-    })();
-
-    if (theme === "light") {
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.add("dark");
-    }
+  
+      window.localStorage.setItem("color-theme", theme || "light");
+    };
+  
+    setTheme();
+  
+    document.addEventListener("astro:after-swap", setTheme);
   </script>
 </head>
