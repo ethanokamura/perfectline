@@ -3,7 +3,7 @@ const { data, index } = Astro.props;
 ---
 
 <div class="flex gap-4 items-center border-2 px-4 py-2 rounded-lg bg-secondary border-accent">
-  <h1 class="text-2xl text-text2">{index}. <span class={`${data.difficulty == "easy" ? "text-green-400" : data.difficulty == "medium" ? "text-yellow-300" : "text-red-400"}`}>{data.title}</span></h1>
+  <h1 class="text-2xl text-text2 dark:text-darktext2">{index}. <span class={`${data.difficulty == "easy" ? "text-green-400" : data.difficulty == "medium" ? "text-yellow-300" : "text-red-400"}`}>{data.title}</span></h1>
   <a class="btn" href={data.url} target="_blank">Problem</a>
   <a class="btn" href={`/solutions/${data.slug}`}>See Solution</a>
 </div>

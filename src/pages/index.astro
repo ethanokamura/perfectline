@@ -1,22 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Window from "../components/Window.astro";
 import Title from "../components/Title.astro";
 ---
 
 <Layout title="PerfectLine" description="Premium, Interactive, Project-Based Courses.">
   <Title description="Coding Academy" subdescription="Premium, Interactive, Project-Based Courses."/>
   <div class="flex items-center">
-    <span class="text-lg md:text-2xl text-primary mr-2">$</span>
     <span class="text-lg md:text-2xl max-w-fit inline-block animate-typing overflow-hidden whitespace-nowrap w-fit">Created By Ethan Okamura</span>
-    <div class="animate-blink bg-text2 h-5 w-2"></div>
+    <div class="animate-blink text-text2 dark:bg-darktext2 h-5 w-2"></div>
   </div>
-  <Window>
-    <h1 class="text-2xl">About Us</h1>
-    <div class="text-text2 text-xl grid gap-4">
+  <section>
+    <div class="grid gap-4">
       <p>Welcome to PerfectLine, where we aim to empower you in your programming journey. We will set you up for success by engaging in detailed programming projects ranging from beginning to advanced difficulty. We push our you to think outside the box by offering a supportive environment to explore coding as a healthy outlet for creativity.</p>
       <p>Join us to unlock your potential in the exciting world of software development and embark on a transformative educational journey.</p>
-      <p>Not to mention, it's <span class="text-green-400">FREE</span></p>
+      <p>Not to mention, it's <span class="text-primary dark:text-darkprimary">FREE</span></p>
     </div>
-  </Window>
+  </section>
 </Layout>

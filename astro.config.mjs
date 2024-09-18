@@ -10,7 +10,12 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: 'catppuccin-frappe',
+      themes: {
+        dark:'catppuccin-frappe',
+        light:'catppuccin-latte',
+      },
       defaultColor: false,
+      cssVariablePrefix: '--shiki-',
       langs: [],
       // Enable word wrap to prevent horizontal scrolling
       wrap: true,

@@ -3,19 +3,20 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Head from '../components/Head.astro';
 import '../styles/global.css';
-const { title, description } = Astro.props;
+const { title, description, section } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
 <!doctype html>
 <html lang="en">
-  <Head title={title} description={description} section=""/>
-	<body class="flex flex-col justify-between">
-    <main class="flex flex-col justify-start">
+  <Head title={title} description={description} section={section}/>
+	<body class="flex flex-col justify-between items-center">
+    <main class="grid">
       <Header title={title} path={currentPath}/>
-      <article class="grid items-center h-full pb-16 px-12 max-w-4xl mx-auto">
+      <article class="grid items-center h-full pb-16 px-12 max-w-4xl">
         <slot/>
       </article>
     </main>
     <Footer title="PerfectLine"/>
+    <script src="../utils/theme.js"></script>
 	</body>
 </html>

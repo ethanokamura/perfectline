@@ -2,74 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "brains";
-  font-weight: 300;
-  src: url('/fonts/JetBrainsMonoNL-Regular.ttf');
-  font-display: swap;
-}
-@font-face {
-  font-family: "rubik";
-  font-weight: 300;
-  src: url('/fonts/Rubik-Regular.ttf');
-  font-display: swap;
-}
-@font-face {
-  font-family: "rubik";
-  font-weight: 800;
-  src: url('/fonts/Rubik-Bold.ttf');
-  font-display: swap;
-}
-
 @layer base {
-  html::-webkit-scrollbar {
-    display: none;
-  }
+  html::-webkit-scrollbar { display: none; }
   html {
-    @apply w-screen p-0 m-0 font-rubik font-[300] text-text bg-background;
+    @apply h-screen w-screen p-0 m-0 text-text bg-background font-rubik;
   }
-  html,
+  html.dark {
+    @apply text-darktext bg-darkbackground;
+  }
+  html.dark .astro-code,
+  html.dark .astro-code span {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+  }
   body {
-    @apply h-full w-screen p-0 m-0;
+    @apply p-0 m-0 w-screen h-full;
   }
-  ul, ol {
-    @apply list-none p-0;
+
+  h1, h2 { @apply font-bold transition-all ease-linear duration-300; }
+  h1 { @apply text-4xl md:text-6xl; }
+  h2 { @apply text-3xl md:text-4xl; }
+  span { @apply text-text3 text-sm md:text-base; }
+  span.dark { @apply text-darktext3 text-sm md:text-base; }
+  p, li { @apply text-text2 dark:text-darktext2 text-lg md:text-xl; }
+  p.dark, li.dark { @apply text-darktext2 text-lg md:text-xl; }
+  li {@apply text-text3;}
+  li.dark {@apply text-darktext3;}
+  main { @apply max-w-4xl mx-auto; }
+  section {
+    @apply h-full w-full grid gap-4 py-20 items-center;
   }
-  li {
-    @apply ps-0;
+  pre {
+    @apply font-jetbrains;
   }
-  h1, h2, h3, h4 {
-    @apply font-[800];
-  }
-  h1 {
-    @apply text-3xl md:text-5xl;
-  }
-  h2 {
-    @apply text-2xl md:text-3xl;
-  }
-  h3 {
-    @apply text-xl md:text-2xl;
-  }
-  h4 {
-    @apply text-lg md:text-xl;
-  }
-  span {
-    @apply text-text2;
-  }
-  button {
-    @apply border-2 px-2 rounded-lg bg-secondary border-accent hover:bg-accent;
-  }
-  /* article {
-    @apply max-w-4xl w-full p-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary;
-  } */
 }
 
 @layer components {
+  .hidden {
+    display: none;
+  }
   .instructions {
-    @apply w-full py-6 rounded-lg bg-gradient-to-r from-background to-secondary border-solid border-2 border-secondary mb-10;
+    @apply w-full py-6 mb-10 rounded-lg 
+            bg-gradient-to-r from-background to-accent dark:from-darkbackground dark:to-darkaccent
+            border-solid border-2  border-accent dark:border-darkaccent;
   }
   .headnav {
-   @apply text-xl md:text-2xl font-[800] text-primary w-screen items-center pt-4 pb-6 px-6 flex gap-6 z-20;
+   @apply text-xl md:text-2xl font-[800] dark:text-darkprimary text-primary w-screen items-center pt-4 pb-6 px-6 flex gap-6 z-20;
   }
   .headnav a {
     @apply hover:scale-110 transition-all ease-linear duration-100;
@@ -78,28 +56,28 @@
     @apply flex flex-wrap gap-4 mt-5;
   }
   .tags > * {
-    @apply px-2 py-1 rounded-sm bg-accent text-text;
+    @apply px-2 py-1 rounded-sm bg-accent dark:bg-darkaccent text-text dark:text-darktext;
   }
   .tags::-webkit-scrollbar {
     display: none;
   }
   .btn {
-    @apply px-2 bg-background text-text2 rounded hover:bg-primary hover:text-background;
+    @apply px-2 bg-background dark:bg-darkbackground text-text2 dark:text-darktext2 rounded hover:bg-primary dark:hover:bg-darkprimary hover:text-background dark:hover:text-darkbackground;
   }
   .prose {
     @apply w-full;
   }
-  .prose :is(h1, h2, b, a, strong) {
-    @apply text-primary;
+  .prose :is(b, a, strong) {
+    @apply text-primary dark:text-darkprimary;
   }
   .prose :is(h1, h2, h3, h4, h5, h6) {
-    @apply my-3 capitalize;
+    @apply my-3 capitalize font-bold;
   }
   .prose :not(h1, h2, h3, h4, h5, h6) {
     @apply text-base md:text-lg;
   }
   .prose :not(h1, h2, h3, h4, h5, h6, b, a, strong) {
-    @apply text-text2;
+    @apply text-text2 dark:text-darktext2;
   }
   .prose p:not(:is(h1, h2, h3, h4, h5, h6) + p) {
     @apply mt-7
@@ -119,20 +97,17 @@
   .prose :is(ul, ol) li {
     @apply my-2 px-2;
   }
-  .prose code {
-    @apply font-brains;
-  }
   .prose code:not(:is(pre code)) {
-    @apply bg-secondary px-2 rounded-md text-text;
+    @apply bg-accent dark:bg-darkaccent px-2 rounded-md text-text dark:text-darktext;
   }
   .prose pre {
     @apply mt-3 overflow-x-scroll p-4 rounded-md max-w-full;
     tab-size: 2;
   }
   .prose pre::-webkit-scrollbar {
-    @apply bg-accent;
+    @apply bg-accent dark:bg-darkaccent;
   }
   .prose pre::-webkit-scrollbar-thumb {
-    @apply bg-background;
+    @apply bg-background dark:bg-darkbackground;
   }
 }

@@ -1,32 +1,16 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Head from '../components/Head.astro';
 import '../styles/global.css';
-const currentPath = Astro.url.pathname;
-// components
 import Navbar from '../components/Navbar.astro';
-
-// utils
+import Layout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en">
-  <Head title={frontmatter.title} description={frontmatter.description} section={frontmatter.course}/>
-	<body class="flex flex-col justify-between">
-    <main class="flex flex-col justify-start">
-      <Header title={frontmatter.title} path={currentPath}/>
-      <article class="grid items-center h-full pb-16 px-12 max-w-4xl mx-auto">
-        <Navbar course={frontmatter.course} />
-        <h1 class="capitalize text-primary">{frontmatter.title}</h1>
-        <h2 class="font-[300] text-xl md:text-2xl">{frontmatter.description}</h2>
-        <div class="border-b-2 border-accent my-4 border-dashed"></div>
-        <div class="prose">
-          <slot/>
-        </div>
-      </article>
-    </main>
-    <Footer title="PerfectLine"/>
-	</body>
-</html>
+<Layout title={frontmatter.title} description={frontmatter.description} section={frontmatter.section}>
+  <Navbar course={frontmatter.course} />
+  <h1 class="capitalize">{frontmatter.title}</h1>
+  <h2 class="font-[500] text-xl md:text-2xl text-text2 dark:text-darktext2">{frontmatter.description}</h2>
+  <div class="border-b-2 border-accent dark:border-darkaccent my-4 border-dashed"></div>
+  <div class="prose">
+    <slot/>
+  </div>
+</Layout>

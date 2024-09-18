@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
 interface Props {
   section: string;
 	title: string;
@@ -19,10 +18,9 @@ const url = `https://perfectline.io/${section}`;
   <meta name="description" content={description} />
   <meta property="type" content="website" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" onload="this=null;this='stylesheet'" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
-  <ViewTransitions/>
+  <link rel="preconnect" as="style" href="https://fonts.googleapis.com">
+  <link rel="preconnect" as="style" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
@@ -34,4 +32,24 @@ const url = `https://perfectline.io/${section}`;
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content={image}>
+  <script is:inline>
+    const theme = (() => {
+      if (
+        typeof localStorage !== "undefined" &&
+        localStorage.getItem("color-theme")
+      ) {
+        return localStorage.getItem("color-theme");
+      }
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+      }
+      return "light";
+    })();
+
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
 </head>

@@ -7,6 +7,6 @@ const { description, subdescription } = Astro.props;
 ---
 <header class="my-10 w-full">
   <h1 class="md:text-6xl text-3xl">PerfectLine</h1>
-  <h2 class="text-primary uppercase">{description}</h2>
+  <h2 class="text-primary dark:text-darkprimary uppercase">{description}</h2>
   { subdescription == "" ? <></> : <h3 class="text-text2">{subdescription}</h3> }
 </header>
