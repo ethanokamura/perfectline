@@ -7,7 +7,7 @@ interface Props {
 const { path } = Astro.props;
 ---
 
-<nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"}  max-w-4xl text-lg md:text-2xl items-center`}>
+<nav class={`headnav ${path === "/" ? "justify-end" : "justify-between"}  w-full text-lg md:text-2xl items-center`}>
   { path === "/" ? <></> : <a target="_self" href="/">Home</a> }
   <div class="flex gap-4 md:gap-10">
     <a target="_self" href="/tutoring/">Tutoring</a>
