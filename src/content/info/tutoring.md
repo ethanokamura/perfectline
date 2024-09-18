@@ -19,7 +19,7 @@ Game design empowers students to express themselves through programming, graphic
 
 This step represents the most intensive part of the lessons, as we dedicate ample time to exploring Unity and C# concepts. Furthermore, Unity allows for the conversion of games to WebGL, which facilitates the embedding of games in websites. This opens the door to exploring topics such as JavaScript, CSS, and HTML, creating a seamless transition to web development.
 
-## 03: Web Development with JavaScript/HTML/CSS
+## 03: Web Development with JavaScript, HTML, and CSS
 In the final step of our online teaching service, we guide students through the realm of web development, focusing on JavaScript, HTML, and CSS. Students will actively work on creating and enhancing their websites, including a dedicated page where they can showcase their games and overall progress.
 
 By using HTML and CSS, students will learn to create visually appealing and interactive web pages. JavaScript further enriches the web development experience by enabling students to make their websites more dynamic and responsive.
