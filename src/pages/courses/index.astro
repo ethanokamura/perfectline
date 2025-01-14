@@ -7,6 +7,7 @@ import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
 import Title from "../../components/Title.astro";
+import CourseLayout from "../../layouts/CourseLayout.astro";
 
 const allCourses = await getCollection('courses');
 
@@ -20,13 +21,13 @@ const title = "Courses";
 const description = "A List of Courses We Offer"
 ---
 
-<Layout title={title} description={description}>
-  <main class="grid justify-center pb-20">
+<CourseLayout title={title} description={description}>
+  <div class="mx-auto text-center">
     <Title description={title} subdescription={description}/>
-    <div class="flex flex-wrap justify-center items-start gap-6">
-      {formattedCourses.map((course:any) =>
-        <Card data={ course.data } url={`/courses/${course.data.lang}/${course.data.course}/intro`}/>
-      )}
-    </div>
-  </main>
-</Layout>
+  </div>
+  <div class="flex flex-wrap max-w-7xl w-full justify-center items-start gap-6">
+    {formattedCourses.map((course:any) =>
+      <Card data={ course.data } url={`/courses/${course.data.lang}/${course.data.course}/intro`}/>
+    )}
+  </div>
+</CourseLayout>
