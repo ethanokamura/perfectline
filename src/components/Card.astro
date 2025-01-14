@@ -1,10 +1,9 @@
 ---
-import Tag from './Tag.astro'
 const { data, url } = Astro.props;
 ---
 
-<a href={`${url}`} class='bg-accent dark:bg-darkaccent rounded-lg w-64 hover:scale-110 ease-linear duration-100'>
-  <img class="rounded-t-lg w-64 h-auto" src={data.img} alt={data.alt}/>
+<a href={`${url}`} class='bg-accent dark:bg-darkaccent rounded-lg w-96 hover:scale-110 ease-linear duration-100'>
+  <img class="rounded-t-lg w-96 h-auto" src={data.img} alt={data.alt}/>
   <div class="text-start p-6 h-full">
     <h1 class="capitalize text-2xl">{data.title}</h1>
     <p class="capitalize">{data.description}</p>
