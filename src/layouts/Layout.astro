@@ -11,7 +11,7 @@ const currentPath = Astro.url.pathname;
   <Head title={title} description={description} section={section}/>
 	<body class="flex flex-col justify-between items-center">
     <main class="grid">
-      <Header title={title} path={currentPath}/>
+      <Header path={currentPath}/>
       <article class="grid items-center h-full pb-16 px-12 max-w-4xl">
         <slot/>
       </article>
