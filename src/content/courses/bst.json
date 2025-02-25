@@ -1,0 +1,13 @@
+{
+  "title": "Binary Search Tree",
+  "description":"Tree Basics: Binary Search Trees",
+  "author": "Ethan Okamura",
+  "date": "02-24-2025",
+  "tags": [ "cpp", "intermediate", "data-structures" ],
+  "published": true,
+  "lang": "cpp",
+  "course": "bst",
+  "img": "/imgs/thumbnails/dsa.webp",
+  "alt": "binary-search-tree-thumbnail",
+  "order": 3
+}
