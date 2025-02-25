@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.astro';
 import Layout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
-
+<meta charset="utf-8">
 <Layout title={frontmatter.title} description={frontmatter.description} section={frontmatter.section}>
   <Navbar course={frontmatter.course} />
   <h1 class="capitalize">{frontmatter.title}</h1>
