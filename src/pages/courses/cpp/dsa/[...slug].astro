@@ -1,6 +1,7 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import PageLayout from '../../../../layouts/PageLayout.astro';
 
 
 // 1. Generate a new path for every collection entry
@@ -17,7 +18,8 @@ type Props = {
 
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
-
-<Content />
+<PageLayout { ...entry.data }>
+  <Content />
+</PageLayout>

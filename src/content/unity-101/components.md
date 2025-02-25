@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Components
 description: Learn About Unity's Components
 tags:

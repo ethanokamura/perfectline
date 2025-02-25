@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: JavaScript
 description: In this section, we will cover the basics of JavaScript!
 tags:

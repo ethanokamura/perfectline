@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/InfoLayout.astro'
 title: Our Server
 description: Access all your files and see examples over the internet!
 ---

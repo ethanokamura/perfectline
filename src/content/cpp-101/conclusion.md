@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Conclusion
 description: We've finally reached the end!
 tags:

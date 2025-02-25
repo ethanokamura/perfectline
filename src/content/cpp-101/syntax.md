@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Syntax
 description: Learn a bit of terminology, syntax and types for C++
 tags:

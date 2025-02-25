@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/HomeLayout.astro'
 title: Info for the home page
 description: Home page info
 ---

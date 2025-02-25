@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/InfoLayout.astro'
 title: About
 description: A little about me!
 ---

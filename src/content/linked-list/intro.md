@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Linked Lists
 description: Let's learn about Doubly Linked Lists!
 tags:

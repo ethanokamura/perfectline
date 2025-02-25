@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Insert
 description: Let's add some data!
 tags:

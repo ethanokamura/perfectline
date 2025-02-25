@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Basic Searching
 description: Let's learn about Binary and Linear Search
 tags:

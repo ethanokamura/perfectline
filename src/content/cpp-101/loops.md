@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Loops
 description: In this section, we will cover the importance of loops!
 tags:

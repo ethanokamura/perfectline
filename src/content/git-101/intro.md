@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Intro to Git
 description: In this course, we will cover the importance of Git!
 tags:

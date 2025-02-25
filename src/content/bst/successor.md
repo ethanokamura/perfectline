@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Successor
 description: What if we want to find the next largest or smallest node to the current node?
 tags:

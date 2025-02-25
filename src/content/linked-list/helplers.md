@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Helper Functions
 description: Time to add some helper functions!
 tags:

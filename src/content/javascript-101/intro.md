@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Intro
 description: In this course, we will cover various topics in web development.
 author: Ethan Okamura

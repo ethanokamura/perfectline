@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Min / Max
 description: What if we want to know the minimum and maximum values?
 tags:

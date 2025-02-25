@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Unity Editor Layout
 description: Learn The In's and Out's of the Unity UI
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Syntax
 description: In this section, we will cover everything you need to know about JavaScript Syntax!
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Event Loops
 description: In this section, we will cover the importance of event loops!
 tags:

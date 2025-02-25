@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Heaps
 description: A nearly complete binary tree
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Data Structures
 description: In this section, we will cover the importance of data structures!
 tags:

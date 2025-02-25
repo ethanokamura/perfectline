@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Indexing
 description: Let's access data in an easier, prettier way.
 tags:

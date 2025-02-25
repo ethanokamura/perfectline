@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Binary Search Tree
 description: Desc
 tags:

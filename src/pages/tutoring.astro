@@ -1,6 +1,9 @@
 ---
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
+import InfoLayout from '../layouts/InfoLayout.astro';
 const entry = await getEntry('info', 'tutoring');
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
-<Content />
+<InfoLayout frontmatter={entry}>
+  <Content />
+</InfoLayout>

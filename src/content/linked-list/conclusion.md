@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Wrapping Up
 description: We have finally finished our doubly linked list!
 tags:

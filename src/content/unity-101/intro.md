@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Intro
 description: Learn About Unity!
 tags:

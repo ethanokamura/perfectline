@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Nodes
 description: Let's start off by covering the node class!
 tags:

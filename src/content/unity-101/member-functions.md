@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Member Functions
 description: Learn About Unity's Included Functions
 tags:

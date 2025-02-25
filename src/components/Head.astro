@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   section: string;
@@ -34,7 +34,7 @@ const url = `https://perfectline.io/${section}`;
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content={image}>
-  <ViewTransitions/>
+  <ClientRouter />
   <script is:inline>
     const setTheme = () => {
       const theme = (() => {

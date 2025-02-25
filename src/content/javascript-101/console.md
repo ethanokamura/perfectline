@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Console Tips
 description: In this section, I'll show you tips and tricks for console.log!
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Stacks
 description: They're like pancakes...
 tags:

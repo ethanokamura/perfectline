@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Complexity
 description: How complex is our structure or algorithm?
 tags:

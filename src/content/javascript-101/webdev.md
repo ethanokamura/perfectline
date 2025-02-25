@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Web Development
 description: In this section, we will cover the basics of web developement!
 tags:

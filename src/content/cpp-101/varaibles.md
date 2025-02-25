@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Variables
 description: Learn all about variables!
 tags:

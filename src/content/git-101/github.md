@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: GitHub
 description: In this section, we will cover the importance of {title}!
 tags:

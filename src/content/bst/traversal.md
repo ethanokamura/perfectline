@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Traversal
 description: Now it's time to navigate our tree.
 tags:

@@ -1,5 +1,4 @@
 ---
-# layout: '../../layouts/PageLayout.astro'
 title: Intro
 description: Let's put our lessons to use and try some practice problems!
 ---

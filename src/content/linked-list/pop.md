@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Remove
 description: Let's remove data from our list!
 tags:

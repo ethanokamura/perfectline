@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Game Objects
 description: Learn About Game Objects
 tags:

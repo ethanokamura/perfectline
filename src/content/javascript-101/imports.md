@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Imports
 description: In this section, we will cover the importance of imports and exports!
 date: '11.1.2023'

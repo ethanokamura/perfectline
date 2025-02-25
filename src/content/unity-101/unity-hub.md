@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Unity Hub
 description: Learn How to Create a New Unity Project
 tags:

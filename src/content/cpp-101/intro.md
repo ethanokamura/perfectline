@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Intro
 description: In this section, we will cover what C++ is and why one might use it.
 tags:

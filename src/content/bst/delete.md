@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Delete
 description: How can we delete elements?
 tags:

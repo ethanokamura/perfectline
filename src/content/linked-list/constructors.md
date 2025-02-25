@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Constructors
 description: Building and destroying our list!
 tags:

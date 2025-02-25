@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Resizing
 description: Resizing our linked list
 tags:

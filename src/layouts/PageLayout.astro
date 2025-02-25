@@ -2,15 +2,16 @@
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
 import Layout from './Layout.astro';
-const { frontmatter } = Astro.props;
+
+const { title, description, section, course } = Astro.props;
 ---
-<meta charset="utf-8">
-<Layout title={frontmatter.title} description={frontmatter.description} section={frontmatter.section}>
-  <Navbar course={frontmatter.course} />
-  <h1 class="capitalize">{frontmatter.title}</h1>
-  <h2 class="font-[500] text-xl md:text-2xl text-text2 dark:text-darktext2">{frontmatter.description}</h2>
+
+<Layout title={title} description={description} section={section}>
+  <Navbar course={course} />
+  <h1 class="capitalize">{title}</h1>
+  <h2 class="font-[500] text-xl md:text-2xl text-text2 dark:text-darktext2">{description}</h2>
   <div class="border-b-2 border-accent dark:border-darkaccent my-4 border-dashed"></div>
   <div class="prose">
-    <slot/>
+    <slot />
   </div>
 </Layout>

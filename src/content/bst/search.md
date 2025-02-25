@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Search
 description: How do we find nodes within the tree?
 tags:

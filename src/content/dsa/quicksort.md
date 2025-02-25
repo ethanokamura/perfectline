@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PageLayout.astro'
 title: Quicksort
 description: Divide and Conquer
 tags:
