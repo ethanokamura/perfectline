@@ -14,7 +14,7 @@ export default defineConfig({
         dark:'catppuccin-frappe',
         light:'catppuccin-latte',
       },
-      defaultColor: false,
+      defaultColor: "light",
       cssVariablePrefix: '--shiki-',
       langs: [],
       // Enable word wrap to prevent horizontal scrolling

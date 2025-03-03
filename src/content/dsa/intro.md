@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PageLayout.astro
 title: Intro
 description: In this course, we will cover intermediate to advanced topics in C++ while covering various data structures and algorithms
 tags:
