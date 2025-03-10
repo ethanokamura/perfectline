@@ -40,7 +40,7 @@
       }
 
       .cls-5 {
-        font-family: Rubik-ExtraBold, Rubik;
+        font-family: "Rubik", sans-serif;
         font-size: 53.37px;
         font-variation-settings: 'wght' 800;
       }
