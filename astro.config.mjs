@@ -8,7 +8,13 @@ import icon from "astro-icon";
 
 export default defineConfig({
   site: 'https://perfectline.io',
-  integrations: [tailwind(), mdx(), icon()],
+  integrations: [
+    tailwind(),
+    mdx(),
+    icon({
+      iconDir: "src/icons",
+    })
+  ],
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex],
