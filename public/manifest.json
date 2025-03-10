@@ -1,0 +1,15 @@
+{
+  "name": "Perfect Line",
+  "short_name": "PerfectLine",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f3f5f6",
+  "theme_color": "#8875e0",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "256x256",
+      "type": "image/svg"
+    }
+  ]
+}
