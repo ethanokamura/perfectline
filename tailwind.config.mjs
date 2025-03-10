@@ -41,6 +41,7 @@ export default {
       fontFamily: {
         jetbrains: 'jetbrains-mono',
         rubik: 'rubik',
+        noto: 'noto-sans',
       },
       gridTemplateRows: {
         home: [

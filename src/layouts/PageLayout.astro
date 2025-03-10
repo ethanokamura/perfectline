@@ -2,15 +2,23 @@
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
 import Layout from './Layout.astro';
-
-const { title, description, section, course } = Astro.props;
+import { YouTube } from '@astro-community/astro-embed-youtube';
+const { title, description, section, course, videoId } = Astro.props;
 ---
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <Layout title={title} description={description} section={section}>
   <Navbar course={course} />
   <h1 class="capitalize">{title}</h1>
   <h2 class="font-[500] text-xl md:text-2xl text-text2 dark:text-darktext2">{description}</h2>
   <div class="border-b-2 border-accent dark:border-darkaccent my-4 border-dashed"></div>
+  {videoId != null && videoId != ''
+    ? <div class="flex justify-center items-center my-6">
+        <div class="w-4/5">
+          <YouTube posterQuality="high" id={videoId} playlabel="Play the video" />
+        </div>
+      </div>
+    : <></>
+  }
   <div class="prose">
     <slot />
   </div>

@@ -4,7 +4,7 @@
   "author": "Ethan Okamura",
   "date": "02-24-2025",
   "tags": [ "cpp", "intermediate", "data-structures" ],
-  "published": true,
+  "published": false,
   "lang": "cpp",
   "course": "bst",
   "img": "/imgs/thumbnails/bst.webp",

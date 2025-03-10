@@ -30,6 +30,7 @@ const pageCollection = defineCollection({
     published: z.boolean().optional(),
     lang: z.string().optional(),
     order: z.number().optional(),
+    videoId: z.string().optional(),
   }),
 });
 
@@ -45,6 +46,7 @@ const infoCollection = defineCollection({
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   'bst': pageCollection,
+  'trees': pageCollection,
   'courses': courseCollection,
   'cpp-101': pageCollection,
   'linked-list': pageCollection,

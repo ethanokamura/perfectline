@@ -1,0 +1,13 @@
+{
+  "title": "Trees",
+  "description":"Binary-Search Trees, Red-Black Trees, AVL Trees and Heaps",
+  "author": "Ethan Okamura",
+  "date": "02-24-2025",
+  "tags": [ "cpp", "intermediate", "data-structures" ],
+  "published": true,
+  "lang": "cpp",
+  "course": "trees",
+  "img": "/imgs/thumbnails/trees.webp",
+  "alt": "trees-thumbnail",
+  "order": 3
+}
