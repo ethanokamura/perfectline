@@ -21,7 +21,7 @@
       }
 
       .cls-3, .cls-4 {
-        font-family: Rubik-Bold, Rubik;
+        font-family: "Rubik", sans-serif;
         font-variation-settings: 'wght' 700;
       }
 
