@@ -7,10 +7,10 @@ export default {
 	theme: {
 		extend: {
       colors: {
-        'text': '#1a1a1a',
-        'text2': '#7e8286',
+        'text': '#46494b',
+        'text2': '#7f8b90',
         'text3': '#8f8f8f',
-        'background': '#ffffff',
+        'background': '#f3f5f6',
         'accent': '#e5e8ea',
         'primary': '#8875e0',
         
@@ -18,7 +18,7 @@ export default {
         'darktext2': '#969eb0',
         'darktext3': '#666e7d',
         'darkbackground': '#10141a',
-        'darkaccent': '#1d2530',
+        'darkaccent': '#151b24',
         'darkprimary': '#61AFEF',
         green: {
           100:  '#98C379',
