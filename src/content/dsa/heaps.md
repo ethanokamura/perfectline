@@ -59,7 +59,7 @@ Remember that the left and right nodes are the left and right children of the cu
    / \
   2   3
 ```
-These left, right, and parent functions are included in the git repository attached above.
+These left, right, and parent functions are included in the git repository attached below.
 
 One thing to note is that our heap will only take integer values! This structure will work with other data types, but for simplicity, we will use integers.
 
@@ -120,7 +120,7 @@ void heapify(int index) {
 ```
 Heapify is a recursive function that will continue to swap the minimum value with the current value at the desired index!
 
-**NOTE**: The function `min_of_three()` is not covered, but it just returns the minimum value between 3 integers. If you want to see the code feel free to check out the git repository attached above!
+**NOTE**: The function `min_of_three()` is not covered, but it just returns the minimum value between 3 integers. If you want to see the code feel free to check out the git repository attached below!
 
 ### Extract Min
 This structure would not be a queue if we did not remove our highest-priority element! To do this, we use a function called `extract_min()`!
@@ -190,4 +190,4 @@ std::pair<int*, int> heap_sort() {
 Just like that! We have a working priority queue and heap!
 
 ## In Conclusion
-We finally created the main components and functions in our priority queue using the heap as a data structure. You will want to run tests and double-check that your code functions as expected! Again, to see the completed code, check out the git repository at the top!
+We finally created the main components and functions in our priority queue using the heap as a data structure. You will want to run tests and double-check that your code functions as expected! Again, to see the completed code, check out the git repo [here](https://github.com/ethanokamura/dsa/blob/main/linked-list/c%2B%2B/linked_list/linked_list.h)!
