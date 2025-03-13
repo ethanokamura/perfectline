@@ -1,0 +1,13 @@
+{
+  "title": "Graphs",
+  "description":"Learn the basics of graph-structures and algorithms",
+  "author": "Ethan Okamura",
+  "date": "03-10-2025",
+  "tags": [ "cpp", "intermediate", "data-structures" ],
+  "published": true,
+  "lang": "cpp",
+  "course": "graphs",
+  "img": "/imgs/thumbnails/graphs.webp",
+  "alt": "graphs-thumbnail",
+  "order": 3
+}
