@@ -60,7 +60,7 @@ The **left** and **right** nodes are the children of the current node. For examp
    / \
   2   3
 ```
-These **left, right, and parent** functions are included in the Git repository linked above.
+These **left, right, and parent** functions are included in the Git repository linked below.
 
 One important note: Our heap will only store **integer values**! While this structure can work with other data types, we will use integers for simplicity.
 
@@ -135,7 +135,7 @@ void heapify(int index) {
   }
 }
 ```
-**NOTE:** The `min_of_three()` function returns the smallest of three integers. Check the Git repository for its implementation.
+**NOTE:** The `min_of_three()` function returns the smallest of three integers. Check the Git repository below for its implementation.
 
 ---
 
@@ -202,3 +202,5 @@ std::pair<int*, int> heap_sort() {
 
 ## Conclusion
 We have successfully implemented the **core functions** of a **priority queue** using a heap! Be sure to **test** your code and verify its functionality.
+
+Check out the source code <a href="https://github.com/ethanokamura/dsa/tree/main/trees/heap" target="_blank">here</a>.

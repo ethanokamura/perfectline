@@ -197,3 +197,7 @@ delete(value):
 - **Complexity**: Most operations (search, insert, delete, etc.) have a time complexity of O(h), where `h` is the height of the tree. In the worst case, `h` could be equal to the number of nodes (O(n)) in an unbalanced tree.
 
 This pseudocode covers the essential operations of a Binary Search Tree (BST) while maintaining simplicity and clarity.
+
+If you want to see a real example check out my source code:
+- [Example 1](https://github.com/ethanokamura/dsa/tree/main/trees/bst-1)
+- [Example 2](https://github.com/ethanokamura/dsa/tree/main/trees/bst-2)
