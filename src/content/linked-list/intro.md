@@ -97,7 +97,7 @@ Linked lists allow for efficient memory allocation as nodes can be dynamically a
 Linked lists can grow or shrink dynamically during runtime, allowing for efficient insertion and deletion of elements anywhere in the list without requiring resizing or shifting of elements, as is the case with arrays.
 
 ### 2. Efficiency:
-Insertion and deletion operations at the beginning or end of a linked list (when you have direct access to the head or tail) can be performed in constant time O(1), regardless of the list size. This makes linked lists efficient for dynamic data structures. More on time complexity [here](https://PerfectLine.iocourses/cpp/dsa/complexity/).
+Insertion and deletion operations at the beginning or end of a linked list (when you have direct access to the head or tail) can be performed in constant time O(1), regardless of the list size. This makes linked lists efficient for dynamic data structures. More on time complexity [here](https://perfectline.io/cpp/dsa/complexity/).
 
 Insertions and deletions in the middle of a linked list can also be efficient if you have direct access to the node where the operation is performed. Unlike arrays, linked lists don't require shifting elements, resulting in faster operations.
 
@@ -110,4 +110,4 @@ Linked lists come in different forms, such as singly linked lists, doubly linked
 Linked lists are relatively easy to implement and understand compared to more complex data structures like trees and graphs. This simplicity makes them an excellent choice for learning data structures and algorithms.
 
 
-If you want to access the source code for the completed list, I have it posted for public access [here](https://github.com/paperwrld/codesantacruz-solutions/blob/main/linked-list/linked_list.h)
+If you want to access the source code for the completed list, I have it posted for public access <a href="https://github.com/ethanokamura/dsa/blob/main/linked-list/cpp/linked_list/linked_list.h" target="_blank">here</a>
