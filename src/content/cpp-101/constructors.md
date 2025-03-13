@@ -10,7 +10,7 @@ lang: cpp
 course: cpp-101
 order: 12
 ---
-When we create classes and structs, we need to also talk about [constructors](https://www.w3schools.com/cpp/cpp_constructors.asp)!
+When we create classes and structs, we need to also talk about <a href="https://www.w3schools.com/cpp/cpp_constructors.asp" target="_blank">constructors</a>
 
 ## What is a Constructor?
 Constructures initialize our classes so that we can create and use objects! There are a whole bunch of different ways to construct a class. For now, let's look at 4 examples:
@@ -36,7 +36,7 @@ Pizza pizza;
 ```
 When the object is created, we automatically assign its number of slices to 12. This means that any pizza we create starts with 12 slices!
 
-More on  [Default Constructors](https://en.cppreference.com/w/cpp/language/default_constructor)
+More on <a href="https://en.cppreference.com/w/cpp/language/default_constructor" target="_blank">default constructors</a>
 
 ### Initializer List Constructor
 We may want to create an object using a list of values (in braces).
@@ -74,7 +74,7 @@ vector<int> b(a);
 
 This code example shows that we have successfully copied `a` to `b`, but they have unique **memory addresses** (more on this later)!
 
-More on [Copy Constructors](https://en.cppreference.com/w/cpp/language/copy_constructor).
+More on <a href="https://en.cppreference.com/w/cpp/language/copy_constructor" target="_blank">copy constructors</a>.
 
 ### Range Constructor:
 Purpose: initialize an object using a range of values specified by iterators.
